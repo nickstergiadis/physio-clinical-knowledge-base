@@ -44,6 +44,8 @@ Importer reads markdown recursively from:
   - diagnostic-intent boost for condition pages
   - acronym alias expansion (GTPS, FAIS, OA, ACLR, RCRSP)
   - filters for region and content type
+  - optional AI-assisted internal query box that retrieves from DB content and cites source pages
+  - low-confidence fallback from assistant to standard search
 - Content detail page:
   - markdown rendering
   - metadata display (type, region, source file)
@@ -81,6 +83,10 @@ cp .env.example .env
 ```
 
 Edit `.env` and set your PostgreSQL `DATABASE_URL` and optional `KNOWLEDGE_BASE_SOURCE`.
+
+Optional assistant settings:
+- `OPENAI_API_KEY` (enables LLM summarization over retrieved internal content)
+- `OPENAI_MODEL` (defaults to `gpt-4.1-mini`)
 
 ### 3) Generate Prisma client and migrate database
 

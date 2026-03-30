@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FavoriteButton } from '@/components/FavoriteButton';
+import { AssistantQueryBox } from '@/components/AssistantQueryBox';
 import { getNavigationData, searchContent } from '@/lib/data';
 
 type SearchPageProps = {
@@ -16,6 +17,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   return (
     <>
       <h1>Search</h1>
+      <AssistantQueryBox />
+
       <form className="card" style={{ marginBottom: '1rem' }} role="search" aria-label="Clinical content search">
         <div className="grid two">
           <div>
