@@ -29,6 +29,7 @@ export function Sidebar({ regions, types }: SidebarProps) {
           <ul className="clean" style={{ marginBottom: '1rem' }}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/search">Search</Link></li>
+            <li><Link href="/admin">Admin</Link></li>
           </ul>
 
           <FavoritesPanel />

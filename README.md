@@ -11,6 +11,8 @@ A production-style, accessible **Next.js + TypeScript + PostgreSQL + Prisma** ap
 
 ## Source of truth
 
+Markdown files in `./knowledge_base_source` are the repo-first source of truth for content maintenance.
+
 Importer reads markdown recursively from:
 
 1. `KNOWLEDGE_BASE_SOURCE` env var (recommended), otherwise
@@ -59,6 +61,10 @@ Importer reads markdown recursively from:
   - keyboard-accessible controls with visible focus states
   - improved contrast and minimum touch target sizing
   - print-optimized detail pages (clean margins, less page breaking)
+- Lightweight admin workflow:
+  - safe refresh script that skips DB sync when no markdown changes are detected
+  - validation report with import warnings and frontmatter checks
+  - `/admin` dashboard for import status, counts, and validation issues
 
 ## Setup
 
@@ -97,12 +103,43 @@ npm run dev
 
 Open <http://localhost:3000>
 
+## Maintenance workflow (repo-first)
+
+1. Edit markdown/frontmatter in `knowledge_base_source/`.
+2. Run validation first:
+
+```bash
+npm run validate:kb
+```
+
+3. Review warnings in `.kb-admin/import-status.json`:
+   - missing titles
+   - duplicate slugs
+   - missing region/type inference
+   - broken related links
+   - frontmatter consistency mismatches
+4. Refresh content safely:
+
+```bash
+npm run refresh:kb
+```
+
+`refresh:kb` imports only when markdown changed since the last successful import. Use `npm run refresh:kb:force` to force a full re-import.
+
+5. Open `/admin` to review:
+   - content counts by type and region
+   - import status
+   - validation issues
+
 ## Scripts
 
 - `npm run install:deps` – install dependencies
 - `npm run db:generate` – generate Prisma client
 - `npm run db:migrate` – run Prisma migrations
 - `npm run import:kb` – import markdown from source directory
+- `npm run validate:kb` – run markdown/frontmatter validation only
+- `npm run refresh:kb` – safe refresh (skip if no markdown changes)
+- `npm run refresh:kb:force` – force full refresh
 - `npm run seed` – run importer via Prisma seed hook
 - `npm run dev` – start development server
 - `npm run build` – production build
@@ -114,7 +151,8 @@ Open <http://localhost:3000>
 Importer now adds defensive behavior for common fragility points:
 
 - Region inference checks both paths and title text (not just folder naming).
-- Slug collision handling appends deterministic numeric suffixes.
+- Validation reports include duplicate slug detection and broken related links.
+- Frontmatter checks detect title/type/region mismatch against inferred values.
 - Metadata values are normalized for spacing and separators.
 - Tag extraction supports acronym aliases and clinical synonym expansion.
 - Citation extraction deduplicates repeated links/lines.

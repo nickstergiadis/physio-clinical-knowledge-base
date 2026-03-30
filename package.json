@@ -12,7 +12,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:kb": "tsx scripts/import-knowledge-base.ts --validate",
+    "refresh:kb": "tsx scripts/import-knowledge-base.ts",
+    "refresh:kb:force": "tsx scripts/import-knowledge-base.ts --force"
   },
   "dependencies": {
     "@prisma/client": "^6.5.0",
