@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { FavoritesPanel } from '@/components/FavoritesPanel';
 
 type SidebarProps = {
   regions: { slug: string; name: string; count: number }[];
@@ -23,12 +24,14 @@ export function Sidebar({ regions, types }: SidebarProps) {
       </button>
 
       <aside id="sidebar-nav" className={`sidebar ${open ? 'open' : ''}`} aria-label="Site navigation">
-        <nav>
+        <nav onClick={() => setOpen(false)}>
           <h2 style={{ marginTop: 0, fontSize: '1.1rem' }}>Clinical KB</h2>
           <ul className="clean" style={{ marginBottom: '1rem' }}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/search">Search</Link></li>
           </ul>
+
+          <FavoritesPanel />
 
           <h3 style={{ fontSize: '1rem' }}>Body Region</h3>
           <ul className="clean" style={{ marginBottom: '1rem' }}>

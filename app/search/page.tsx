@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FavoriteButton } from '@/components/FavoriteButton';
 import { getNavigationData, searchContent } from '@/lib/data';
 
 type SearchPageProps = {
@@ -15,7 +16,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   return (
     <>
       <h1>Search</h1>
-      <form className="card" style={{ marginBottom: '1rem' }}>
+      <form className="card" style={{ marginBottom: '1rem' }} role="search" aria-label="Clinical content search">
         <div className="grid two">
           <div>
             <label htmlFor="q">Keyword</label>
@@ -47,9 +48,9 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
       <p aria-live="polite">{results.length} result{results.length === 1 ? '' : 's'} found.</p>
 
-      <ul className="clean grid">
+      <ul className="clean grid" aria-label="Search results">
         {results.map((item) => (
-          <li key={item.id} className="card">
+          <li key={item.id} className="card result-card">
             <h2 style={{ marginTop: 0, fontSize: '1.2rem' }}>
               <Link href={`/content/${item.slug}`}>{item.title}</Link>
             </h2>
@@ -62,6 +63,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                 <strong>Tags:</strong> {item.tags.map((t) => t.tag.name).join(', ')}
               </p>
             )}
+            <FavoriteButton slug={item.slug} title={item.title} />
           </li>
         ))}
       </ul>
