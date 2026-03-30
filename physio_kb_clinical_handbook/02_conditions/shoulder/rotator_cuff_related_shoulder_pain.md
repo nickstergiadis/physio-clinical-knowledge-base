@@ -1,3 +1,17 @@
+---
+title: "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy"
+slug: "rotator_cuff_related_shoulder_pain"
+section: "conditions"
+region: "Shoulder"
+tags:
+  - "shoulder"
+  - "condition"
+summary: "Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pain where symptoms are linked to rotator cuff / subacromial loading but cannot be "
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy
 
 ## Clinical summary

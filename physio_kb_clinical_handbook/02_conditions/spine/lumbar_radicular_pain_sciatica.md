@@ -1,3 +1,17 @@
+---
+title: "Lumbar Radicular Pain / Sciatica"
+slug: "lumbar_radicular_pain_sciatica"
+section: "conditions"
+region: "Lumbar Spine"
+tags:
+  - "spine"
+  - "condition"
+summary: "Lumbar radicular pain (commonly labelled sciatica when it follows the sciatic distribution) is leg pain arising from irritation or inflammation of a lumbar nerve root. It may occur with or without low back pain and may o"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Lumbar Radicular Pain / Sciatica
 
 ## Clinical summary

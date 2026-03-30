@@ -1,3 +1,17 @@
+---
+title: "Lateral Ankle Sprain"
+slug: "lateral_ankle_sprain"
+section: "conditions"
+region: "Ankle"
+tags:
+  - "ankle"
+  - "condition"
+summary: "Lateral ankle sprain (LAS) is among the most common musculoskeletal injuries. Most routine sprains are managed conservatively. Best-practice guidance supports early external support, progressive weight-bearing, restorati"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Lateral Ankle Sprain
 
 ## Clinical summary

@@ -1,3 +1,17 @@
+---
+title: "Chronic Ankle Instability"
+slug: "chronic_ankle_instability"
+section: "conditions"
+region: "Ankle"
+tags:
+  - "ankle"
+  - "condition"
+summary: "Chronic ankle instability (CAI) describes ongoing symptoms after ankle sprain that can include recurrent sprains, repeated “giving way,” reduced confidence, and persistent balance / movement-coordination deficits. Conser"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Chronic Ankle Instability
 
 ## Clinical summary

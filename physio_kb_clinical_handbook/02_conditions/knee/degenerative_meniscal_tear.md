@@ -1,3 +1,17 @@
+---
+title: "Degenerative Meniscal Tear"
+slug: "degenerative_meniscal_tear"
+section: "conditions"
+region: "Knee"
+tags:
+  - "knee"
+  - "condition"
+summary: "Degenerative meniscal tears are common in middle-aged and older adults and frequently coexist with knee osteoarthritis. Current evidence supports conservative management with exercise-based rehabilitation as first-line c"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Degenerative Meniscal Tear
 
 ## Clinical summary

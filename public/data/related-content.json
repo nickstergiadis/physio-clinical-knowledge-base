@@ -1,0 +1,1166 @@
+[
+  {
+    "slug": "achilles-tendon-repair-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "adhesive-capsulitis-frozen-shoulder",
+    "related": {
+      "assessmentTools": [
+        "shoulder-outcome-measures",
+        "shoulder-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "shoulder-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "shoulder-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "shoulder-bankart-stabilization-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "ankle-foot-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "ankle-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "ankle-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "ankle-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "ankle-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "ankle-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "case-mix-review-and-added-topics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervical-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "cervicogenic-headache",
+    "related": {
+      "assessmentTools": [
+        "cervical-outcome-measures",
+        "cervical-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "cervical-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "cervical-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "chronic-ankle-instability",
+    "related": {
+      "assessmentTools": [
+        "ankle-outcome-measures",
+        "ankle-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "ankle-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "ankle-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "gastrocnemius-recession-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes",
+        "total-knee-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "cubital-tunnel-syndrome",
+    "related": {
+      "assessmentTools": [
+        "elbow-forearm-subjective-objective-exam",
+        "elbow-nerve-entrapment-differential-add-on"
+      ],
+      "exerciseFrameworks": [
+        "elbow-forearm-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "elbow-forearm-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "de-quervain-tenosynovitis",
+    "related": {
+      "assessmentTools": [
+        "hand-wrist-outcome-measures",
+        "hand-wrist-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hand-wrist-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hand-wrist-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "degenerative-meniscal-tear",
+    "related": {
+      "assessmentTools": [
+        "knee-outcome-measures",
+        "knee-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "knee-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "knee-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "elbow-forearm-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "elbow-forearm-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "elbow-forearm-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "elbow-forearm-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "elbow-forearm-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "elbow-nerve-entrapment-differential-add-on",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "femoroacetabular-impingement-syndrome",
+    "related": {
+      "assessmentTools": [
+        "hip-outcome-measures",
+        "hip-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hip-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hip-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "gastrocnemius-recession-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "gluteus-medius-minimus-repair-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "greater-trochanteric-pain-syndrome",
+    "related": {
+      "assessmentTools": [
+        "hip-outcome-measures",
+        "hip-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hip-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hip-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "hand-wrist-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hand-wrist-tendinopathy-load-related",
+    "related": {
+      "assessmentTools": [
+        "hand-wrist-outcome-measures",
+        "hand-wrist-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hand-wrist-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hand-wrist-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "hip-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-arthroscopy-fai-labral-repair-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-osteoarthritis",
+    "related": {
+      "assessmentTools": [
+        "hip-outcome-measures",
+        "hip-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hip-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hip-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "hip-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "hip-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-osteoarthritis",
+    "related": {
+      "assessmentTools": [
+        "knee-outcome-measures",
+        "knee-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "knee-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "knee-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "knee-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "knee-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lateral-ankle-sprain",
+    "related": {
+      "assessmentTools": [
+        "ankle-outcome-measures",
+        "ankle-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "ankle-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "ankle-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "lateral-elbow-tendinopathy",
+    "related": {
+      "assessmentTools": [
+        "elbow-forearm-subjective-objective-exam",
+        "elbow-nerve-entrapment-differential-add-on"
+      ],
+      "exerciseFrameworks": [
+        "elbow-forearm-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "elbow-forearm-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "lumbar-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lumbar-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lumbar-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lumbar-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lumbar-radicular-pain-sciatica",
+    "related": {
+      "assessmentTools": [
+        "lumbar-outcome-measures",
+        "lumbar-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "lumbar-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "lumbar-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "lumbar-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "lumbar-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "mechanical-neck-pain",
+    "related": {
+      "assessmentTools": [
+        "cervical-outcome-measures",
+        "cervical-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "cervical-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "cervical-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "medial-elbow-tendinopathy",
+    "related": {
+      "assessmentTools": [
+        "elbow-forearm-subjective-objective-exam",
+        "elbow-nerve-entrapment-differential-add-on"
+      ],
+      "exerciseFrameworks": [
+        "elbow-forearm-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "elbow-forearm-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "midportion-achilles-tendinopathy",
+    "related": {
+      "assessmentTools": [
+        "ankle-outcome-measures",
+        "ankle-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "ankle-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "ankle-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "myogenous-temporomandibular-disorder",
+    "related": {
+      "assessmentTools": [
+        "tmj-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "tmj-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "tmj-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "non-specific-low-back-pain",
+    "related": {
+      "assessmentTools": [
+        "lumbar-outcome-measures",
+        "lumbar-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "lumbar-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "lumbar-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "patellofemoral-pain",
+    "related": {
+      "assessmentTools": [
+        "knee-outcome-measures",
+        "knee-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "knee-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "knee-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "readme",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "physiotherapy-clinical-handbook",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "master-index",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "post-op-acl-reconstruction-meniscal-repair",
+    "related": {
+      "assessmentTools": [
+        "knee-outcome-measures",
+        "knee-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "knee-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "knee-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "post-op-acl-reconstruction-meniscal-repair-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "radial-tunnel-posterior-interosseous-nerve-syndrome",
+    "related": {
+      "assessmentTools": [
+        "elbow-forearm-subjective-objective-exam",
+        "elbow-nerve-entrapment-differential-add-on"
+      ],
+      "exerciseFrameworks": [
+        "elbow-forearm-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "elbow-forearm-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "rotator-cuff-repair-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "rotator-cuff-related-shoulder-pain",
+    "related": {
+      "assessmentTools": [
+        "shoulder-outcome-measures",
+        "shoulder-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "shoulder-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "shoulder-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "shoulder-bankart-stabilization-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "shoulder-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-bankart-stabilization-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-outcome-measures",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "shoulder-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-cluster-evidence-update",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-rehab-progression-framework",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-subjective-objective-exam",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-anatomy-biomechanics",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-clinical-reasoning",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "tmj-disc-displacement-mobility-disorder",
+    "related": {
+      "assessmentTools": [
+        "tmj-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "tmj-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "tmj-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
+    }
+  },
+  {
+    "slug": "total-hip-arthroplasty-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "total-knee-arthroplasty-post-op-notes",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "traumatic-anterior-shoulder-instability",
+    "related": {
+      "assessmentTools": [
+        "shoulder-outcome-measures",
+        "shoulder-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "shoulder-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "shoulder-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "shoulder-bankart-stabilization-post-op-notes"
+      ]
+    }
+  }
+]

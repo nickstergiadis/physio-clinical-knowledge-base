@@ -1,3 +1,17 @@
+---
+title: "Traumatic Anterior Shoulder Instability"
+slug: "traumatic_anterior_shoulder_instability"
+section: "conditions"
+region: "Shoulder"
+tags:
+  - "shoulder"
+  - "condition"
+summary: "Traumatic anterior shoulder instability is a spectrum that includes first-time dislocation, recurrent dislocation, and symptomatic subluxation / apprehension states. Assessment and management should be shaped by age, rec"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Traumatic Anterior Shoulder Instability
 
 ## Clinical summary

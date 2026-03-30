@@ -1,3 +1,17 @@
+---
+title: "Patellofemoral Pain"
+slug: "patellofemoral_pain"
+section: "conditions"
+region: "Knee"
+tags:
+  - "knee"
+  - "condition"
+summary: "Patellofemoral pain (PFP) is a clinical pain syndrome typically characterized by anterior or retropatellar knee pain related to loading of the patellofemoral joint. Current best-practice guidance supports exercise therap"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Patellofemoral Pain
 
 ## Clinical summary

@@ -1,49 +1,78 @@
+---
+title: "De Quervain Tenosynovitis"
+slug: "de_quervain_tenosynovitis"
+section: "conditions"
+region: "Hand & Wrist"
+tags:
+  - "hand-wrist"
+  - "condition"
+summary: "First dorsal compartment tendinopathy/tenosynovitis with radial wrist pain aggravated by thumb abduction/extension and gripping."
+evidence_update_needed: false
+psychometric_values_to_verify: true
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # De Quervain Tenosynovitis
 
-## Clinical summary
-De Quervain tenosynovitis is a first dorsal compartment pain syndrome affecting the abductor pollicis longus and extensor pollicis brevis region near the radial styloid. It is usually diagnosed clinically.
+## Diagnosis
+- radial styloid pain with thumb/wrist loading
+- tenderness over first dorsal compartment (APL/EPB)
+- pain with thumb abduction/extension and gripping tasks
 
-## Typical presentation
-- pain and tenderness at or just proximal to radial styloid
-- pain with thumb motion, gripping, lifting, wringing, childcare, gym gripping, or texting
-- sometimes local swelling / thickening
-- resisted thumb abduction / extension and combined ulnar-deviation style provocation may reproduce symptoms
+## Clinical classification
+- irritability-led staging (high vs low irritability) to set dosage and splint time
+- workload-driven recurrence profile (new parenting/caregiving, manual work, high repetitive hand use)
 
-## Subjective findings to prioritize
-- radial wrist pain location
-- irritability with lifting / gripping / thumb use
-- work, childcare, phone use, gym, and repetitive hand tasks
-- pregnancy / postpartum context when relevant
-- previous splint, injection, or rest response
+## Differential diagnosis and red flags
+Differentiate from:
+- thumb CMC OA
+- intersection syndrome
+- radial sensory nerve irritation
+- scaphoid pathology after trauma
 
-## Objective findings
-- local tenderness over first dorsal compartment
-- pain with resisted thumb abduction / extension
-- pain with functional grip / lift tasks
-- provocative thumb deviation tests may support the diagnosis but should not be used brutally
-- rule out thumb CMC OA, radial sensory nerve irritation, and fracture where relevant
+Refer/escalate if:
+- traumatic onset with snuffbox tenderness (fracture risk)
+- persistent severe pain with failed conservative plan and major functional loss
+- atypical swelling/systemic inflammatory signs
 
-## Conservative management
-- activity and load modification
-- thumb-spica style immobilization for a short period when irritability is high
-- education and tendon-load pacing
-- progressive exercise / tendon gliding once calmer
-- corticosteroid injection referral when symptoms are significant or persistent
+## Subjective exam priorities
+- aggravating tasks: lifting infant, wringing, typing, tool use
+- dose-response and next-day irritability
+- hand dominance and work/care demands
+- prior splinting/injection response
 
-## Exercise priorities
-- settle high-irritability tasks first
-- restore thumb and wrist motion without repeatedly flaring pain
-- progressive thumb / wrist loading
-- grip / pinch rebuilding
-- return to childcare, work, phone, tools, or gym exposure gradually
+## Objective exam priorities
+- inspect local swelling/tenderness at radial styloid
+- provocative thumb/wrist loading (Finkelstein/Eichhoff/WHAT as tolerated)
+- thumb CMC joint screen to exclude OA-dominant source
+- grip/pinch baseline for progression tracking
 
-## When to refer / reconsider
-- severe persistent pain and function loss despite a good rehab trial
-- fracture suspicion or atypical presentation
-- significant neural symptoms
-- need for injection or surgical opinion
+## Useful tests and limits
+- **Finkelstein/Eichhoff/WHAT:** useful symptom provocation; false positives occur with CMC OA or generalized irritability
+- no single special test confirms diagnosis in isolation; combine history + local findings
 
-## Patient education points
-- This is often managed successfully without surgery.
-- Short-term splinting can help when symptoms are very irritable.
-- Lasting recovery usually requires changing exposure and then rebuilding tolerance, not just rest.
+## Management
+- temporary activity modification + thumb spica support where useful
+- progressive tendon loading once irritability settles
+- education on task variation and grip strategy
+
+## Exercise progression logic
+1. symptom-calming ROM/isometrics
+2. thumb/wrist isotonic loading progression
+3. grip/pinch endurance + task-specific return
+
+## Escalation / imaging / injections / surgery
+- corticosteroid injection may be considered when pain remains high despite well-dosed conservative care
+- imaging generally unnecessary unless trauma/alternate diagnosis suspected
+- surgical release considered for persistent severe disability after non-operative care
+
+## Notes for this KB
+Use this page with:
+- `../../01_foundations/hand_wrist_anatomy_biomechanics.md`
+- `../../01_foundations/hand_wrist_clinical_reasoning.md`
+- `../../03_assessment_tools/hand_wrist_subjective_objective_exam.md`
+- `../../03_assessment_tools/hand_wrist_outcome_measures.md`
+- `../../04_exercise_library/hand_wrist_rehab_progression_framework.md`
+
+## Evidence notes
+- **Psychometric values to verify:** hand/wrist PROM MCID and grip/pinch threshold values should be checked against current sources.

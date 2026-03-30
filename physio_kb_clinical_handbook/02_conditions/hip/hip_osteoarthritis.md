@@ -1,3 +1,17 @@
+---
+title: "Hip Osteoarthritis (Hip OA)"
+slug: "hip_osteoarthritis"
+section: "conditions"
+region: "Hip"
+tags:
+  - "hip"
+  - "condition"
+summary: "Hip OA is commonly diagnosed clinically in adults with activity-related hip pain and short-duration morning stiffness. Imaging is not routinely required when the presentation is typical."
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Hip Osteoarthritis (Hip OA)
 
 ## Clinical summary
