@@ -16,9 +16,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body>
+        <a href="#main-content" className="skip-link">Skip to content</a>
         <div className="shell">
           <Sidebar regions={nav.regions} types={nav.types} />
-          <main className="main" id="main-content">
+          <main className="main" id="main-content" tabIndex={-1}>
             {children}
           </main>
         </div>

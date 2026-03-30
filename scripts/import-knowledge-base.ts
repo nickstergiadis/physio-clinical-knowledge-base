@@ -20,6 +20,26 @@ const CONTENT_TYPE_MAP: Record<string, string> = {
   '06_protocol_annexes': 'postop',
 };
 
+const REGION_PATTERNS: Record<string, RegExp[]> = {
+  ankle: [/\bankle\b/i, /\bfoot\b/i],
+  cervical: [/\bcervical\b/i, /\bneck\b/i],
+  elbow_forearm: [/\belbow\b/i, /\bforearm\b/i],
+  hand_wrist: [/\bhand\b/i, /\bwrist\b/i],
+  hip: [/\bhip\b/i],
+  knee: [/\bknee\b/i],
+  lumbar: [/\blumbar\b/i, /\blow\s+back\b/i, /\bspine\b/i],
+  shoulder: [/\bshoulder\b/i],
+  tmj: [/\btmj\b/i, /\btemporomandibular\b/i],
+};
+
+const TAG_ALIASES: Record<string, string[]> = {
+  gtps: ['greater trochanteric pain syndrome', 'lateral hip pain'],
+  fais: ['femoroacetabular impingement syndrome', 'hip impingement'],
+  oa: ['osteoarthritis'],
+  aclr: ['anterior cruciate ligament reconstruction', 'acl reconstruction'],
+  rcrsp: ['rotator cuff related shoulder pain', 'rotator cuff pain'],
+};
+
 type ParsedItem = {
   title: string;
   slug: string;
@@ -53,23 +73,12 @@ async function collectMarkdownFiles(rootDir: string): Promise<string[]> {
   return files;
 }
 
-function inferRegion(parts: string[]): string | null {
-  const known = new Set([
-    'ankle',
-    'cervical',
-    'elbow_forearm',
-    'hand_wrist',
-    'hip',
-    'knee',
-    'lumbar',
-    'shoulder',
-    'tmj',
-    'spine',
-  ]);
+function inferRegion(parts: string[], title: string): string | null {
+  const joined = `${parts.join(' ')} ${title}`.replace(/[_-]+/g, ' ');
 
-  for (const part of parts) {
-    if (known.has(part)) {
-      return normalizeLabel(part === 'spine' ? 'lumbar spine' : part);
+  for (const [regionKey, patterns] of Object.entries(REGION_PATTERNS)) {
+    if (patterns.some((pattern) => pattern.test(joined))) {
+      return normalizeLabel(regionKey === 'lumbar' ? 'lumbar spine' : regionKey);
     }
   }
 
@@ -81,31 +90,73 @@ function extractTitle(markdown: string, filename: string): string {
   return heading || titleFromFilename(filename);
 }
 
-function extractTagsAndCitations(markdown: string): {
+function normalizeMetadataValue(value: unknown): unknown {
+  if (typeof value === 'string') {
+    return value.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+  if (Array.isArray(value)) {
+    return value.map(normalizeMetadataValue);
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, nested]) => [key, normalizeMetadataValue(nested)]),
+    );
+  }
+  return value;
+}
+
+function extractTagsAndCitations(markdown: string, title: string): {
   tags: string[];
   citations: { label: string; url?: string; note?: string }[];
 } {
   const tags = new Set<string>();
-  const citations: { label: string; url?: string; note?: string }[] = [];
+  const citationsMap = new Map<string, { label: string; url?: string; note?: string }>();
 
-  for (const match of markdown.matchAll(/\b(ankle|cervical|elbow|forearm|hand|wrist|hip|knee|lumbar|shoulder|tmj|pain|rehab|assessment|strength|mobility|post[- ]?op)\b/gi)) {
-    tags.add(normalizeLabel(match[1]));
+  const baseKeywords = [
+    'ankle', 'cervical', 'elbow', 'forearm', 'hand', 'wrist', 'hip', 'knee', 'lumbar', 'shoulder', 'tmj',
+    'pain', 'rehab', 'assessment', 'strength', 'mobility', 'post-op', 'post op', 'osteoarthritis',
+  ];
+
+  for (const keyword of baseKeywords) {
+    if (new RegExp(`\\b${keyword.replace(/[- ]/g, '[- ]?')}\\b`, 'i').test(markdown) || new RegExp(`\\b${keyword.replace(/[- ]/g, '[- ]?')}\\b`, 'i').test(title)) {
+      tags.add(normalizeLabel(keyword));
+    }
+  }
+
+  for (const [alias, expansions] of Object.entries(TAG_ALIASES)) {
+    const aliasRegex = new RegExp(`\\b${alias}\\b`, 'i');
+    if (aliasRegex.test(markdown) || aliasRegex.test(title)) {
+      tags.add(alias.toUpperCase());
+      for (const expansion of expansions) {
+        tags.add(normalizeLabel(expansion));
+      }
+    }
+    for (const expansion of expansions) {
+      if (new RegExp(`\\b${expansion.replace(/\s+/g, '\\s+')}\\b`, 'i').test(markdown) || new RegExp(`\\b${expansion.replace(/\s+/g, '\\s+')}\\b`, 'i').test(title)) {
+        tags.add(normalizeLabel(expansion));
+      }
+    }
   }
 
   for (const match of markdown.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)) {
-    citations.push({ label: match[1].trim(), url: match[2].trim() });
+    const label = match[1].trim();
+    const url = match[2].trim();
+    const key = `${label}::${url}`.toLowerCase();
+    citationsMap.set(key, { label, url });
   }
 
   const evidenceSection = markdown.match(/(?:^|\n)#{1,3}\s*(?:citations?|references?|evidence)\s*\n([\s\S]*?)(?:\n#{1,3}\s|$)/i)?.[1];
   if (evidenceSection) {
     for (const line of evidenceSection.split('\n').map((l) => l.trim()).filter(Boolean)) {
-      if (!line.includes('http')) {
-        citations.push({ label: line.replace(/^[-*]\s*/, '') });
+      const clean = line.replace(/^[-*]\s*/, '');
+      if (!clean.includes('http')) {
+        const key = `${clean}::`.toLowerCase();
+        citationsMap.set(key, { label: clean });
       }
     }
   }
 
-  return { tags: [...tags], citations };
+  return { tags: [...tags], citations: [...citationsMap.values()] };
 }
 
 function inferRelatedSlugs(markdown: string): { slug: string; kind: string }[] {
@@ -129,9 +180,9 @@ async function parseFile(filePath: string, root: string): Promise<ParsedItem> {
 
   const title = extractTitle(markdown, filename);
   const slug = slugify(path.basename(filename, '.md'));
-  const regionName = inferRegion(relParts.concat([filename])) || null;
+  const regionName = inferRegion(relParts.concat([filename]), title) || null;
   const contentTypeName = CONTENT_TYPE_MAP[topLevel] ? normalizeLabel(CONTENT_TYPE_MAP[topLevel]) : normalizeLabel(topLevel);
-  const { tags, citations } = extractTagsAndCitations(markdown);
+  const { tags, citations } = extractTagsAndCitations(markdown, title);
 
   return {
     title,
@@ -145,12 +196,29 @@ async function parseFile(filePath: string, root: string): Promise<ParsedItem> {
     tags,
     citations,
     relatedSlugs: inferRelatedSlugs(markdown),
-    metadata: {
+    metadata: normalizeMetadataValue({
       folderSegments: relParts.slice(0, -1),
       topLevelFolder: topLevel,
-    },
+      titleNormalized: normalizeLabel(title),
+      importVersion: 2,
+    }) as Record<string, unknown>,
     mtime: stat.mtime,
   };
+}
+
+function ensureUniqueSlugs(parsed: ParsedItem[]): ParsedItem[] {
+  const seen = new Map<string, number>();
+  return parsed.map((item) => {
+    const count = seen.get(item.slug) ?? 0;
+    seen.set(item.slug, count + 1);
+    if (count === 0) return item;
+
+    return {
+      ...item,
+      slug: `${item.slug}-${count + 1}`,
+      metadata: { ...item.metadata, slugCollisionResolved: true },
+    };
+  });
 }
 
 async function main() {
@@ -162,7 +230,7 @@ async function main() {
     throw new Error(`No markdown files found in: ${root}`);
   }
 
-  const parsed = await Promise.all(files.map((file) => parseFile(file, root)));
+  const parsed = ensureUniqueSlugs(await Promise.all(files.map((file) => parseFile(file, root))));
 
   await prisma.$transaction(async (tx) => {
     await tx.relatedLink.deleteMany();
@@ -203,7 +271,7 @@ async function main() {
         },
       });
 
-      for (const tagName of item.tags) {
+      for (const tagName of item.tags.slice(0, 40)) {
         const tag = await tx.tag.upsert({
           where: { slug: slugify(tagName) },
           update: { name: tagName },
@@ -240,7 +308,6 @@ async function main() {
         }
       }
 
-      // infer cluster-level relationships based on shared folder + region.
       const siblings = parsed.filter(
         (other) =>
           other.slug !== item.slug &&
@@ -248,7 +315,7 @@ async function main() {
           other.regionName &&
           other.regionName === item.regionName,
       );
-      for (const sib of siblings.slice(0, 5)) {
+      for (const sib of siblings.slice(0, 7)) {
         candidateLinks.add(`${sib.slug}::cluster_related`);
       }
 

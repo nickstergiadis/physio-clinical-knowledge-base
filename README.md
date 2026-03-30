@@ -38,20 +38,27 @@ Importer reads markdown recursively from:
   - recently updated content
 - Search page:
   - PostgreSQL full-text search over title + content + tags
+  - weighted ranking for exact/prefix title matches
+  - diagnostic-intent boost for condition pages
+  - acronym alias expansion (GTPS, FAIS, OA, ACLR, RCRSP)
   - filters for region and content type
 - Content detail page:
   - markdown rendering
   - metadata display (type, region, source file)
-  - related content
+  - quick facts summary for condition pages
+  - related assessment and related rehab progression sections
+  - related content links grouped by assessment/rehab/evidence/postop
   - citations/evidence section
-  - assessment/rehab/evidence/postop related links where available
-- Structured left sidebar + mobile toggle navigation
-- Accessibility basics:
-  - semantic landmarks
-  - keyboard-accessible controls
-  - visible focus states
-  - readable typography/line length
-- Print mode for clean clinical printing
+  - client-side favorites toggle
+- Navigation and workflow:
+  - structured sidebar + mobile toggle navigation
+  - local-persistence favorites panel (localStorage)
+  - skip link and improved focus handling
+- Accessibility and print:
+  - semantic landmarks + heading structure
+  - keyboard-accessible controls with visible focus states
+  - improved contrast and minimum touch target sizing
+  - print-optimized detail pages (clean margins, less page breaking)
 
 ## Setup
 
@@ -102,19 +109,16 @@ Open <http://localhost:3000>
 - `npm run start` – run production server
 - `npm run typecheck` – TypeScript check
 
-## Notes on importer behavior
+## Importer hardening and metadata normalization
 
-- Recursively scans all `.md` files.
-- Extracts and normalizes:
-  - title
-  - slug
-  - source path and filename
-  - body region inference (path/filename)
-  - content type inference (top-level folder)
-  - tags (keyword extraction)
-  - citations/evidence links (markdown links + evidence sections)
-  - related links (cross-links + inferred cluster links)
-- Preserves full original markdown body in DB.
+Importer now adds defensive behavior for common fragility points:
+
+- Region inference checks both paths and title text (not just folder naming).
+- Slug collision handling appends deterministic numeric suffixes.
+- Metadata values are normalized for spacing and separators.
+- Tag extraction supports acronym aliases and clinical synonym expansion.
+- Citation extraction deduplicates repeated links/lines.
+- Related link inference still includes explicit markdown cross-links + regional cluster relationships.
 
 ## Error handling
 

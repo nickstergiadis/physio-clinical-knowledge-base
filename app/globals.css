@@ -6,7 +6,7 @@
   --muted: #516372;
   --border: #d6e0e8;
   --accent: #005b8f;
-  --focus: #f59f00;
+  --focus: #d97706;
   --max-width: 78rem;
 }
 
@@ -27,6 +27,18 @@ a:hover { text-decoration-thickness: 0.15em; }
   outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.skip-link:focus-visible { left: 0.5rem; top: 0.5rem; }
 
 .shell {
   display: grid;
@@ -62,13 +74,29 @@ a:hover { text-decoration-thickness: 0.15em; }
 
 ul.clean { list-style: none; margin: 0; padding: 0; }
 
+input, select, button {
+  min-height: 2.75rem;
+}
+
 input, select {
   width: 100%;
   padding: 0.6rem;
-  border: 1px solid #98acbc;
+  border: 1px solid #6d8294;
   border-radius: 0.5rem;
   background: white;
   color: var(--text);
+}
+
+button {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.favorite-btn {
+  margin-top: 0.5rem;
 }
 
 .prose {
@@ -77,6 +105,19 @@ input, select {
 
 .prose h1, .prose h2, .prose h3 { line-height: 1.25; margin-top: 1.5rem; }
 .prose pre, .prose code { white-space: pre-wrap; }
+
+.quick-facts {
+  background: #f0f7fb;
+  border: 1px solid #bdd6e4;
+  border-radius: 0.6rem;
+  padding: 0.8rem 1rem;
+}
+
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
 
 .mobile-nav-toggle { display: none; }
 
@@ -91,19 +132,32 @@ input, select {
   .mobile-nav-toggle {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    width: calc(100% - 2.5rem);
+    margin: 0.75rem 1.25rem 0;
     gap: 0.5rem;
-    margin-bottom: 0.75rem;
     border: 1px solid var(--border);
-    padding: 0.5rem 0.75rem;
+    padding: 0.6rem 0.75rem;
     border-radius: 0.5rem;
     background: white;
   }
+
+  .main { padding: 1rem; }
+  .result-card { padding: 0.9rem; }
 }
 
 @media print {
-  body { background: white; font-size: 12pt; }
-  .sidebar, .mobile-nav-toggle, form, .no-print { display: none !important; }
+  @page {
+    size: auto;
+    margin: 0.5in;
+  }
+
+  body { background: white; font-size: 11pt; }
+  .sidebar, .mobile-nav-toggle, form, .no-print, .favorite-btn { display: none !important; }
   .main { max-width: none; padding: 0; }
   a { color: black; text-decoration: none; }
   .card { border: 0; padding: 0; }
+  .quick-facts { border: 1px solid #888; }
+  h1, h2, h3 { break-after: avoid; }
+  p, li, .card, section { break-inside: avoid-page; }
 }
