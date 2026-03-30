@@ -97,7 +97,8 @@ function parseFrontmatter(raw: string): { frontmatter: Frontmatter; body: string
 
     const listItem = line.match(/^\s*[-*]\s+(.+)$/);
     if (listItem && activeKey) {
-      const values = Array.isArray(frontmatter[activeKey]) ? frontmatter[activeKey] : [];
+      const existing = frontmatter[activeKey];
+      const values: string[] = Array.isArray(existing) ? [...existing] : [];
       values.push(listItem[1].trim().replace(/^['"]|['"]$/g, ''));
       frontmatter[activeKey] = values;
     }
