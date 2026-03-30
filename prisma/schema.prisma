@@ -1,0 +1,110 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Region {
+  id        String        @id @default(cuid())
+  name      String        @unique
+  slug      String        @unique
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  items      ContentItem[]
+}
+
+model ContentType {
+  id        String        @id @default(cuid())
+  name      String        @unique
+  slug      String        @unique
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  items      ContentItem[]
+}
+
+model ContentItem {
+  id             String        @id @default(cuid())
+  title          String
+  slug           String        @unique
+  sourcePath     String        @unique
+  sourceFilename String
+  markdown       String
+  excerpt        String?
+  metadata       Json?
+  updatedAtSource DateTime?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  regionId       String?
+  region         Region?       @relation(fields: [regionId], references: [id], onDelete: SetNull)
+
+  contentTypeId  String?
+  contentType    ContentType?  @relation(fields: [contentTypeId], references: [id], onDelete: SetNull)
+
+  tags           ContentItemTag[]
+  citations      Citation[]
+  outboundLinks  RelatedLink[] @relation("sourceLinks")
+  inboundLinks   RelatedLink[] @relation("targetLinks")
+
+  @@index([title])
+  @@index([regionId])
+  @@index([contentTypeId])
+}
+
+model Tag {
+  id        String          @id @default(cuid())
+  name      String          @unique
+  slug      String          @unique
+  createdAt DateTime        @default(now())
+  items     ContentItemTag[]
+}
+
+model ContentItemTag {
+  contentItemId String
+  tagId         String
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+  tag           Tag         @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([contentItemId, tagId])
+  @@index([tagId])
+}
+
+model Citation {
+  id            String      @id @default(cuid())
+  contentItemId String
+  label         String
+  url           String?
+  note          String?
+  createdAt     DateTime    @default(now())
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+
+  @@index([contentItemId])
+}
+
+model RelatedLink {
+  id            String      @id @default(cuid())
+  sourceItemId  String
+  targetItemId  String
+  kind          String
+  createdAt     DateTime    @default(now())
+
+  sourceItem    ContentItem @relation("sourceLinks", fields: [sourceItemId], references: [id], onDelete: Cascade)
+  targetItem    ContentItem @relation("targetLinks", fields: [targetItemId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceItemId, targetItemId, kind])
+  @@index([sourceItemId])
+  @@index([targetItemId])
+}
+
+model SavedPage {
+  id            String      @id @default(cuid())
+  userIdentifier String
+  contentItemId String
+  createdAt     DateTime    @default(now())
+  contentItem   ContentItem @relation(fields: [contentItemId], references: [id], onDelete: Cascade)
+
+  @@unique([userIdentifier, contentItemId])
+}
