@@ -1,21 +1,22 @@
 import Link from 'next/link';
-import { getNavigationData, getRecentContent } from '@/lib/data';
+import { getKnowledgeBaseItems, getNavigationData } from '@/lib/kb';
 
-export default async function HomePage() {
-  const [nav, recent] = await Promise.all([getNavigationData(), getRecentContent(10)]);
+export default function HomePage() {
+  const nav = getNavigationData();
+  const recent = [...getKnowledgeBaseItems()].reverse().slice(0, 10);
 
   return (
     <>
       <header>
         <h1>Clinical Knowledge Base</h1>
-        <p>Search and browse physiotherapy references by region, condition, assessment, rehab and evidence updates.</p>
+        <p>Static physiotherapy references from markdown source files, organized for fast point-of-care browsing.</p>
       </header>
 
       <section className="card" aria-labelledby="home-search-title" style={{ marginBottom: '1rem' }}>
         <h2 id="home-search-title">Quick search</h2>
         <form action="/search" role="search">
-          <label htmlFor="q">Search title, content, and tags</label>
-          <input id="q" name="q" type="search" placeholder="e.g. patellofemoral pain, rotator cuff, outcome measures" />
+          <label htmlFor="q">Search title, aliases, tags, and summary</label>
+          <input id="q" name="q" type="search" placeholder="e.g. GTPS, patellofemoral pain, outcome measures" />
         </form>
       </section>
 
@@ -31,12 +32,12 @@ export default async function HomePage() {
           </ul>
         </section>
 
-        <section className="card" aria-labelledby="types-title">
-          <h2 id="types-title">Browse by content type</h2>
+        <section className="card" aria-labelledby="sections-title">
+          <h2 id="sections-title">Browse by section</h2>
           <ul>
-            {nav.types.map((t) => (
-              <li key={t.slug}>
-                <Link href={`/search?type=${t.slug}`}>{t.name}</Link> ({t.count})
+            {nav.sections.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/search?section=${s.slug}`}>{s.name}</Link> ({s.count})
               </li>
             ))}
           </ul>
@@ -44,15 +45,15 @@ export default async function HomePage() {
       </div>
 
       <section className="card" aria-labelledby="recent-title">
-        <h2 id="recent-title">Recently updated</h2>
+        <h2 id="recent-title">Reference pages</h2>
         <ul>
           {recent.map((item) => (
             <li key={item.id}>
               <Link href={`/content/${item.slug}`}>{item.title}</Link>
               {' · '}
-              <span>{item.region?.name || 'General'}</span>
+              <span>{item.region}</span>
               {' · '}
-              <span>{item.contentType?.name || 'Other'}</span>
+              <span>{item.sectionLabel}</span>
             </li>
           ))}
         </ul>
