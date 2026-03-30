@@ -36,6 +36,14 @@ function expandedTerms(query: string): string[] {
   return [...new Set(expanded.map((term) => term.toLowerCase()))];
 }
 
+function toRegionSlug(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 export function SearchClient({
   regions,
   sections,
@@ -53,7 +61,7 @@ export function SearchClient({
   const results = useMemo(() => {
     const terms = expandedTerms(q);
     return items.filter((item) => {
-      const regionMatch = !region || item.region.toLowerCase().replace(/\s+/g, '-') === region;
+      const regionMatch = !region || toRegionSlug(item.region) === region;
       const sectionMatch = !section || item.section === section;
       if (!regionMatch || !sectionMatch) return false;
       if (!terms.length) return true;

@@ -4,6 +4,7 @@ import { getKnowledgeBaseItems, getNavigationData } from '@/lib/kb';
 export default function HomePage() {
   const nav = getNavigationData();
   const recent = [...getKnowledgeBaseItems()].reverse().slice(0, 10);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <>
@@ -14,7 +15,7 @@ export default function HomePage() {
 
       <section className="card" aria-labelledby="home-search-title" style={{ marginBottom: '1rem' }}>
         <h2 id="home-search-title">Quick search</h2>
-        <form action="/search" role="search">
+        <form action={`${basePath}/search`} role="search">
           <label htmlFor="q">Search title, aliases, tags, and summary</label>
           <input id="q" name="q" type="search" placeholder="e.g. GTPS, patellofemoral pain, outcome measures" />
         </form>

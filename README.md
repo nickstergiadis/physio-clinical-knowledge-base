@@ -86,6 +86,12 @@ Workflow: `.github/workflows/deploy-pages.yml`
 - Uploads `./out` as Pages artifact.
 - Deploys using `actions/deploy-pages`.
 
+### Project-subpath correctness notes
+
+- `next.config.ts` sets `basePath` + `assetPrefix` from `NEXT_PUBLIC_BASE_PATH` (workflow sets this to `/<repo-name>`).
+- Internal navigation uses `next/link` routes, which are basePath-aware.
+- The home search form action is explicitly prefixed with `NEXT_PUBLIC_BASE_PATH` so query navigation works under a project subpath too.
+
 ## Limitations of the static version
 
 - No runtime database updates; content changes require rebuild/redeploy.
