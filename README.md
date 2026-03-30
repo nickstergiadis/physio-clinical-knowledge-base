@@ -1,171 +1,102 @@
-# Physio Clinical Knowledge Base (v1)
+# Physio Clinical Knowledge Base (Static GitHub Pages Edition)
 
-A production-style, accessible **Next.js + TypeScript + PostgreSQL + Prisma** application that imports markdown clinical content and serves it as a searchable knowledge base.
+This repository now builds as a **fully static Next.js export** for deployment on **GitHub Pages project sites**.
 
-## Stack
+## What changed
 
-- Next.js (App Router)
-- TypeScript
-- PostgreSQL
-- Prisma ORM
+- Removed runtime backend requirements (PostgreSQL, Prisma, API routes, server-side assistant, and admin dashboard).
+- Added a build-time markdown pipeline that reads source files and emits static pages.
+- Added build-time JSON artifacts for client search and precomputed related-content links.
+- Configured Next.js with `output: 'export'` and project-subpath support (`basePath` / `assetPrefix`).
+- Added GitHub Actions workflow to build and deploy `/out` to Pages.
 
 ## Source of truth
 
-Markdown files in `./knowledge_base_source` are the repo-first source of truth for content maintenance.
+Markdown files in `/knowledge_base_source` are the source of truth.
 
-Importer reads markdown recursively from:
-
-1. `KNOWLEDGE_BASE_SOURCE` env var (recommended), otherwise
-2. `./knowledge_base_source`, otherwise
-3. `./physio_kb_clinical_handbook` (fallback for this repository)
-
-## Data model
-
-- `Region`
-- `ContentType`
-- `ContentItem`
-- `Tag`
-- `Citation`
-- `RelatedLink`
-- `SavedPage`
-
-`ContentItem` preserves original markdown and source path.
-
-## Features delivered
-
-- Home page with:
-  - search bar
-  - browse by body region
-  - browse by content type
-  - recently updated content
-- Search page:
-  - PostgreSQL full-text search over title + content + tags
-  - weighted ranking for exact/prefix title matches
-  - diagnostic-intent boost for condition pages
-  - acronym alias expansion (GTPS, FAIS, OA, ACLR, RCRSP)
-  - filters for region and content type
-  - optional AI-assisted internal query box that retrieves from DB content and cites source pages
-  - low-confidence fallback from assistant to standard search
-- Content detail page:
-  - markdown rendering
-  - metadata display (type, region, source file)
-  - quick facts summary for condition pages
-  - related assessment and related rehab progression sections
-  - related content links grouped by assessment/rehab/evidence/postop
-  - citations/evidence section
-  - client-side favorites toggle
-- Navigation and workflow:
-  - structured sidebar + mobile toggle navigation
-  - local-persistence favorites panel (localStorage)
-  - skip link and improved focus handling
-- Accessibility and print:
-  - semantic landmarks + heading structure
-  - keyboard-accessible controls with visible focus states
-  - improved contrast and minimum touch target sizing
-  - print-optimized detail pages (clean margins, less page breaking)
-- Lightweight admin workflow:
-  - safe refresh script that skips DB sync when no markdown changes are detected
-  - validation report with import warnings and frontmatter checks
-  - `/admin` dashboard for import status, counts, and validation issues
-
-## Setup
-
-### 1) Install dependencies
+In this repository, `knowledge_base_source` points to `physio_kb_clinical_handbook`.
+You can override with:
 
 ```bash
-npm run install:deps
+KNOWLEDGE_BASE_SOURCE=/absolute/path/to/knowledge_base_source
 ```
 
-### 2) Configure environment
+## Static content pipeline
+
+### Build-time parsing
+
+The pipeline in `lib/kb.ts`:
+
+1. Recursively reads markdown from `knowledge_base_source`.
+2. Parses frontmatter when present.
+3. Infers fallback metadata when frontmatter is missing:
+   - title
+   - section
+   - region
+   - aliases/tags/summary/excerpt
+4. Extracts citations from markdown links.
+5. Precomputes related-content links for condition pages:
+   - assessment tools
+   - exercise frameworks
+   - evidence updates
+   - post-op annexes
+
+### JSON output for client search
+
+`npm run build:index` (also run automatically in `prebuild`) generates:
+
+- `public/data/search-index.json`
+- `public/data/related-content.json`
+
+Search is fully client-side over:
+
+- title
+- aliases
+- tags
+- summary
+- excerpt
+
+Common aliases/abbreviations are included (GTPS, FAIS, OA, ACLR, RCRSP, TKA, THA, TMJ/TMD).
+
+## Run locally
 
 ```bash
-cp .env.example .env
-```
-
-Edit `.env` and set your PostgreSQL `DATABASE_URL` and optional `KNOWLEDGE_BASE_SOURCE`.
-
-Optional assistant settings:
-- `OPENAI_API_KEY` (enables LLM summarization over retrieved internal content)
-- `OPENAI_MODEL` (defaults to `gpt-4.1-mini`)
-
-### 3) Generate Prisma client and migrate database
-
-```bash
-npm run db:generate
-npm run db:migrate -- --name init
-```
-
-### 4) Import the markdown knowledge base
-
-```bash
-npm run import:kb
-```
-
-### 5) Start development server
-
-```bash
+npm install
 npm run dev
 ```
 
-Open <http://localhost:3000>
-
-## Maintenance workflow (repo-first)
-
-1. Edit markdown/frontmatter in `knowledge_base_source/`.
-2. Run validation first:
+## Build static export
 
 ```bash
-npm run validate:kb
+npm run build
 ```
 
-3. Review warnings in `.kb-admin/import-status.json`:
-   - missing titles
-   - duplicate slugs
-   - missing region/type inference
-   - broken related links
-   - frontmatter consistency mismatches
-4. Refresh content safely:
+This outputs static assets to:
 
-```bash
-npm run refresh:kb
+```text
+/out
 ```
 
-`refresh:kb` imports only when markdown changed since the last successful import. Use `npm run refresh:kb:force` to force a full re-import.
+## GitHub Pages deployment
 
-5. Open `/admin` to review:
-   - content counts by type and region
-   - import status
-   - validation issues
+Workflow: `.github/workflows/deploy-pages.yml`
 
-## Scripts
+- Builds with `NEXT_PUBLIC_BASE_PATH=/<repo-name>`.
+- Runs `next build` with static export.
+- Uploads `./out` as Pages artifact.
+- Deploys using `actions/deploy-pages`.
 
-- `npm run install:deps` – install dependencies
-- `npm run db:generate` – generate Prisma client
-- `npm run db:migrate` – run Prisma migrations
-- `npm run import:kb` – import markdown from source directory
-- `npm run validate:kb` – run markdown/frontmatter validation only
-- `npm run refresh:kb` – safe refresh (skip if no markdown changes)
-- `npm run refresh:kb:force` – force full refresh
-- `npm run seed` – run importer via Prisma seed hook
-- `npm run dev` – start development server
-- `npm run build` – production build
-- `npm run start` – run production server
-- `npm run typecheck` – TypeScript check
+## Limitations of the static version
 
-## Importer hardening and metadata normalization
+- No runtime database updates; content changes require rebuild/redeploy.
+- No server API routes or server actions.
+- Search ranking is client-side heuristic instead of PostgreSQL full-text ranking.
+- Favorites are local-only via `localStorage`.
 
-Importer now adds defensive behavior for common fragility points:
+## Accessibility and UI guarantees
 
-- Region inference checks both paths and title text (not just folder naming).
-- Validation reports include duplicate slug detection and broken related links.
-- Frontmatter checks detect title/type/region mismatch against inferred values.
-- Metadata values are normalized for spacing and separators.
-- Tag extraction supports acronym aliases and clinical synonym expansion.
-- Citation extraction deduplicates repeated links/lines.
-- Related link inference still includes explicit markdown cross-links + regional cluster relationships.
-
-## Error handling
-
-- Importer exits non-zero on critical failures.
-- Empty source directory surfaces a clear import error.
-- DB calls use explicit includes/selects and defensive null rendering.
+- Semantic headings and landmarks.
+- Keyboard navigation with visible focus styles.
+- Responsive mobile navigation.
+- Print-friendly detail pages.
+- Clinical/minimal presentation with preserved source-file references and citations.
