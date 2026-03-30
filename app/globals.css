@@ -161,3 +161,26 @@ button {
   h1, h2, h3 { break-after: avoid; }
   p, li, .card, section { break-inside: avoid-page; }
 }
+
+.muted {
+  color: #475569;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.admin-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background: #fff;
+  padding: 0.9rem;
+}
+
+.issue-list {
+  max-height: 220px;
+  overflow: auto;
+}
