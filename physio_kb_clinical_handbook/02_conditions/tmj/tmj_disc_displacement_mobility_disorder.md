@@ -1,50 +1,67 @@
-# TMJ Disc Displacement / Mobility-Dominant Disorder
+---
+title: "TMJ Disc Displacement / Mobility Disorder"
+slug: "tmj_disc_displacement_mobility_disorder"
+section: "conditions"
+region: "TMJ"
+tags:
+  - "tmj"
+  - "condition"
+summary: "Intra-articular TMJ disorder featuring clicking, intermittent locking, or motion restriction requiring mobility-focused and symptom-guided rehab."
+evidence_update_needed: true
+psychometric_values_to_verify: true
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
 
-## Clinical summary
-This bucket includes disc-related and mobility-dominant jaw presentations, such as clicking with reduction and painful restricted opening / locking-type episodes. Management depends more on irritability, pain, and function than on the sound itself.
+# TMJ Disc Displacement / Mobility Disorder
 
-## Typical presentation
-- clicking, popping, or intermittent catching
-- deviation or deflection during opening
-- painful restricted opening in some cases
-- chewing and yawning aggravation
-- some patients report a “locked” episode or sudden loss of opening
+## Diagnosis
+- clicking/catching or intermittent locking associated with jaw movement
+- opening deviation/deflection and motion restriction pattern
+- intra-articular features dominate over pure myogenous pain profile
 
-## Subjective findings to prioritize
-- whether clicking is painless or painful
-- history of locking, sudden opening loss, or wide-yawn onset
-- current opening tolerance and chewing function
-- chronicity and irritability
-- coexisting cervical, headache, stress, or parafunctional issues
+## Classification
+- disc displacement **with reduction** (clicking, usually better opening)
+- disc displacement **without reduction** (restricted opening/locking history)
+- hypermobility/instability pattern with end-range apprehension
 
-## Objective findings
-- measure comfortable and maximum opening
-- observe path of opening
-- note clicking timing if present
-- determine whether limitation feels pain-dominant vs mechanical
-- avoid repeatedly provoking irritable locking symptoms
+## Differential diagnosis and referral triggers
+Differentiate from myogenous TMD, fracture/dislocation, inflammatory arthropathy, dental pain, and neuralgia.
 
-## Conservative management
-- education and reassurance where sounds are not the main functional problem
-- short-term diet / load modification in highly irritable cases
-- gentle controlled mobility and motor-control exercise
-- supervised opening exercise where mobility loss is present
-- consider stabilization splint collaboration when indicated
-- escalate when persistent mechanical lock or major functional loss does not improve
+Refer urgently for acute dislocation not reducing, traumatic fracture suspicion, infection/systemic illness signs, cranial nerve deficits, or rapidly progressive dysfunction.
 
-## Exercise priorities
-- controlled opening in a tolerable range
-- gentle mobility drills, not aggressive stretching in irritable joint states
-- motor-control retraining for opening / closing path
-- cervical and postural support when relevant
+## Subjective exam priorities
+- locking history (frequency, duration, reduction ability)
+- opening tolerance for eating/speaking and functional limits
+- pain irritability and post-load flare pattern
+- prior splints, injections, or dental interventions
 
-## When to refer / reconsider
-- acute closed-lock style presentation with major opening loss
-- recurrent dislocation
-- significant trauma
-- severe persistent disability despite conservative care
+## Objective exam priorities
+- maximal opening, lateral excursion, protrusion with symptom response
+- opening trajectory (deviation/deflection)
+- joint noise timing and reproducibility
+- loading tolerance of jaw + cervical co-contributors
 
-## Patient education points
-- Not every click needs treatment.
-- Pain, locking, and loss of function drive management more than sound alone.
-- Aggressive self-stretching can flare some disc / joint presentations.
+## Useful tests and limits
+- clinical motion/noise assessment supports classification but cannot visualize disc position directly
+- MRI reserved for persistent severe dysfunction/operative planning rather than routine first-line use
+
+## Management and progression
+- early symptom-calming: controlled opening, soft-diet modification, avoid extreme end-range loading
+- mobility restoration with gentle repeated movement where indicated
+- progress to endurance/control and graded return to normal chewing demand
+- combine with cervical and behavioral contributors as needed
+
+## Escalation / imaging / injections / surgery
+- specialist referral when persistent closed lock, severe functional loss, or failure of appropriate conservative trial
+- consider imaging/intra-articular procedures only for defined refractory subgroups
+
+## Notes for this KB
+Use this page with:
+- `../../01_foundations/tmj_anatomy_biomechanics.md`
+- `../../01_foundations/tmj_clinical_reasoning.md`
+- `../../03_assessment_tools/tmj_subjective_objective_exam.md`
+- `../../04_exercise_library/tmj_rehab_progression_framework.md`
+
+## Evidence notes
+- **Evidence update needed:** refresh comparative evidence for conservative care vs minimally invasive procedures.
+- **Psychometric values to verify:** jaw functional outcome psychometric thresholds should be confirmed against current validation studies.

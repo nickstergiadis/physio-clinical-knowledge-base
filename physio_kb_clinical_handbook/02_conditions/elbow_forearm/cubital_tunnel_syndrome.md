@@ -1,3 +1,17 @@
+---
+title: "Cubital Tunnel Syndrome (Ulnar Neuropathy at the Elbow)"
+slug: "cubital_tunnel_syndrome"
+section: "conditions"
+region: "Elbow & Forearm"
+tags:
+  - "elbow-forearm"
+  - "condition"
+summary: "Cubital tunnel syndrome is an ulnar nerve entrapment / irritation presentation at the elbow, usually involving compression, traction, or repeated irritation around the cubital tunnel or retrocondylar groove."
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Cubital Tunnel Syndrome (Ulnar Neuropathy at the Elbow)
 
 ## Clinical summary

@@ -1,3 +1,17 @@
+---
+title: "Knee Osteoarthritis"
+slug: "knee_osteoarthritis"
+section: "conditions"
+region: "Knee"
+tags:
+  - "knee"
+  - "condition"
+summary: "Knee osteoarthritis (OA) is a clinical diagnosis in many adults and should usually be managed first with exercise, education, and weight management support when relevant."
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Knee Osteoarthritis
 
 ## Clinical summary

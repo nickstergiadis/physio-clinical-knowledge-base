@@ -1,49 +1,66 @@
-# Medial Elbow Tendinopathy / Flexor-Pronator Overload
+---
+title: "Medial Elbow Tendinopathy"
+slug: "medial_elbow_tendinopathy"
+section: "conditions"
+region: "Elbow & Forearm"
+tags:
+  - "elbow-forearm"
+  - "condition"
+summary: "Load-related medial elbow pain from flexor-pronator tendon overload; clinically differentiated from ulnar nerve and ligament pathology."
+evidence_update_needed: false
+psychometric_values_to_verify: true
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
 
-## Clinical summary
-Medial elbow tendinopathy is a load-related pain disorder involving the common flexor-pronator origin near the medial epicondyle. It is often aggravated by gripping, wrist flexion, pronation, and valgus-loading tasks.
+# Medial Elbow Tendinopathy
 
-## Typical presentation
-- pain at or just distal to medial epicondyle
-- pain with gripping, lifting, pronation tasks, climbing, throwing, golf, or gym pulling
-- medial forearm tightness / ache may coexist
-- symptoms may overlap with ulnar nerve irritation
+## Diagnosis
+- medial elbow pain with gripping, wrist flexion/pronation, and throwing/load tasks
+- tenderness at flexor-pronator origin
+- pain reproduced with resisted wrist flexion/pronation
 
-## Subjective findings to prioritize
-- exact medial pain location and whether symptoms radiate toward forearm / hand
-- gripping, typing, lifting, pronation-heavy work, throwing, climbing, golf, gym
-- neural symptoms in ring / little finger or medial forearm
-- irritability and post-load flare pattern
-- trauma or valgus-overload history
+## Clinical classification
+- high-irritability reactive presentation
+- capacity-deficit chronic load intolerance
+- mixed tendon + ulnar nerve irritability profile
 
-## Objective findings
-- local tenderness at common flexor-pronator origin
-- pain with resisted wrist flexion and pronation
-- pain with gripping and loaded carrying
-- screen valgus stress tolerance where relevant
-- assess ulnar nerve sensitivity and cervical contribution when indicated
+## Differential diagnosis and red flags
+Differentiate from cubital tunnel syndrome, UCL injury/instability (throwers), cervical referral, and elbow OA.
 
-## Conservative management
-- education and load modification
-- graded flexor-pronator loading
-- temporary unloading strategies if needed for work / sport
-- manual therapy or taping only as adjuncts
-- address proximal drivers, especially shoulder / trunk / throwing mechanics when relevant
+Refer if neurologic deficit, valgus instability pattern, traumatic onset with functional collapse, or poor response with persistent diagnostic uncertainty.
 
-## Exercise priorities
-- calm very irritable pronation / gripping tasks
-- restore wrist / elbow motion if guarded
-- progressive tendon loading
-- grip / carry / pronation endurance
-- return to sport or work exposure gradually
+## Subjective exam priorities
+- throwing/workload progression and recent spikes
+- paresthesia in ulnar distribution, night symptoms
+- functional tasks limited most (carry, grip, throw, tools)
 
-## When to refer / reconsider
-- clear ulnar neuropathy progression
-- significant instability suspicion in throwing athlete
-- trauma, fracture, or major swelling
-- persistent severe pain despite a good rehab trial
+## Objective exam priorities
+- resisted flexion/pronation provocation and grip baseline
+- valgus stress/UCL screen where relevant
+- ulnar nerve provocation and neuro screen
 
-## Patient education points
-- The goal is to rebuild load tolerance, not eliminate all use.
-- Nerve symptoms need separate attention when present.
-- Return to throwing / golf / heavy gym work should be progressive, not abrupt.
+## Useful tests and limits
+- resisted wrist flexion/pronation tests: useful but not specific alone
+- valgus stress tests: help triage ligament contribution, variable sensitivity
+- neurodynamic/ulnar provocation: supports nerve involvement, not severity grading
+
+## Management and exercise progression
+- load modulation with maintained activity
+- tendon loading progression (isometric -> isotonic -> high-demand task loading)
+- address kinetic chain contributors in throwing/manual workers
+- include neural interface management if ulnar symptoms coexist
+
+## Escalation / imaging / injections / surgery
+- image when instability, significant trauma, or refractory symptoms suggest alternate pathology
+- injections may be considered selectively; avoid passive-only pathway
+- surgical referral for persistent severe disability or confirmed structural lesion
+
+## Notes for this KB
+Use this page with:
+- `../../01_foundations/elbow_forearm_anatomy_biomechanics.md`
+- `../../01_foundations/elbow_forearm_clinical_reasoning.md`
+- `../../03_assessment_tools/elbow_forearm_subjective_objective_exam.md`
+- `../../04_exercise_library/elbow_forearm_rehab_progression_framework.md`
+
+## Evidence notes
+- **Psychometric values to verify:** objective change thresholds for elbow outcomes should be verified before reporting.

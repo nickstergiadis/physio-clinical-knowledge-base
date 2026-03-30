@@ -1,3 +1,17 @@
+---
+title: "Greater Trochanteric Pain Syndrome (GTPS) / Gluteal Tendinopathy"
+slug: "greater_trochanteric_pain_syndrome"
+section: "conditions"
+region: "Hip"
+tags:
+  - "hip"
+  - "condition"
+summary: "GTPS is a lateral hip pain syndrome commonly involving gluteal tendon pathology with or without associated bursal irritation. The old “trochanteric bursitis” label is often too narrow."
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Greater Trochanteric Pain Syndrome (GTPS) / Gluteal Tendinopathy
 
 ## Clinical summary

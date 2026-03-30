@@ -1,3 +1,17 @@
+---
+title: "Adhesive Capsulitis / Frozen Shoulder"
+slug: "adhesive_capsulitis_frozen_shoulder"
+section: "conditions"
+region: "Shoulder"
+tags:
+  - "shoulder"
+  - "condition"
+summary: "Adhesive capsulitis is a clinical syndrome of painful shoulder stiffness characterized by substantial loss of passive motion, especially external rotation. It is commonly self-limiting but often prolonged, so treatment a"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Adhesive Capsulitis / Frozen Shoulder
 
 ## Clinical summary

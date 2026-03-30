@@ -1,82 +1,64 @@
-# Post-Op ACL Reconstruction + Meniscal Repair
+---
+title: "Post-op ACL Reconstruction + Meniscal Repair"
+slug: "post_op_acl_reconstruction_meniscal_repair"
+section: "conditions"
+region: "Knee"
+tags:
+  - "knee"
+  - "condition"
+summary: "Post-operative ACLR with meniscal repair pathway prioritizing protection, progressive loading, and criterion-based return to running and sport."
+evidence_update_needed: false
+psychometric_values_to_verify: true
+procedure_restrictions_vary_by_surgeon_protocol: true
+---
 
-## Clinical summary
-This page is designed for early and mid-phase outpatient rehab after ACL reconstruction when meniscal repair precautions are also present. It is not a substitute for surgeon-specific restrictions. Use the operative note, graft type, concomitant procedures, and surgeon protocol to individualize the plan.
+# Post-op ACL Reconstruction + Meniscal Repair
 
-## Typical early priorities
-- protect graft and repair
-- control pain, effusion, and inflammatory irritability
-- restore full passive extension as early as possible unless specifically contraindicated
-- recover progressive flexion within protocol limits
-- regain quadriceps activation and extensor control
-- normalize gait as weight-bearing restrictions lift
-- maintain hip, trunk, and contralateral-limb capacity
+## Diagnosis / classification
+- post-surgical rehabilitation condition, not a diagnostic uncertainty pathway
+- classify by **post-op phase + graft/repair constraints + objective milestone status**
 
-## Subjective findings to prioritize
-- graft type / surgery date / concomitant procedures
-- exact WB and ROM precautions
-- swelling behavior and 24-hour response
-- extension loss or anterior knee pain
-- confidence, fear, and HEP adherence
-- brace use and sleep tolerance
+## Red flags / urgent referral
+- suspected DVT/PE symptoms
+- infection signs (fever, wound erythema, unusual drainage)
+- rapid extension loss with painful block (possible cyclops/arthrofibrosis concern)
+- traumatic re-injury event with instability or large effusion surge
 
-## Objective findings
-- effusion
-- passive extension and flexion
-- quadriceps set quality
-- extensor lag / SLR tolerance when allowed
-- patellar mobility
-- gait quality within restrictions
-- calf symptoms / DVT screen when indicated
+## Subjective exam priorities
+- current surgeon restrictions and timeline
+- pain/effusion behavior and next-day response to loading
+- confidence, instability episodes, and task-specific fear
+- adherence barriers for home and gym progression
 
-## Common early-phase management
-- education on protection + progression
-- extension restoration strategies
-- quadriceps facilitation
-- symptom-guided ROM work within restrictions
-- swelling management
-- hip / trunk strengthening
-- progressive weight-bearing and gait retraining when cleared
+## Objective exam priorities
+- extension restoration urgency, flexion trend, effusion grade
+- gait quality and load tolerance
+- quadriceps activation/strength asymmetry
+- single-leg control progression and hop/readiness metrics (later phase)
 
-## Exercise priorities by phase
-### Protection phase
-- ankle pumps and circulation work
-- quad set / NMES-assisted activation if needed
-- heel-prop or equivalent extension work
-- gentle flexion ROM within protocol limits
-- patellar mobility
-- hip / core work that respects precautions
+## Useful tests and limits
+- strength LSI and hop batteries are essential but should not be used in isolation
+- combine objective metrics with quality-of-movement and symptom response
+- early provocative pivoting tests are not routine progression drivers
 
-### Controlled loading phase
-- progressive closed-chain strength
-- gait normalization
-- single-leg balance and neuromuscular control
-- knee-dominant and hip-dominant strength building
-- cardiovascular reconditioning
+## Management and exercise progression logic
+1. **Protection/restore phase:** control effusion, regain extension, normalize gait, restore quad activation.
+2. **Strength-capacity phase:** progressive bilateral->unilateral strength, closed/open-chain dosing per protocol.
+3. **Impact and change-of-direction phase:** running progression, plyometric exposure, deceleration/re-acceleration control.
+4. **Return-to-sport phase:** criterion-based progression using strength, hop, movement quality, and confidence measures.
 
-### Return-to-running / field phase
-- criterion-based progression
-- landing mechanics
-- change-of-direction exposure
-- strength symmetry and confidence rebuilding
-- sport-specific conditioning
+## Escalation / imaging / injection / surgical considerations
+- re-discuss with surgical team when ROM stalls, recurrent effusion persists, instability episodes occur, or milestones plateau despite adherence
+- imaging is surgeon-led when graft/repair integrity or arthrofibrosis is questioned
 
-## Precaution logic
-Meniscal repair modifications often affect:
-- weight-bearing progression
-- flexion range limits early on
-- loaded knee flexion depth
-- pivoting / impact timelines
+## Notes for this KB
+Use this page with:
+- `../../01_foundations/knee_anatomy_biomechanics.md`
+- `../../01_foundations/knee_clinical_reasoning.md`
+- `../../03_assessment_tools/knee_subjective_objective_exam.md`
+- `../../03_assessment_tools/knee_outcome_measures.md`
+- `../../04_exercise_library/post_op_acl_reconstruction_meniscal_repair_progression_framework.md`
 
-## Refer / escalate if
-- calf pain / swelling suggests vascular issue
-- marked extension loss persists
-- infection signs appear
-- effusion or pain escalates unexpectedly
-- giving-way / new locking symptoms appear
-- rehab progress stalls despite adherence and appropriate loading
-
-## Patient education points
-- Progress should be criterion-based, not only calendar-based.
-- Swelling and extension loss are key early markers to watch.
-- Meniscal repairs often require extra patience with ROM and load progressions.
+## Evidence notes
+- **Procedure-specific restrictions vary by surgeon/protocol:** graft type, meniscal repair zone, and concurrent procedures can materially alter load and ROM progression rules.
+- **Psychometric values to verify:** RTS cut-points and PROM thresholds should be verified against current consensus statements.

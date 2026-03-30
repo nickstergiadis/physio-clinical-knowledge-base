@@ -1,49 +1,63 @@
+---
+title: "Lateral Elbow Tendinopathy"
+slug: "lateral_elbow_tendinopathy"
+section: "conditions"
+region: "Elbow & Forearm"
+tags:
+  - "elbow-forearm"
+  - "condition"
+summary: "Load-related lateral elbow pain (typically extensor tendon complex) managed with progressive loading and exposure modification."
+evidence_update_needed: false
+psychometric_values_to_verify: true
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Lateral Elbow Tendinopathy
 
-## Clinical summary
-Lateral elbow tendinopathy is a load-related pain disorder centered around the common extensor tendon region, often the extensor carpi radialis brevis origin. It is usually diagnosed clinically.
+## Diagnosis
+- lateral elbow pain aggravated by gripping, lifting, or wrist extension/supination loading
+- local tenderness at common extensor origin
+- pain reproduction with resisted wrist/finger extension and gripping tasks
 
-## Typical presentation
-- pain at or just distal / anterior to the lateral epicondyle
-- pain with gripping, carrying, lifting a kettle / pan / bag, gym pulling, or racquet / stick sport
-- pain with resisted wrist extension, finger extension, or gripping
-- proximal forearm ache may coexist
+## Clinical classification
+- high irritability vs capacity-deficit presentation
+- work-sport exposure dominant vs mixed cervical/neural contribution
 
-## Subjective findings to prioritize
-- exact lateral pain location and whether symptoms spread into proximal forearm
-- gripping, keyboard / mouse, tools, gym, childcare, sport exposure
-- irritability: pain during task, after task, or next-day flare
-- previous injection / brace / rest response
-- neural symptoms or cervical contribution
+## Differential diagnosis and red flags
+Differentiate from radial tunnel/PIN syndrome, cervical referral, posterolateral instability, and elbow OA.
 
-## Objective findings
-- local tenderness over common extensor origin
-- pain with resisted wrist extension and gripping
-- pain with stretch into elbow extension + wrist flexion when irritable
-- compare pain-free grip strength side to side
-- screen radial tunnel / cervical / shoulder contribution when presentation is atypical
+Refer when progressive weakness, true motor deficit, traumatic instability, or persistent severe disability with diagnostic uncertainty is present.
 
-## Conservative management
-- education and load modification
-- graded tendon loading program
-- temporary strap / support only if it helps function
-- manual therapy as an adjunct, not the sole plan
-- consider injection discussion when short-term symptom settling is needed, but frame recurrence risk and long-term limits
+## Subjective exam priorities
+- load map: which grips/positions/time-under-tension provoke pain
+- post-load response and next-day irritability
+- occupational constraints and return-to-demand timeline
 
-## Exercise priorities
-- settle very irritable gripping first
-- isometric loading if helpful
-- progress to wrist extensor and grip loading
-- build pronation / supination and functional carrying tolerance
-- reintegrate kinetic-chain demand and task-specific exposure
+## Objective exam priorities
+- pain-provoking resisted tests and grip dynamometry baseline
+- cervical/neurological screen if symptoms are diffuse or atypical
+- functional task simulation (lift, carry, tool use)
 
-## When to refer / reconsider
-- significant trauma or suspected fracture
-- persistent high irritability with poor progress despite a solid load-management trial
-- progressive neurologic findings
-- marked motion loss, locking, or intra-articular suspicion
+## Useful tests and limits
+- Cozen, Mill, Maudsley: useful for symptom provocation; limited specificity alone
+- grip dynamometry: sensitive to change, pain-inhibited early
 
-## Patient education points
-- This is usually a load-management problem, not just “inflammation.”
-- Rest alone rarely restores long-term tolerance.
-- Short-term passive care may help symptoms, but lasting change usually comes from graded loading and exposure rebuilding.
+## Management and exercise progression
+- dose down provocative exposure, avoid full unloading
+- progressive isometric -> isotonic -> heavy-slow and energy-storage loading as tolerated
+- integrate proximal chain and task-specific conditioning
+
+## Escalation / imaging / injections / surgery
+- imaging rarely needed unless rupture/alternate pathology suspected
+- injection options can reduce short-term pain but are not stand-alone long-term strategy
+- surgical referral for persistent high disability after structured rehab
+
+## Notes for this KB
+Use this page with:
+- `../../01_foundations/elbow_forearm_anatomy_biomechanics.md`
+- `../../01_foundations/elbow_forearm_clinical_reasoning.md`
+- `../../03_assessment_tools/elbow_forearm_subjective_objective_exam.md`
+- `../../04_exercise_library/elbow_forearm_rehab_progression_framework.md`
+
+## Evidence notes
+- **Psychometric values to verify:** elbow-related PROM and grip-change thresholds should be verified before formal audit use.

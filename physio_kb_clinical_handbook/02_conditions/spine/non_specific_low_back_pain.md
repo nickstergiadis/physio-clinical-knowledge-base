@@ -1,3 +1,17 @@
+---
+title: "Non-specific Low Back Pain"
+slug: "non_specific_low_back_pain"
+section: "conditions"
+region: "Lumbar Spine"
+tags:
+  - "spine"
+  - "condition"
+summary: "Non-specific low back pain refers to lumbar pain that cannot be confidently explained by a single specific pathoanatomical diagnosis such as fracture, infection, malignancy, inflammatory disease, cauda equina syndrome, o"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Non-specific Low Back Pain
 
 ## Clinical summary

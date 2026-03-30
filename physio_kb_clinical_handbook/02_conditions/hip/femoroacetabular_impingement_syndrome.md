@@ -1,3 +1,17 @@
+---
+title: "Femoroacetabular Impingement Syndrome (FAIS)"
+slug: "femoroacetabular_impingement_syndrome"
+section: "conditions"
+region: "Hip"
+tags:
+  - "hip"
+  - "condition"
+summary: "FAIS is a motion-related hip disorder characterized by hip pain, clinical findings, and imaging features that reflect cam, pincer, or mixed morphology. Not everyone with morphology is symptomatic."
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Femoroacetabular Impingement Syndrome (FAIS)
 
 ## Clinical summary

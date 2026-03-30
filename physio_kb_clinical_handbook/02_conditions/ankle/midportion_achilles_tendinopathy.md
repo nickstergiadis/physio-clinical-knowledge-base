@@ -1,3 +1,17 @@
+---
+title: "Midportion Achilles Tendinopathy"
+slug: "midportion_achilles_tendinopathy"
+section: "conditions"
+region: "Ankle"
+tags:
+  - "ankle"
+  - "condition"
+summary: "Midportion Achilles tendinopathy is a load-related tendon pain condition, usually presenting with localized pain 2–6 cm proximal to the tendon insertion. Current guidance supports progressive mechanical loading as the ma"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Midportion Achilles Tendinopathy
 
 ## Clinical summary

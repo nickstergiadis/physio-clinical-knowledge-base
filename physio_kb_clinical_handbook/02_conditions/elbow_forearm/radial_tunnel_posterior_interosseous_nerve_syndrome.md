@@ -1,3 +1,17 @@
+---
+title: "Radial Tunnel Syndrome / Posterior Interosseous Nerve Syndrome"
+slug: "radial_tunnel_posterior_interosseous_nerve_syndrome"
+section: "conditions"
+region: "Elbow & Forearm"
+tags:
+  - "elbow-forearm"
+  - "condition"
+summary: "These are radial nerve entrapment presentations around the proximal forearm / supinator region. In practice, separate the predominantly pain-dominant radial tunnel picture from the more motor-dominant posterior interosse"
+evidence_update_needed: false
+psychometric_values_to_verify: false
+procedure_restrictions_vary_by_surgeon_protocol: false
+---
+
 # Radial Tunnel Syndrome / Posterior Interosseous Nerve Syndrome
 
 ## Clinical summary
