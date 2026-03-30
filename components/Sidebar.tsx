@@ -6,10 +6,10 @@ import { FavoritesPanel } from '@/components/FavoritesPanel';
 
 type SidebarProps = {
   regions: { slug: string; name: string; count: number }[];
-  types: { slug: string; name: string; count: number }[];
+  sections: { slug: string; name: string; count: number }[];
 };
 
-export function Sidebar({ regions, types }: SidebarProps) {
+export function Sidebar({ regions, sections }: SidebarProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -29,7 +29,6 @@ export function Sidebar({ regions, types }: SidebarProps) {
           <ul className="clean" style={{ marginBottom: '1rem' }}>
             <li><Link href="/">Home</Link></li>
             <li><Link href="/search">Search</Link></li>
-            <li><Link href="/admin">Admin</Link></li>
           </ul>
 
           <FavoritesPanel />
@@ -43,11 +42,11 @@ export function Sidebar({ regions, types }: SidebarProps) {
             ))}
           </ul>
 
-          <h3 style={{ fontSize: '1rem' }}>Content Type</h3>
+          <h3 style={{ fontSize: '1rem' }}>Content Sections</h3>
           <ul className="clean">
-            {types.map((t) => (
-              <li key={t.slug}>
-                <Link href={`/search?type=${encodeURIComponent(t.slug)}`}>{t.name} ({t.count})</Link>
+            {sections.map((section) => (
+              <li key={section.slug}>
+                <Link href={`/search?section=${encodeURIComponent(section.slug)}`}>{section.name} ({section.count})</Link>
               </li>
             ))}
           </ul>
