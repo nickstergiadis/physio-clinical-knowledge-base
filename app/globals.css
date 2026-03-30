@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f9fb;
+  --panel: #ffffff;
+  --text: #10212d;
+  --muted: #516372;
+  --border: #d6e0e8;
+  --accent: #005b8f;
+  --focus: #f59f00;
+  --max-width: 78rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration-thickness: 0.08em; }
+a:hover { text-decoration-thickness: 0.15em; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 17rem minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  background: #eef4f8;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow: auto;
+}
+
+.main {
+  max-width: var(--max-width);
+  padding: 1.25rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+.grid { display: grid; gap: 1rem; }
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+
+ul.clean { list-style: none; margin: 0; padding: 0; }
+
+input, select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #98acbc;
+  border-radius: 0.5rem;
+  background: white;
+  color: var(--text);
+}
+
+.prose {
+  max-width: 72ch;
+}
+
+.prose h1, .prose h2, .prose h3 { line-height: 1.25; margin-top: 1.5rem; }
+.prose pre, .prose code { white-space: pre-wrap; }
+
+.mobile-nav-toggle { display: none; }
+
+@media (max-width: 900px) {
+  .shell { grid-template-columns: 1fr; }
+  .sidebar {
+    position: static;
+    height: auto;
+    display: none;
+  }
+  .sidebar.open { display: block; }
+  .mobile-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background: white;
+  }
+}
+
+@media print {
+  body { background: white; font-size: 12pt; }
+  .sidebar, .mobile-nav-toggle, form, .no-print { display: none !important; }
+  .main { max-width: none; padding: 0; }
+  a { color: black; text-decoration: none; }
+  .card { border: 0; padding: 0; }
+}
