@@ -1,0 +1,2840 @@
+[
+  {
+    "slug": "abc-scale",
+    "title": "ABC Scale",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Balance Confidence]"
+    ],
+    "summary": "1. Purpose Balance confidence scale for fall-risk context. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration…",
+    "excerpt": "1. Purpose Balance confidence scale for fall-risk context. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/ABC_Scale.md"
+  },
+  {
+    "slug": "achilles-repair-rehabilitation",
+    "title": "Achilles Repair Rehabilitation",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Post Op",
+      "Achilles]"
+    ],
+    "summary": "1. Scope / procedure Post-op rehabilitation after Achilles tendon repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surgeon/proto…",
+    "excerpt": "1. Scope / procedure Post-op rehabilitation after Achilles tendon repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surgeon/protocol. 3. Healing and rehab phases Protect…",
+    "sourcePath": "Physio_Knowledge_Base/03_Post_Op/Foot_Ankle/Achilles_Repair_Rehabilitation.md"
+  },
+  {
+    "slug": "achilles-tendinopathy",
+    "title": "Achilles Tendinopathy",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Achilles",
+      "Tendinopathy]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Foot_Ankle/Achilles_Tendinopathy.md"
+  },
+  {
+    "slug": "achilles-tendon-repair-post-op-notes",
+    "title": "Achilles Tendon Repair Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Achilles Tendon Repair Post-Op Notes Use this annex for - outpatient rehab planning after operative Achilles rupture repair Non-negotiable note Always reconcile against: - surgeon…",
+    "excerpt": "Achilles Tendon Repair Post-Op Notes Use this annex for - outpatient rehab planning after operative Achilles rupture repair Non-negotiable note Always reconcile against: - surgeon boot / wedge plan - tendon quality and r…",
+    "sourcePath": "06_protocol_annexes/achilles_tendon_repair_post_op_notes.md"
+  },
+  {
+    "slug": "acl-injury",
+    "title": "ACL Injury",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Acl",
+      "Knee Trauma]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Knee/ACL_Injury.md"
+  },
+  {
+    "slug": "aclr-rehabilitation",
+    "title": "ACLR Rehabilitation",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "ACLR",
+      "anterior cruciate ligament reconstruction"
+    ],
+    "tags": [
+      "[Post Op",
+      "Aclr]"
+    ],
+    "summary": "1. Scope / procedure Post-op rehabilitation after anterior cruciate ligament reconstruction with or without meniscal procedures. 2. Important surgeon- or protocol-dependent caution…",
+    "excerpt": "1. Scope / procedure Post-op rehabilitation after anterior cruciate ligament reconstruction with or without meniscal procedures. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary b…",
+    "sourcePath": "Physio_Knowledge_Base/03_Post_Op/Knee/ACLR_Rehabilitation.md"
+  },
+  {
+    "slug": "acute-meniscal-pathology",
+    "title": "Acute Meniscal Pathology",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Meniscus",
+      "Knee]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Knee/Acute_Meniscal_Pathology.md"
+  },
+  {
+    "slug": "adhesive-capsulitis",
+    "title": "Adhesive Capsulitis",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Shoulder",
+      "Stiffness]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Shoulder/Adhesive_Capsulitis.md"
+  },
+  {
+    "slug": "adhesive-capsulitis-frozen-shoulder",
+    "title": "Adhesive Capsulitis / Frozen Shoulder",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Adhesive Capsulitis / Frozen Shoulder Clinical summary Adhesive capsulitis is a clinical syndrome of painful shoulder stiffness characterized by substantial loss of passive motion,…",
+    "excerpt": "Adhesive Capsulitis / Frozen Shoulder Clinical summary Adhesive capsulitis is a clinical syndrome of painful shoulder stiffness characterized by substantial loss of passive motion, especially external rotation. It is com…",
+    "sourcePath": "02_conditions/shoulder/adhesive_capsulitis_frozen_shoulder.md"
+  },
+  {
+    "slug": "ankle-foot-anatomy-biomechanics",
+    "title": "Ankle + Foot Anatomy / Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Ankle + Foot Anatomy / Biomechanics Clinical purpose This page is a quick-reference foundation for common outpatient ankle and posterior heel presentations in this KB, especially:…",
+    "excerpt": "Ankle + Foot Anatomy / Biomechanics Clinical purpose This page is a quick-reference foundation for common outpatient ankle and posterior heel presentations in this KB, especially: - lateral ankle sprain (LAS) - chronic a…",
+    "sourcePath": "01_foundations/ankle_foot_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "ankle-clinical-reasoning",
+    "title": "Ankle Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Ankle Clinical Reasoning Why this page exists Most outpatient ankle presentations are not hard because of anatomy alone. They are hard because the clinician has to separate: - acut…",
+    "excerpt": "Ankle Clinical Reasoning Why this page exists Most outpatient ankle presentations are not hard because of anatomy alone. They are hard because the clinician has to separate: - acute tissue irritation vs persistent load i…",
+    "sourcePath": "01_foundations/ankle_clinical_reasoning.md"
+  },
+  {
+    "slug": "ankle-cluster-evidence-update",
+    "title": "Ankle Cluster — Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Ankle Cluster — Evidence Update Core sources used in this cluster Lateral ankle sprain / chronic ankle instability - JOSPT / AOPT lateral ankle sprain revision CPG (2021) - APTA Or…",
+    "excerpt": "Ankle Cluster — Evidence Update Core sources used in this cluster Lateral ankle sprain / chronic ankle instability - JOSPT / AOPT lateral ankle sprain revision CPG (2021) - APTA Orthopedics summary page for outcome tools…",
+    "sourcePath": "05_evidence_updates/ankle_cluster_evidence_update.md"
+  },
+  {
+    "slug": "ankle-outcome-measures",
+    "title": "Ankle Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Ankle Outcome Measures Core ankle tools in this KB Lateral ankle sprain / chronic ankle instability - LEFS - FAAM / FAAM-Sport when available in your workflow - CAIT if perceived i…",
+    "excerpt": "Ankle Outcome Measures Core ankle tools in this KB Lateral ankle sprain / chronic ankle instability - LEFS - FAAM / FAAM-Sport when available in your workflow - CAIT if perceived instability is a major feature - modified…",
+    "sourcePath": "03_assessment_tools/ankle_outcome_measures.md"
+  },
+  {
+    "slug": "ankle-rehab-progression-framework",
+    "title": "Ankle Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Ankle Rehab Progression Framework Goal Provide a reusable progression framework for the main non-surgical ankle cluster in this KB: - lateral ankle sprain - chronic ankle instabili…",
+    "excerpt": "Ankle Rehab Progression Framework Goal Provide a reusable progression framework for the main non-surgical ankle cluster in this KB: - lateral ankle sprain - chronic ankle instability - midportion Achilles tendinopathy Ge…",
+    "sourcePath": "04_exercise_library/ankle_rehab_progression_framework.md"
+  },
+  {
+    "slug": "ankle-subjective-objective-exam",
+    "title": "Ankle Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Ankle Subjective + Objective Exam Subjective priorities History of present condition - exact location: lateral ligaments, high ankle, posterior heel, insertional heel, diffuse ankl…",
+    "excerpt": "Ankle Subjective + Objective Exam Subjective priorities History of present condition - exact location: lateral ligaments, high ankle, posterior heel, insertional heel, diffuse ankle, medial ankle - onset: inversion injur…",
+    "sourcePath": "03_assessment_tools/ankle_subjective_objective_exam.md"
+  },
+  {
+    "slug": "assessment-page-template",
+    "title": "Assessment Page Template",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Template",
+      "Assessment]"
+    ],
+    "summary": "1. Purpose 2. Key questions 3. Observation 4. Active testing 5. Passive testing 6. Resisted testing 7. Neuro screen where relevant 8. Special tests 9. Differential pivots 10. Compa…",
+    "excerpt": "1. Purpose 2. Key questions 3. Observation 4. Active testing 5. Passive testing 6. Resisted testing 7. Neuro screen where relevant 8. Special tests 9. Differential pivots 10. Comparable signs 11. Red flags 12. Documentat…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Templates/Assessment_Page_Template.md"
+  },
+  {
+    "slug": "berg-balance-scale",
+    "title": "Berg Balance Scale",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Balance]"
+    ],
+    "summary": "1. Purpose Balance performance measure for fall-risk screening and progression tracking. 2. Population / when to use Use in the relevant regional condition set and track over episo…",
+    "excerpt": "1. Purpose Balance performance measure for fall-risk screening and progression tracking. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-repor…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/Berg_Balance_Scale.md"
+  },
+  {
+    "slug": "build-roadmap",
+    "title": "Build Roadmap",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Roadmap",
+      "Build Plan]"
+    ],
+    "summary": "Build Roadmap Phase 1: Architecture and cleanup - Establish standardized folder architecture. - Add index, standards, templates. - Move old summary-style content into 99_Legacy aft…",
+    "excerpt": "Build Roadmap Phase 1: Architecture and cleanup - Establish standardized folder architecture. - Add index, standards, templates. - Move old summary-style content into 99_Legacy after conversion. Phase 2: Convert existing…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Build_Roadmap.md"
+  },
+  {
+    "slug": "carpal-tunnel-syndrome",
+    "title": "Carpal Tunnel Syndrome",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Wrist",
+      "Median Nerve]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Elbow_Wrist_Hand/Carpal_Tunnel_Syndrome.md"
+  },
+  {
+    "slug": "case-mix-review-and-added-topics",
+    "title": "Case-Mix Review and Coverage Update",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "ACLR",
+      "anterior cruciate ligament reconstruction",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "TKA",
+      "total knee arthroplasty",
+      "total knee replacement",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "Case-Mix Review and Coverage Update What this cleanup pass addressed This build was reviewed against your actual case mix and the gaps from earlier versions were closed where they…",
+    "excerpt": "Case-Mix Review and Coverage Update What this cleanup pass addressed This build was reviewed against your actual case mix and the gaps from earlier versions were closed where they were clearly recurring or high-value. Co…",
+    "sourcePath": "00_index/case_mix_review_and_added_topics.md"
+  },
+  {
+    "slug": "cervical-anatomy-biomechanics",
+    "title": "Cervical Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Cervical Anatomy + Biomechanics Core anatomy - upper cervical region contributes substantially to flexion-extension and rotation coupling relevant to headache and upper-neck sympto…",
+    "excerpt": "Cervical Anatomy + Biomechanics Core anatomy - upper cervical region contributes substantially to flexion-extension and rotation coupling relevant to headache and upper-neck symptoms - lower cervical segments contribute…",
+    "sourcePath": "01_foundations/cervical_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "cervical-clinical-reasoning",
+    "title": "Cervical Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Cervical",
+    "aliases": [],
+    "tags": [],
+    "summary": "Cervical Clinical Reasoning Main buckets - mechanical neck pain - neck pain with mobility deficit - neck pain with movement-coordination / endurance deficit - cervicogenic headache…",
+    "excerpt": "Cervical Clinical Reasoning Main buckets - mechanical neck pain - neck pain with mobility deficit - neck pain with movement-coordination / endurance deficit - cervicogenic headache pattern - neck pain with radicular feat…",
+    "sourcePath": "01_foundations/cervical_clinical_reasoning.md"
+  },
+  {
+    "slug": "cervical-cluster-evidence-update",
+    "title": "Cervical Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Cervical Cluster Evidence Update Main themes to re-check during updates - exercise remains central for mechanical neck pain - manual therapy may help short term but should not repl…",
+    "excerpt": "Cervical Cluster Evidence Update Main themes to re-check during updates - exercise remains central for mechanical neck pain - manual therapy may help short term but should not replace a loading / self-management plan - h…",
+    "sourcePath": "05_evidence_updates/cervical_cluster_evidence_update.md"
+  },
+  {
+    "slug": "cervical-outcome-measures",
+    "title": "Cervical Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Cervical",
+    "aliases": [],
+    "tags": [],
+    "summary": "Cervical Outcome Measures Good core set - numeric pain rating scale - PSFS - Neck Disability Index (NDI) Optional additions - headache diary / frequency if headache is relevant - p…",
+    "excerpt": "Cervical Outcome Measures Good core set - numeric pain rating scale - PSFS - Neck Disability Index (NDI) Optional additions - headache diary / frequency if headache is relevant - pain-free rotation or driving tolerance i…",
+    "sourcePath": "03_assessment_tools/cervical_outcome_measures.md"
+  },
+  {
+    "slug": "cervical-radicular-pain",
+    "title": "Cervical Radicular Pain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Cervical",
+      "Radicular Pain]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Spine/Cervical_Radicular_Pain.md"
+  },
+  {
+    "slug": "cervical-region-assessment",
+    "title": "Cervical Region Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Cervical]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Cervical_Region_Assessment.md"
+  },
+  {
+    "slug": "cervical-rehab-progression-framework",
+    "title": "Cervical Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Cervical",
+    "aliases": [
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Cervical Rehab Progression Framework Phase 1: calm / restore movement confidence - comfortable ROM - deep neck flexor support work if tolerated - thoracic mobility - breathing and…",
+    "excerpt": "Cervical Rehab Progression Framework Phase 1: calm / restore movement confidence - comfortable ROM - deep neck flexor support work if tolerated - thoracic mobility - breathing and general activity - symptom-guided exposu…",
+    "sourcePath": "04_exercise_library/cervical_rehab_progression_framework.md"
+  },
+  {
+    "slug": "cervical-subjective-objective-exam",
+    "title": "Cervical Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Cervical Subjective + Objective Exam Subjective priorities - trauma vs gradual onset - headache pattern and arm symptoms - dizziness, visual change, facial symptoms, swallowing / s…",
+    "excerpt": "Cervical Subjective + Objective Exam Subjective priorities - trauma vs gradual onset - headache pattern and arm symptoms - dizziness, visual change, facial symptoms, swallowing / speech issues when indicated - sleep, wor…",
+    "sourcePath": "03_assessment_tools/cervical_subjective_objective_exam.md"
+  },
+  {
+    "slug": "cervicogenic-headache",
+    "title": "Cervicogenic Headache",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Cervicogenic Headache Clinical summary Cervicogenic headache is headache referred from cervical structures, commonly with accompanying neck pain, reduced cervical movement, and pro…",
+    "excerpt": "Cervicogenic Headache Clinical summary Cervicogenic headache is headache referred from cervical structures, commonly with accompanying neck pain, reduced cervical movement, and provocation by neck posture or movement. Di…",
+    "sourcePath": "02_conditions/cervical/cervicogenic_headache.md"
+  },
+  {
+    "slug": "chronic-ankle-instability",
+    "title": "Chronic Ankle Instability",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Ankle",
+    "aliases": [
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Chronic Ankle Instability Clinical summary Chronic ankle instability (CAI) describes ongoing symptoms after ankle sprain that can include recurrent sprains, repeated “giving way,”…",
+    "excerpt": "Chronic Ankle Instability Clinical summary Chronic ankle instability (CAI) describes ongoing symptoms after ankle sprain that can include recurrent sprains, repeated “giving way,” reduced confidence, and persistent balan…",
+    "sourcePath": "02_conditions/ankle/chronic_ankle_instability.md"
+  },
+  {
+    "slug": "condition-page-template",
+    "title": "Condition Page Template",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Template",
+      "Condition]"
+    ],
+    "summary": "1. Clinical summary 2. Key presentation patterns 3. Differential diagnosis 4. Red flags / referral triggers 5. Subjective exam priorities 6. Objective exam priorities 7. Useful spe…",
+    "excerpt": "1. Clinical summary 2. Key presentation patterns 3. Differential diagnosis 4. Red flags / referral triggers 5. Subjective exam priorities 6. Objective exam priorities 7. Useful special tests and their limits 8. Common im…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Templates/Condition_Page_Template.md"
+  },
+  {
+    "slug": "content-standards",
+    "title": "Content Standards",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Standards",
+      "Governance",
+      "Authoring]"
+    ],
+    "summary": "Content Standards Naming conventions - Folders: Title_Case_With_Underscores. - Files: Topic_Name.md, concise and explicit. - Prefer one condition/page concept per file. - Keep lega…",
+    "excerpt": "Content Standards Naming conventions - Folders: Title_Case_With_Underscores. - Files: Topic_Name.md, concise and explicit. - Prefer one condition/page concept per file. - Keep legacy raw summaries inside 99_Legacy/. Requ…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Content_Standards.md"
+  },
+  {
+    "slug": "cubital-tunnel-syndrome",
+    "title": "Cubital Tunnel Syndrome (Ulnar Neuropathy at the Elbow)",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Cubital Tunnel Syndrome (Ulnar Neuropathy at the Elbow) Clinical summary Cubital tunnel syndrome is an ulnar nerve entrapment / irritation presentation at the elbow, usually involv…",
+    "excerpt": "Cubital Tunnel Syndrome (Ulnar Neuropathy at the Elbow) Clinical summary Cubital tunnel syndrome is an ulnar nerve entrapment / irritation presentation at the elbow, usually involving compression, traction, or repeated i…",
+    "sourcePath": "02_conditions/elbow_forearm/cubital_tunnel_syndrome.md"
+  },
+  {
+    "slug": "de-quervain-tenosynovitis",
+    "title": "De Quervain Tenosynovitis",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "De Quervain Tenosynovitis Clinical summary De Quervain tenosynovitis is a first dorsal compartment pain syndrome affecting the abductor pollicis longus and extensor pollicis brevis…",
+    "excerpt": "De Quervain Tenosynovitis Clinical summary De Quervain tenosynovitis is a first dorsal compartment pain syndrome affecting the abductor pollicis longus and extensor pollicis brevis region near the radial styloid. It is u…",
+    "sourcePath": "02_conditions/hand_wrist/de_quervain_tenosynovitis.md"
+  },
+  {
+    "slug": "degenerative-meniscal-tear",
+    "title": "Degenerative Meniscal Tear",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Degenerative Meniscal Tear Clinical summary Degenerative meniscal tears are common in middle-aged and older adults and frequently coexist with knee osteoarthritis. Current evidence…",
+    "excerpt": "Degenerative Meniscal Tear Clinical summary Degenerative meniscal tears are common in middle-aged and older adults and frequently coexist with knee osteoarthritis. Current evidence supports conservative management with e…",
+    "sourcePath": "02_conditions/knee/degenerative_meniscal_tear.md"
+  },
+  {
+    "slug": "dhi",
+    "title": "DHI",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Vestibular]"
+    ],
+    "summary": "1. Purpose Self-report dizziness-related handicap measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration…",
+    "excerpt": "1. Purpose Self-report dizziness-related handicap measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/DHI.md"
+  },
+  {
+    "slug": "dizziness-vestibular-screening",
+    "title": "Dizziness / Vestibular Screening",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Vestibular]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Special_Tests/Dizziness_Vestibular_Screening.md"
+  },
+  {
+    "slug": "elbow-forearm-anatomy-biomechanics",
+    "title": "Elbow / Forearm Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Elbow / Forearm Anatomy + Biomechanics Core anatomy - humeroulnar and humeroradial joints manage flexion-extension load transfer - proximal radioulnar joint drives pronation-supina…",
+    "excerpt": "Elbow / Forearm Anatomy + Biomechanics Core anatomy - humeroulnar and humeroradial joints manage flexion-extension load transfer - proximal radioulnar joint drives pronation-supination - common extensor and common flexor…",
+    "sourcePath": "01_foundations/elbow_forearm_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "elbow-forearm-clinical-reasoning",
+    "title": "Elbow / Forearm Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Elbow / Forearm Clinical Reasoning Main buckets - lateral elbow tendinopathy - medial elbow tendinopathy - ulnar neuropathy / cubital tunnel - radial tunnel / PIN pattern - cervica…",
+    "excerpt": "Elbow / Forearm Clinical Reasoning Main buckets - lateral elbow tendinopathy - medial elbow tendinopathy - ulnar neuropathy / cubital tunnel - radial tunnel / PIN pattern - cervical referral or peripheral neural contribu…",
+    "sourcePath": "01_foundations/elbow_forearm_clinical_reasoning.md"
+  },
+  {
+    "slug": "elbow-forearm-cluster-evidence-update",
+    "title": "Elbow / Forearm Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Elbow / Forearm Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current elbow / forearm cluster: - lateral elbow tendinopathy - medial e…",
+    "excerpt": "Elbow / Forearm Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current elbow / forearm cluster: - lateral elbow tendinopathy - medial elbow tendinopathy / flexor-pronator over…",
+    "sourcePath": "05_evidence_updates/elbow_forearm_cluster_evidence_update.md"
+  },
+  {
+    "slug": "elbow-forearm-rehab-progression-framework",
+    "title": "Elbow / Forearm Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Elbow / Forearm Rehab Progression Framework Phase 1: calm highly irritable symptoms Goals - reduce flare frequency - stop repeatedly provoking tendon pain - maintain enough movemen…",
+    "excerpt": "Elbow / Forearm Rehab Progression Framework Phase 1: calm highly irritable symptoms Goals - reduce flare frequency - stop repeatedly provoking tendon pain - maintain enough movement for function Common strategies - task…",
+    "sourcePath": "04_exercise_library/elbow_forearm_rehab_progression_framework.md"
+  },
+  {
+    "slug": "elbow-forearm-subjective-objective-exam",
+    "title": "Elbow / Forearm Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Elbow / Forearm Subjective + Objective Exam Subjective Key questions - exact symptom location - gripping / lifting / tools / keyboard / mouse / sport aggravators - pronation / supi…",
+    "excerpt": "Elbow / Forearm Subjective + Objective Exam Subjective Key questions - exact symptom location - gripping / lifting / tools / keyboard / mouse / sport aggravators - pronation / supination irritability - trauma vs gradual…",
+    "sourcePath": "03_assessment_tools/elbow_forearm_subjective_objective_exam.md"
+  },
+  {
+    "slug": "elbow-nerve-entrapment-differential-add-on",
+    "title": "Elbow Nerve / Entrapment Differential Add-On",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Elbow Nerve / Entrapment Differential Add-On Use this add-on when - lateral or medial elbow pain is not behaving like a straightforward tendinopathy - paresthesia, weakness, clumsi…",
+    "excerpt": "Elbow Nerve / Entrapment Differential Add-On Use this add-on when - lateral or medial elbow pain is not behaving like a straightforward tendinopathy - paresthesia, weakness, clumsiness, or night symptoms are present - lo…",
+    "sourcePath": "03_assessment_tools/elbow_nerve_entrapment_differential_add_on.md"
+  },
+  {
+    "slug": "evidence-refresh-register",
+    "title": "Evidence Refresh Register",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "ACLR",
+      "anterior cruciate ligament reconstruction"
+    ],
+    "tags": [
+      "[Evidence",
+      "Surveillance]"
+    ],
+    "summary": "Evidence Refresh Register Priority refresh items - Low back pain and sciatica guideline harmonization. - Shoulder injection sequencing and subgroup guidance. - Return-to-sport crit…",
+    "excerpt": "Evidence Refresh Register Priority refresh items - Low back pain and sciatica guideline harmonization. - Shoulder injection sequencing and subgroup guidance. - Return-to-sport criteria for lateral ankle sprain and ACLR.…",
+    "sourcePath": "Physio_Knowledge_Base/05_Evidence_Notes/Evidence_Refresh_Register.md"
+  },
+  {
+    "slug": "faam",
+    "title": "FAAM",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Foot Ankle]"
+    ],
+    "summary": "1. Purpose Foot/ankle self-report function measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-re…",
+    "excerpt": "1. Purpose Foot/ankle self-report function measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as stan…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/FAAM.md"
+  },
+  {
+    "slug": "femoroacetabular-impingement-syndrome",
+    "title": "Femoroacetabular Impingement Syndrome (FAIS)",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hip",
+    "aliases": [
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Femoroacetabular Impingement Syndrome (FAIS) Clinical summary FAIS is a motion-related hip disorder characterized by hip pain, clinical findings, and imaging features that reflect…",
+    "excerpt": "Femoroacetabular Impingement Syndrome (FAIS) Clinical summary FAIS is a motion-related hip disorder characterized by hip pain, clinical findings, and imaging features that reflect cam, pincer, or mixed morphology. Not ev…",
+    "sourcePath": "02_conditions/hip/femoroacetabular_impingement_syndrome.md"
+  },
+  {
+    "slug": "five-times-sit-to-stand",
+    "title": "Five Times Sit to Stand",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Function]"
+    ],
+    "summary": "1. Purpose Functional lower-limb strength/endurance screen. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration…",
+    "excerpt": "1. Purpose Functional lower-limb strength/endurance screen. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/Five_Times_Sit_to_Stand.md"
+  },
+  {
+    "slug": "foot-ankle-regional-assessment",
+    "title": "Foot and Ankle Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Foot Ankle]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Foot_Ankle_Regional_Assessment.md"
+  },
+  {
+    "slug": "gastrocnemius-recession-post-op-notes",
+    "title": "Gastrocnemius Recession / Tendon Lengthening Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Gastrocnemius Recession / Tendon Lengthening Post-Op Notes Why this is in an annex This is a useful case-driven topic for practice, but the evidence base is much more protocol- and…",
+    "excerpt": "Gastrocnemius Recession / Tendon Lengthening Post-Op Notes Why this is in an annex This is a useful case-driven topic for practice, but the evidence base is much more protocol- and surgeon-specific than the main outpatie…",
+    "sourcePath": "06_protocol_annexes/gastrocnemius_recession_post_op_notes.md"
+  },
+  {
+    "slug": "lower-quarter-neuro-screen",
+    "title": "General Lower-Quarter Neuro Screen",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Neuro Screen]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Neuro_Screen/Lower_Quarter_Neuro_Screen.md"
+  },
+  {
+    "slug": "upper-quarter-neuro-screen",
+    "title": "General Upper-Quarter Neuro Screen",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Neuro Screen]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Neuro_Screen/Upper_Quarter_Neuro_Screen.md"
+  },
+  {
+    "slug": "gluteus-medius-minimus-repair-post-op-notes",
+    "title": "Gluteus Medius / Minimus Repair Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Gluteus Medius / Minimus Repair Post-Op Notes Use this annex for - post-op lateral hip rehab after gluteal tendon repair - quick planning before reconciling with the surgeon protoc…",
+    "excerpt": "Gluteus Medius / Minimus Repair Post-Op Notes Use this annex for - post-op lateral hip rehab after gluteal tendon repair - quick planning before reconciling with the surgeon protocol Non-negotiable note Always check: - r…",
+    "sourcePath": "06_protocol_annexes/gluteus_medius_minimus_repair_post_op_notes.md"
+  },
+  {
+    "slug": "greater-trochanteric-pain-syndrome",
+    "title": "Greater Trochanteric Pain Syndrome",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Hip",
+      "Gtps]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Hip_Groin/Greater_Trochanteric_Pain_Syndrome.md"
+  },
+  {
+    "slug": "greater-trochanteric-pain-syndrome",
+    "title": "Greater Trochanteric Pain Syndrome (GTPS) / Gluteal Tendinopathy",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Greater Trochanteric Pain Syndrome (GTPS) / Gluteal Tendinopathy Clinical summary GTPS is a lateral hip pain syndrome commonly involving gluteal tendon pathology with or without as…",
+    "excerpt": "Greater Trochanteric Pain Syndrome (GTPS) / Gluteal Tendinopathy Clinical summary GTPS is a lateral hip pain syndrome commonly involving gluteal tendon pathology with or without associated bursal irritation. The old “tro…",
+    "sourcePath": "02_conditions/hip/greater_trochanteric_pain_syndrome.md"
+  },
+  {
+    "slug": "hand-wrist-anatomy-biomechanics",
+    "title": "Hand / Wrist Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Anatomy + Biomechanics Core anatomy - wrist motion combines radiocarpal and midcarpal contributions - thumb function depends heavily on CMC mobility plus coordinated t…",
+    "excerpt": "Hand / Wrist Anatomy + Biomechanics Core anatomy - wrist motion combines radiocarpal and midcarpal contributions - thumb function depends heavily on CMC mobility plus coordinated tendon loading - radial wrist pain often…",
+    "sourcePath": "01_foundations/hand_wrist_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "hand-wrist-clinical-reasoning",
+    "title": "Hand / Wrist Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Clinical Reasoning Main buckets - De Quervain tenosynovitis - load-related tendon pain around wrist / thumb - CMC irritation - median / ulnar / radial neural contribut…",
+    "excerpt": "Hand / Wrist Clinical Reasoning Main buckets - De Quervain tenosynovitis - load-related tendon pain around wrist / thumb - CMC irritation - median / ulnar / radial neural contribution - inflammatory or traumatic driver -…",
+    "sourcePath": "01_foundations/hand_wrist_clinical_reasoning.md"
+  },
+  {
+    "slug": "hand-wrist-cluster-evidence-update",
+    "title": "Hand / Wrist Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Cluster Evidence Update Main themes to re-check during updates - De Quervain care commonly combines activity modification, splinting, exercise, and injection depending…",
+    "excerpt": "Hand / Wrist Cluster Evidence Update Main themes to re-check during updates - De Quervain care commonly combines activity modification, splinting, exercise, and injection depending on irritability and goals - exercise ev…",
+    "sourcePath": "05_evidence_updates/hand_wrist_cluster_evidence_update.md"
+  },
+  {
+    "slug": "hand-wrist-outcome-measures",
+    "title": "Hand / Wrist Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Hand & Wrist",
+    "aliases": [],
+    "tags": [],
+    "summary": "Hand / Wrist Outcome Measures Good core set - numeric pain rating scale - PSFS - QuickDASH - PRWHE when a wrist/hand-specific measure is preferred Practical tip Use QuickDASH or PR…",
+    "excerpt": "Hand / Wrist Outcome Measures Good core set - numeric pain rating scale - PSFS - QuickDASH - PRWHE when a wrist/hand-specific measure is preferred Practical tip Use QuickDASH or PRWHE plus PSFS and one task-specific benc…",
+    "sourcePath": "03_assessment_tools/hand_wrist_outcome_measures.md"
+  },
+  {
+    "slug": "hand-wrist-rehab-progression-framework",
+    "title": "Hand / Wrist Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Rehab Progression Framework Phase 1: calm / protect - reduce high-irritability thumb and wrist exposure temporarily - splinting only when clearly helpful - comfortable…",
+    "excerpt": "Hand / Wrist Rehab Progression Framework Phase 1: calm / protect - reduce high-irritability thumb and wrist exposure temporarily - splinting only when clearly helpful - comfortable ROM and tendon gliding where appropriat…",
+    "sourcePath": "04_exercise_library/hand_wrist_rehab_progression_framework.md"
+  },
+  {
+    "slug": "hand-wrist-subjective-objective-exam",
+    "title": "Hand / Wrist Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Subjective + Objective Exam Subjective priorities - exact symptom map: radial styloid, dorsal wrist, volar wrist, thumb base, ulnar wrist - childcare, lifting, keyboar…",
+    "excerpt": "Hand / Wrist Subjective + Objective Exam Subjective priorities - exact symptom map: radial styloid, dorsal wrist, volar wrist, thumb base, ulnar wrist - childcare, lifting, keyboard / mouse, phone, sport, and gym trigger…",
+    "sourcePath": "03_assessment_tools/hand_wrist_subjective_objective_exam.md"
+  },
+  {
+    "slug": "hand-wrist-tendinopathy-load-related",
+    "title": "Hand / Wrist Tendinopathy (Load-Related)",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Hand / Wrist Tendinopathy (Load-Related) Clinical summary This page covers non–de Quervain load-related hand and wrist tendinopathy presentations where pain is linked to repetitive…",
+    "excerpt": "Hand / Wrist Tendinopathy (Load-Related) Clinical summary This page covers non–de Quervain load-related hand and wrist tendinopathy presentations where pain is linked to repetitive gripping, keyboard / mouse use, tools,…",
+    "sourcePath": "02_conditions/hand_wrist/hand_wrist_tendinopathy_load_related.md"
+  },
+  {
+    "slug": "hip-anatomy-biomechanics",
+    "title": "Hip Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Anatomy + Biomechanics Core anatomy - ball-and-socket joint formed by the femoral head and acetabulum - acetabular labrum contributes to depth, seal, and load distribution - ca…",
+    "excerpt": "Hip Anatomy + Biomechanics Core anatomy - ball-and-socket joint formed by the femoral head and acetabulum - acetabular labrum contributes to depth, seal, and load distribution - capsule and key passive restraints include…",
+    "sourcePath": "01_foundations/hip_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "hip-arthroscopy-fai-labral-repair-post-op-notes",
+    "title": "Hip Arthroscopy for FAI / Labral Repair Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Arthroscopy for FAI / Labral Repair Post-Op Notes Use this annex for - hip arthroscopy after cam / pincer correction - labral repair or debridement - quick rehab framing before…",
+    "excerpt": "Hip Arthroscopy for FAI / Labral Repair Post-Op Notes Use this annex for - hip arthroscopy after cam / pincer correction - labral repair or debridement - quick rehab framing before reconciling with surgeon restrictions N…",
+    "sourcePath": "06_protocol_annexes/hip_arthroscopy_fai_labral_repair_post_op_notes.md"
+  },
+  {
+    "slug": "hip-arthroscopy-rehabilitation",
+    "title": "Hip Arthroscopy Rehabilitation",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Post Op",
+      "Hip]"
+    ],
+    "summary": "1. Scope / procedure Rehabilitation pathway following hip arthroscopy procedures. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surge…",
+    "excerpt": "1. Scope / procedure Rehabilitation pathway following hip arthroscopy procedures. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surgeon/protocol. 3. Healing and rehab phases…",
+    "sourcePath": "Physio_Knowledge_Base/03_Post_Op/Hip/Hip_Arthroscopy_Rehabilitation.md"
+  },
+  {
+    "slug": "hip-regional-assessment",
+    "title": "Hip Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Hip]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Hip_Regional_Assessment.md"
+  },
+  {
+    "slug": "hip-clinical-reasoning",
+    "title": "Hip Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Clinical Reasoning Main diagnostic buckets - intra-articular / joint-dominant: hip OA, FAIS, labral or chondral contribution - lateral hip: GTPS / gluteal tendinopathy-bursopat…",
+    "excerpt": "Hip Clinical Reasoning Main diagnostic buckets - intra-articular / joint-dominant: hip OA, FAIS, labral or chondral contribution - lateral hip: GTPS / gluteal tendinopathy-bursopathy spectrum - musculotendinous / load-re…",
+    "sourcePath": "01_foundations/hip_clinical_reasoning.md"
+  },
+  {
+    "slug": "hip-cluster-evidence-update",
+    "title": "Hip Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Hip Cluster Evidence Update Main themes to re-check during updates - exercise and education remain the core of most non-operative hip management - imaging should support clinical r…",
+    "excerpt": "Hip Cluster Evidence Update Main themes to re-check during updates - exercise and education remain the core of most non-operative hip management - imaging should support clinical reasoning, not replace it - lateral hip p…",
+    "sourcePath": "05_evidence_updates/hip_cluster_evidence_update.md"
+  },
+  {
+    "slug": "hip-osteoarthritis",
+    "title": "Hip Osteoarthritis",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Hip",
+      "Osteoarthritis]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Hip_Groin/Hip_Osteoarthritis.md"
+  },
+  {
+    "slug": "hip-osteoarthritis",
+    "title": "Hip Osteoarthritis (Hip OA)",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Hip Osteoarthritis (Hip OA) Clinical summary Hip OA is commonly diagnosed clinically in adults with activity-related hip pain and short-duration morning stiffness. Imaging is not r…",
+    "excerpt": "Hip Osteoarthritis (Hip OA) Clinical summary Hip OA is commonly diagnosed clinically in adults with activity-related hip pain and short-duration morning stiffness. Imaging is not routinely required when the presentation…",
+    "sourcePath": "02_conditions/hip/hip_osteoarthritis.md"
+  },
+  {
+    "slug": "hip-outcome-measures",
+    "title": "Hip Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Outcome Measures Good core set - numeric pain rating scale - PSFS - HOOS or HOOS JR where appropriate - iHOT-12 for younger active populations - LEFS when a broader lower-limb…",
+    "excerpt": "Hip Outcome Measures Good core set - numeric pain rating scale - PSFS - HOOS or HOOS JR where appropriate - iHOT-12 for younger active populations - LEFS when a broader lower-limb measure is preferable Useful context mea…",
+    "sourcePath": "03_assessment_tools/hip_outcome_measures.md"
+  },
+  {
+    "slug": "hip-rehab-progression-framework",
+    "title": "Hip Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Rehab Progression Framework Phase 1: calm / regain tolerance - reduce compressive aggravators when lateral hip pain is irritable - comfortable ROM - low-load isometrics where h…",
+    "excerpt": "Hip Rehab Progression Framework Phase 1: calm / regain tolerance - reduce compressive aggravators when lateral hip pain is irritable - comfortable ROM - low-load isometrics where helpful - gait volume adjustment - trunk…",
+    "sourcePath": "04_exercise_library/hip_rehab_progression_framework.md"
+  },
+  {
+    "slug": "hip-subjective-objective-exam",
+    "title": "Hip Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Hip",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Hip Subjective + Objective Exam Subjective priorities - pain location: groin, lateral hip, buttock, anterior thigh - onset: gradual vs traumatic vs post-op - aggravating tasks: sit…",
+    "excerpt": "Hip Subjective + Objective Exam Subjective priorities - pain location: groin, lateral hip, buttock, anterior thigh - onset: gradual vs traumatic vs post-op - aggravating tasks: sitting, stairs, side-lying, walking, deep…",
+    "sourcePath": "03_assessment_tools/hip_subjective_objective_exam.md"
+  },
+  {
+    "slug": "hoos-jr",
+    "title": "HOOS JR",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Outcome Measure",
+      "Hip]"
+    ],
+    "summary": "1. Purpose Hip-specific patient-reported outcome with concise scoring option. 2. Population / when to use Use in the relevant regional condition set and track over episode of care.…",
+    "excerpt": "1. Purpose Hip-specific patient-reported outcome with concise scoring option. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/HOOS_JR.md"
+  },
+  {
+    "slug": "kb-index",
+    "title": "KB Index",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "ACLR",
+      "anterior cruciate ligament reconstruction",
+      "RCRSP",
+      "rotator cuff related shoulder pain"
+    ],
+    "tags": [
+      "[Navigation",
+      "Index]"
+    ],
+    "summary": "KB Index Intended use Clinic-facing physiotherapy reference for rapid decision support, documentation quality, and evidence-aware management planning. Browse by region - Spine: 01_…",
+    "excerpt": "KB Index Intended use Clinic-facing physiotherapy reference for rapid decision support, documentation quality, and evidence-aware management planning. Browse by region - Spine: 01_Conditions/Spine/ - Shoulder: 01_Conditi…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/KB_Index.md"
+  },
+  {
+    "slug": "knee-anatomy-biomechanics",
+    "title": "Knee Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Knee Anatomy + Biomechanics Why this page exists Use this page to anchor clinical reasoning before jumping to diagnosis labels. Knee pain is often driven by the interaction of: - t…",
+    "excerpt": "Knee Anatomy + Biomechanics Why this page exists Use this page to anchor clinical reasoning before jumping to diagnosis labels. Knee pain is often driven by the interaction of: - tibiofemoral load tolerance - patellofemo…",
+    "sourcePath": "01_foundations/knee_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "knee-regional-assessment",
+    "title": "Knee Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Knee]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Knee_Regional_Assessment.md"
+  },
+  {
+    "slug": "knee-clinical-reasoning",
+    "title": "Knee Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Knee Clinical Reasoning Core question Which knee presentation best explains the person in front of you, and what actually changes management? Common buckets 1. Knee osteoarthritis…",
+    "excerpt": "Knee Clinical Reasoning Core question Which knee presentation best explains the person in front of you, and what actually changes management? Common buckets 1. Knee osteoarthritis Think higher probability when: - age usu…",
+    "sourcePath": "01_foundations/knee_clinical_reasoning.md"
+  },
+  {
+    "slug": "knee-cluster-evidence-update",
+    "title": "Knee Cluster — Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Knee Cluster — Evidence Update Core sources used in this cluster Knee OA - NICE NG226 osteoarthritis guideline (2022) - AAOS Management of Osteoarthritis of the Knee (Non-Arthropla…",
+    "excerpt": "Knee Cluster — Evidence Update Core sources used in this cluster Knee OA - NICE NG226 osteoarthritis guideline (2022) - AAOS Management of Osteoarthritis of the Knee (Non-Arthroplasty), 3rd edition (2021) - OARSI recomme…",
+    "sourcePath": "05_evidence_updates/knee_cluster_evidence_update.md"
+  },
+  {
+    "slug": "knee-osteoarthritis",
+    "title": "Knee Osteoarthritis",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Knee Osteoarthritis Clinical summary Knee osteoarthritis (OA) is a clinical diagnosis in many adults and should usually be managed first with exercise, education, and weight manage…",
+    "excerpt": "Knee Osteoarthritis Clinical summary Knee osteoarthritis (OA) is a clinical diagnosis in many adults and should usually be managed first with exercise, education, and weight management support when relevant. Typical pres…",
+    "sourcePath": "02_conditions/knee/knee_osteoarthritis.md"
+  },
+  {
+    "slug": "knee-osteoarthritis",
+    "title": "Knee Osteoarthritis",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Knee",
+      "Osteoarthritis]"
+    ],
+    "summary": "1. Clinical summary Knee OA is a chronic joint condition with variable pain and function impact. Exercise and weight/load management are core care pillars. 2. Key presentation patt…",
+    "excerpt": "1. Clinical summary Knee OA is a chronic joint condition with variable pain and function impact. Exercise and weight/load management are core care pillars. 2. Key presentation patterns Activity-related knee pain, morning…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Knee/Knee_Osteoarthritis.md"
+  },
+  {
+    "slug": "knee-outcome-measures",
+    "title": "Knee Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Knee Outcome Measures Core options KOOS / KOOS-JR Useful for: - knee OA - post-op / broader knee symptom tracking Comments: - KOOS-JR is quicker and pragmatic for routine follow-up…",
+    "excerpt": "Knee Outcome Measures Core options KOOS / KOOS-JR Useful for: - knee OA - post-op / broader knee symptom tracking Comments: - KOOS-JR is quicker and pragmatic for routine follow-up - full KOOS gives more domain detail WO…",
+    "sourcePath": "03_assessment_tools/knee_outcome_measures.md"
+  },
+  {
+    "slug": "knee-rehab-progression-framework",
+    "title": "Knee Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Knee Rehab Progression Framework Goal Provide a reusable framework for progressing most non-surgical knee presentations in this KB: - knee OA - patellofemoral pain - degenerative m…",
+    "excerpt": "Knee Rehab Progression Framework Goal Provide a reusable framework for progressing most non-surgical knee presentations in this KB: - knee OA - patellofemoral pain - degenerative meniscal presentation General principles…",
+    "sourcePath": "04_exercise_library/knee_rehab_progression_framework.md"
+  },
+  {
+    "slug": "knee-subjective-objective-exam",
+    "title": "Knee Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Knee Subjective + Objective Exam Subjective priorities History of present condition - exact location: anterior, medial joint line, lateral joint line, diffuse, posterior - onset: t…",
+    "excerpt": "Knee Subjective + Objective Exam Subjective priorities History of present condition - exact location: anterior, medial joint line, lateral joint line, diffuse, posterior - onset: traumatic, overload, gradual, flare of kn…",
+    "sourcePath": "03_assessment_tools/knee_subjective_objective_exam.md"
+  },
+  {
+    "slug": "koos-jr",
+    "title": "KOOS JR",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Outcome Measure",
+      "Knee]"
+    ],
+    "summary": "1. Purpose Knee-specific patient-reported outcome with concise scoring option. 2. Population / when to use Use in the relevant regional condition set and track over episode of care…",
+    "excerpt": "1. Purpose Knee-specific patient-reported outcome with concise scoring option. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/KOOS_JR.md"
+  },
+  {
+    "slug": "lateral-ankle-sprain",
+    "title": "Lateral Ankle Sprain",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lateral Ankle Sprain Clinical summary Lateral ankle sprain (LAS) is among the most common musculoskeletal injuries. Most routine sprains are managed conservatively. Best-practice g…",
+    "excerpt": "Lateral Ankle Sprain Clinical summary Lateral ankle sprain (LAS) is among the most common musculoskeletal injuries. Most routine sprains are managed conservatively. Best-practice guidance supports early external support,…",
+    "sourcePath": "02_conditions/ankle/lateral_ankle_sprain.md"
+  },
+  {
+    "slug": "lateral-ankle-sprain",
+    "title": "Lateral Ankle Sprain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Ankle",
+      "Sprain",
+      "Ligament]"
+    ],
+    "summary": "1. Clinical summary High-incidence injury with meaningful recurrence risk. Early protected loading plus progressive neuromuscular rehab is key. 2. Key presentation patterns Lateral…",
+    "excerpt": "1. Clinical summary High-incidence injury with meaningful recurrence risk. Early protected loading plus progressive neuromuscular rehab is key. 2. Key presentation patterns Lateral ankle pain/swelling after inversion inj…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Foot_Ankle/Lateral_Ankle_Sprain.md"
+  },
+  {
+    "slug": "lateral-elbow-tendinopathy",
+    "title": "Lateral Elbow Tendinopathy",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Lateral Elbow Tendinopathy Clinical summary Lateral elbow tendinopathy is a load-related pain disorder centered around the common extensor tendon region, often the extensor carpi r…",
+    "excerpt": "Lateral Elbow Tendinopathy Clinical summary Lateral elbow tendinopathy is a load-related pain disorder centered around the common extensor tendon region, often the extensor carpi radialis brevis origin. It is usually dia…",
+    "sourcePath": "02_conditions/elbow_forearm/lateral_elbow_tendinopathy.md"
+  },
+  {
+    "slug": "lateral-elbow-tendinopathy",
+    "title": "Lateral Elbow Tendinopathy",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Elbow",
+      "Tendinopathy]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Elbow_Wrist_Hand/Lateral_Elbow_Tendinopathy.md"
+  },
+  {
+    "slug": "lefs",
+    "title": "LEFS",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Lower Extremity]"
+    ],
+    "summary": "1. Purpose Region-specific self-report function measure for lower extremity conditions. 2. Population / when to use Use in the relevant regional condition set and track over episod…",
+    "excerpt": "1. Purpose Region-specific self-report function measure for lower extremity conditions. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/LEFS.md"
+  },
+  {
+    "slug": "ankle-sprain-cpg-2021-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/MSK_Conditions/Foot_Ankle_Sprains/Ankle_Sprain_CPG_2021_Summary.md"
+  },
+  {
+    "slug": "aaos-osteoarthritis-of-the-knee-guideline-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/MSK_Conditions/Knee_Osteoarthritis/AAOS_Osteoarthritis_of_the_Knee_Guideline_Summary.md"
+  },
+  {
+    "slug": "low-back-pain-and-sciatica-nice-2020",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Lumbar Spine",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion to clinic-facing condition page.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion to clinic-facing condition page.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/MSK_Conditions/Low_Back_Pain/Low_Back_Pain_and_Sciatica_NICE_2020.md"
+  },
+  {
+    "slug": "pfp-cpg-2019-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/MSK_Conditions/Patellofemoral_Pain/PFP_CPG_2019_Summary.md"
+  },
+  {
+    "slug": "rotator-cuff-injuries-cpg-2025-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/MSK_Conditions/Shoulder_Rotator_Cuff/Rotator_Cuff_Injuries_CPG_2025_Summary.md"
+  },
+  {
+    "slug": "vestibular-hypofunction-cpg-2017-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw guideline summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/02_Clinical_Practice_Guidelines/Neuro_Rehab/Vestibular_Hypofunction_CPG_2017_Summary.md"
+  },
+  {
+    "slug": "berg-balance-scale-summary",
+    "title": "Legacy Summary",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [],
+    "summary": "Legacy Summary Legacy raw measure summary preserved after conversion.",
+    "excerpt": "Legacy Summary Legacy raw measure summary preserved after conversion.",
+    "sourcePath": "Physio_Knowledge_Base/99_Legacy/03_Outcome_Measures/Berg_Balance_Scale_Summary.md"
+  },
+  {
+    "slug": "low-back-pain-sciatica",
+    "title": "Low Back Pain and Sciatica",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Spine",
+      "Low Back Pain",
+      "Sciatica]"
+    ],
+    "summary": "1. Clinical summary Common presentation in primary care. Most episodes improve, but recurrence is common. Active management and graded activity are central. 2. Key presentation pat…",
+    "excerpt": "1. Clinical summary Common presentation in primary care. Most episodes improve, but recurrence is common. Active management and graded activity are central. 2. Key presentation patterns - Local lumbar pain with or withou…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Spine/Low_Back_Pain_Sciatica.md"
+  },
+  {
+    "slug": "lumbar-anatomy-biomechanics",
+    "title": "Lumbar Anatomy and Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lumbar Anatomy and Biomechanics Purpose of this page Use this page as the stable background layer for lumbar condition pages. It should change slowly compared with treatment recomm…",
+    "excerpt": "Lumbar Anatomy and Biomechanics Purpose of this page Use this page as the stable background layer for lumbar condition pages. It should change slowly compared with treatment recommendations. Region summary The lumbar reg…",
+    "sourcePath": "01_foundations/lumbar_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "lumbar-clinical-reasoning",
+    "title": "Lumbar Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lumbar Clinical Reasoning Purpose This page is the bridge between lumbar anatomy and lumbar condition pages. Use it to decide what bucket the patient fits into first, then refine m…",
+    "excerpt": "Lumbar Clinical Reasoning Purpose This page is the bridge between lumbar anatomy and lumbar condition pages. Use it to decide what bucket the patient fits into first, then refine management. Step 1: triage first Immediat…",
+    "sourcePath": "01_foundations/lumbar_clinical_reasoning.md"
+  },
+  {
+    "slug": "lumbar-cluster-evidence-update",
+    "title": "Lumbar Cluster — Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lumbar Cluster — Evidence Update Core guideline anchors NICE NG59 (updated 2020) Key points: - consider risk stratification such as STarT Back - do not routinely image in non-speci…",
+    "excerpt": "Lumbar Cluster — Evidence Update Core guideline anchors NICE NG59 (updated 2020) Key points: - consider risk stratification such as STarT Back - do not routinely image in non-specialist settings - provide tailored advice…",
+    "sourcePath": "05_evidence_updates/lumbar_cluster_evidence_update.md"
+  },
+  {
+    "slug": "lumbar-outcome-measures",
+    "title": "Lumbar Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Lumbar Outcome Measures Primary options Oswestry Disability Index (ODI) Use when: - lumbar disability is moderate to high - a spine-specific disability score is useful Pros: - well…",
+    "excerpt": "Lumbar Outcome Measures Primary options Oswestry Disability Index (ODI) Use when: - lumbar disability is moderate to high - a spine-specific disability score is useful Pros: - well established - widely used in spine reha…",
+    "sourcePath": "03_assessment_tools/lumbar_outcome_measures.md"
+  },
+  {
+    "slug": "lumbar-radicular-pain-sciatica",
+    "title": "Lumbar Radicular Pain / Sciatica",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lumbar Radicular Pain / Sciatica Clinical summary Lumbar radicular pain (commonly labelled sciatica when it follows the sciatic distribution) is leg pain arising from irritation or…",
+    "excerpt": "Lumbar Radicular Pain / Sciatica Clinical summary Lumbar radicular pain (commonly labelled sciatica when it follows the sciatic distribution) is leg pain arising from irritation or inflammation of a lumbar nerve root. It…",
+    "sourcePath": "02_conditions/spine/lumbar_radicular_pain_sciatica.md"
+  },
+  {
+    "slug": "lumbar-region-assessment",
+    "title": "Lumbar Region Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Lumbar]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Lumbar_Region_Assessment.md"
+  },
+  {
+    "slug": "lumbar-rehab-progression-framework",
+    "title": "Lumbar Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Lumbar Rehab Progression Framework Purpose This is a symptom-guided progression framework, not a diagnosis-exclusive program. Use it for non-specific low back pain and adapt for ra…",
+    "excerpt": "Lumbar Rehab Progression Framework Purpose This is a symptom-guided progression framework, not a diagnosis-exclusive program. Use it for non-specific low back pain and adapt for radicular presentations. Stage 1 — Calm an…",
+    "sourcePath": "04_exercise_library/lumbar_rehab_progression_framework.md"
+  },
+  {
+    "slug": "lumbar-subjective-objective-exam",
+    "title": "Lumbar Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Lumbar Subjective + Objective Exam Subjective screen Core symptom questions - Where is the pain? - Is it back-dominant, buttock-dominant, or leg-dominant? - Does it go below the kn…",
+    "excerpt": "Lumbar Subjective + Objective Exam Subjective screen Core symptom questions - Where is the pain? - Is it back-dominant, buttock-dominant, or leg-dominant? - Does it go below the knee? - Any numbness, tingling, weakness,…",
+    "sourcePath": "03_assessment_tools/lumbar_subjective_objective_exam.md"
+  },
+  {
+    "slug": "mechanical-neck-pain",
+    "title": "Mechanical / Non-Specific Neck Pain",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Cervical",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Mechanical / Non-Specific Neck Pain Clinical summary Mechanical neck pain is a broad clinical label for neck-dominant pain where symptoms are meaningfully modified by posture, move…",
+    "excerpt": "Mechanical / Non-Specific Neck Pain Clinical summary Mechanical neck pain is a broad clinical label for neck-dominant pain where symptoms are meaningfully modified by posture, movement, loading, or activity and no seriou…",
+    "sourcePath": "02_conditions/cervical/mechanical_neck_pain.md"
+  },
+  {
+    "slug": "medial-elbow-tendinopathy",
+    "title": "Medial Elbow Tendinopathy / Flexor-Pronator Overload",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Medial Elbow Tendinopathy / Flexor-Pronator Overload Clinical summary Medial elbow tendinopathy is a load-related pain disorder involving the common flexor-pronator origin near the…",
+    "excerpt": "Medial Elbow Tendinopathy / Flexor-Pronator Overload Clinical summary Medial elbow tendinopathy is a load-related pain disorder involving the common flexor-pronator origin near the medial epicondyle. It is often aggravat…",
+    "sourcePath": "02_conditions/elbow_forearm/medial_elbow_tendinopathy.md"
+  },
+  {
+    "slug": "meniscal-repair-rehabilitation",
+    "title": "Meniscal Repair Rehabilitation",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Post Op",
+      "Meniscus]"
+    ],
+    "summary": "1. Scope / procedure Post-op rehabilitation following arthroscopic meniscal repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by sur…",
+    "excerpt": "1. Scope / procedure Post-op rehabilitation following arthroscopic meniscal repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surgeon/protocol. 3. Healing and rehab phas…",
+    "sourcePath": "Physio_Knowledge_Base/03_Post_Op/Knee/Meniscal_Repair_Rehabilitation.md"
+  },
+  {
+    "slug": "midportion-achilles-tendinopathy",
+    "title": "Midportion Achilles Tendinopathy",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Midportion Achilles Tendinopathy Clinical summary Midportion Achilles tendinopathy is a load-related tendon pain condition, usually presenting with localized pain 2–6 cm proximal t…",
+    "excerpt": "Midportion Achilles Tendinopathy Clinical summary Midportion Achilles tendinopathy is a load-related tendon pain condition, usually presenting with localized pain 2–6 cm proximal to the tendon insertion. Current guidance…",
+    "sourcePath": "02_conditions/ankle/midportion_achilles_tendinopathy.md"
+  },
+  {
+    "slug": "msk-red-flags-referral-triggers",
+    "title": "MSK Red Flags and Referral Triggers",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Red Flags]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Red_Flags/MSK_Red_Flags_Referral_Triggers.md"
+  },
+  {
+    "slug": "myogenous-temporomandibular-disorder",
+    "title": "Myogenous Temporomandibular Disorder",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "TMJ",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "Myogenous Temporomandibular Disorder Clinical summary Myogenous TMD is a muscle-dominant temporomandibular disorder involving pain and sensitivity in the masticatory system, often…",
+    "excerpt": "Myogenous Temporomandibular Disorder Clinical summary Myogenous TMD is a muscle-dominant temporomandibular disorder involving pain and sensitivity in the masticatory system, often associated with clenching, bruxism, stre…",
+    "sourcePath": "02_conditions/tmj/myogenous_temporomandibular_disorder.md"
+  },
+  {
+    "slug": "ndi",
+    "title": "NDI",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Cervical]"
+    ],
+    "summary": "1. Purpose Disability measure for neck-related functional impact. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administ…",
+    "excerpt": "1. Purpose Disability measure for neck-related functional impact. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/NDI.md"
+  },
+  {
+    "slug": "neck-pain",
+    "title": "Neck Pain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Cervical",
+      "Neck Pain]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Spine/Neck_Pain.md"
+  },
+  {
+    "slug": "non-specific-low-back-pain",
+    "title": "Non-specific Low Back Pain",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Lumbar Spine",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Non-specific Low Back Pain Clinical summary Non-specific low back pain refers to lumbar pain that cannot be confidently explained by a single specific pathoanatomical diagnosis suc…",
+    "excerpt": "Non-specific Low Back Pain Clinical summary Non-specific low back pain refers to lumbar pain that cannot be confidently explained by a single specific pathoanatomical diagnosis such as fracture, infection, malignancy, in…",
+    "sourcePath": "02_conditions/spine/non_specific_low_back_pain.md"
+  },
+  {
+    "slug": "nprs",
+    "title": "NPRS",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Pain]"
+    ],
+    "summary": "1. Purpose Simple pain intensity tracking measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-rep…",
+    "excerpt": "1. Purpose Simple pain intensity tracking measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as stand…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/NPRS.md"
+  },
+  {
+    "slug": "odi",
+    "title": "ODI",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Lumbar]"
+    ],
+    "summary": "1. Purpose Disability measure for low back pain impact. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Sel…",
+    "excerpt": "1. Purpose Disability measure for low back pain impact. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/ODI.md"
+  },
+  {
+    "slug": "outcome-measure-template",
+    "title": "Outcome Measure Template",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Template",
+      "Outcome Measure]"
+    ],
+    "summary": "1. Purpose 2. Population / when to use 3. Administration 4. Scoring 5. Interpretation 6. MDC / MCID / key measurement notes where known 7. Strengths 8. Limitations 9. Related condi…",
+    "excerpt": "1. Purpose 2. Population / when to use 3. Administration 4. Scoring 5. Interpretation 6. MDC / MCID / key measurement notes where known 7. Strengths 8. Limitations 9. Related conditions / use cases",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Templates/Outcome_Measure_Template.md"
+  },
+  {
+    "slug": "patellofemoral-pain",
+    "title": "Patellofemoral Pain",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Patellofemoral Pain Clinical summary Patellofemoral pain (PFP) is a clinical pain syndrome typically characterized by anterior or retropatellar knee pain related to loading of the…",
+    "excerpt": "Patellofemoral Pain Clinical summary Patellofemoral pain (PFP) is a clinical pain syndrome typically characterized by anterior or retropatellar knee pain related to loading of the patellofemoral joint. Current best-pract…",
+    "sourcePath": "02_conditions/knee/patellofemoral_pain.md"
+  },
+  {
+    "slug": "patellofemoral-pain",
+    "title": "Patellofemoral Pain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Knee",
+      "Patellofemoral]"
+    ],
+    "summary": "1. Clinical summary Common overuse-related anterior knee pain syndrome, often load-capacity mismatch across patellofemoral joint tasks. 2. Key presentation patterns Retropatellar/p…",
+    "excerpt": "1. Clinical summary Common overuse-related anterior knee pain syndrome, often load-capacity mismatch across patellofemoral joint tasks. 2. Key presentation patterns Retropatellar/peripatellar pain with stairs, squatting,…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Knee/Patellofemoral_Pain.md"
+  },
+  {
+    "slug": "readme",
+    "title": "Physio Clinical Knowledge Base",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Physio Clinical Knowledge Base This repo contains a structured physiotherapy knowledge base and the app that turns it into a searchable, accessible clinical reference. Source of tr…",
+    "excerpt": "Physio Clinical Knowledge Base This repo contains a structured physiotherapy knowledge base and the app that turns it into a searchable, accessible clinical reference. Source of truth All content lives in /knowledge_base…",
+    "sourcePath": "README.md"
+  },
+  {
+    "slug": "readme",
+    "title": "Physio Knowledge Base",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [],
+    "summary": "Physio Knowledge Base This folder is the clinic-facing physiotherapy knowledge base scaffold. It is organized for quick point-of-care navigation by condition, assessment workflow,…",
+    "excerpt": "Physio Knowledge Base This folder is the clinic-facing physiotherapy knowledge base scaffold. It is organized for quick point-of-care navigation by condition, assessment workflow, post-op pathways, and outcome measures.…",
+    "sourcePath": "Physio_Knowledge_Base/README.md"
+  },
+  {
+    "slug": "physiotherapy-clinical-handbook",
+    "title": "Physiotherapy Clinical Handbook",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "ACLR",
+      "anterior cruciate ligament reconstruction",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "TKA",
+      "total knee arthroplasty",
+      "total knee replacement",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "Physiotherapy Clinical Handbook Purpose This handbook is the front-door guide to the physiotherapy knowledge base. It is designed to help you navigate the full folder set quickly i…",
+    "excerpt": "Physiotherapy Clinical Handbook Purpose This handbook is the front-door guide to the physiotherapy knowledge base. It is designed to help you navigate the full folder set quickly in clinic, keep cluster coverage consiste…",
+    "sourcePath": "00_index/physiotherapy_clinical_handbook.md"
+  },
+  {
+    "slug": "master-index",
+    "title": "Physiotherapy Knowledge Base - Clinical Handbook Build",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "GTPS",
+      "greater trochanteric pain syndrome",
+      "FAIS",
+      "femoroacetabular impingement syndrome",
+      "hip impingement",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "ACLR",
+      "anterior cruciate ligament reconstruction",
+      "TKA",
+      "total knee arthroplasty",
+      "total knee replacement",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "Physiotherapy Knowledge Base - Clinical Handbook Build This is the cleaned and consolidated handbook build of the physiotherapy knowledge base. It merges the earlier modular cluste…",
+    "excerpt": "Physiotherapy Knowledge Base - Clinical Handbook Build This is the cleaned and consolidated handbook build of the physiotherapy knowledge base. It merges the earlier modular clusters and case-based additions, then normal…",
+    "sourcePath": "00_index/master_index.md"
+  },
+  {
+    "slug": "plantar-heel-pain",
+    "title": "Plantar Heel Pain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Ankle",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Foot",
+      "Plantar Heel Pain]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Foot_Ankle/Plantar_Heel_Pain.md"
+  },
+  {
+    "slug": "post-op-acl-reconstruction-meniscal-repair",
+    "title": "Post-Op ACL Reconstruction + Meniscal Repair",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Post-Op ACL Reconstruction + Meniscal Repair Clinical summary This page is designed for early and mid-phase outpatient rehab after ACL reconstruction when meniscal repair precautio…",
+    "excerpt": "Post-Op ACL Reconstruction + Meniscal Repair Clinical summary This page is designed for early and mid-phase outpatient rehab after ACL reconstruction when meniscal repair precautions are also present. It is not a substit…",
+    "sourcePath": "02_conditions/knee/post_op_acl_reconstruction_meniscal_repair.md"
+  },
+  {
+    "slug": "post-op-acl-reconstruction-meniscal-repair-progression-framework",
+    "title": "Post-Op ACL Reconstruction + Meniscal Repair Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Post-Op ACL Reconstruction + Meniscal Repair Progression Framework Phase 1: protection / activation - pain and effusion control - full passive extension target - flexion progressio…",
+    "excerpt": "Post-Op ACL Reconstruction + Meniscal Repair Progression Framework Phase 1: protection / activation - pain and effusion control - full passive extension target - flexion progression per protocol - quadriceps activation -…",
+    "sourcePath": "04_exercise_library/post_op_acl_reconstruction_meniscal_repair_progression_framework.md"
+  },
+  {
+    "slug": "post-op-page-template",
+    "title": "Post-Op Page Template",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Template",
+      "Post Op]"
+    ],
+    "summary": "1. Scope / procedure 2. Important surgeon- or protocol-dependent cautions 3. Healing and rehab phases 4. Early priorities 5. ROM/loading precautions 6. Strength and function progre…",
+    "excerpt": "1. Scope / procedure 2. Important surgeon- or protocol-dependent cautions 3. Healing and rehab phases 4. Early priorities 5. ROM/loading precautions 6. Strength and function progression 7. Common complications / escalati…",
+    "sourcePath": "Physio_Knowledge_Base/00_Index/Templates/Post_Op_Page_Template.md"
+  },
+  {
+    "slug": "psfs",
+    "title": "PSFS",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Outcome Measure",
+      "Function]"
+    ],
+    "summary": "1. Purpose Captures patient-prioritized activity limitations. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administrati…",
+    "excerpt": "1. Purpose Captures patient-prioritized activity limitations. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance form…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/PSFS.md"
+  },
+  {
+    "slug": "quickdash",
+    "title": "QuickDASH",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Upper Extremity]"
+    ],
+    "summary": "1. Purpose Upper-limb disability and symptom tracking tool. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration…",
+    "excerpt": "1. Purpose Upper-limb disability and symptom tracking tool. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/QuickDASH.md"
+  },
+  {
+    "slug": "radial-tunnel-posterior-interosseous-nerve-syndrome",
+    "title": "Radial Tunnel Syndrome / Posterior Interosseous Nerve Syndrome",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Elbow & Forearm",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Radial Tunnel Syndrome / Posterior Interosseous Nerve Syndrome Clinical summary These are radial nerve entrapment presentations around the proximal forearm / supinator region. In p…",
+    "excerpt": "Radial Tunnel Syndrome / Posterior Interosseous Nerve Syndrome Clinical summary These are radial nerve entrapment presentations around the proximal forearm / supinator region. In practice, separate the predominantly pain…",
+    "sourcePath": "02_conditions/elbow_forearm/radial_tunnel_posterior_interosseous_nerve_syndrome.md"
+  },
+  {
+    "slug": "rotator-cuff-related-shoulder-pain",
+    "title": "Rotator Cuff Related Shoulder Pain",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain"
+    ],
+    "tags": [
+      "[Shoulder",
+      "Rotator Cuff]"
+    ],
+    "summary": "1. Clinical summary Broad clinical syndrome including subacromial pain presentations. Diagnosis is pattern-based, not single-test dependent. 2. Key presentation patterns Painful ar…",
+    "excerpt": "1. Clinical summary Broad clinical syndrome including subacromial pain presentations. Diagnosis is pattern-based, not single-test dependent. 2. Key presentation patterns Painful arc, night discomfort, overhead load intol…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Shoulder/Rotator_Cuff_Related_Shoulder_Pain.md"
+  },
+  {
+    "slug": "rotator-cuff-repair-post-op-notes",
+    "title": "Rotator Cuff Repair Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "General",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [],
+    "summary": "Rotator Cuff Repair Post-Op Notes Use this annex for - arthroscopic rotator cuff repair rehab planning - quick protocol framing before reconciling with surgeon restrictions Non-neg…",
+    "excerpt": "Rotator Cuff Repair Post-Op Notes Use this annex for - arthroscopic rotator cuff repair rehab planning - quick protocol framing before reconciling with surgeon restrictions Non-negotiable note Always check: - tear size a…",
+    "sourcePath": "06_protocol_annexes/rotator_cuff_repair_post_op_notes.md"
+  },
+  {
+    "slug": "rotator-cuff-repair-rehabilitation",
+    "title": "Rotator Cuff Repair Rehabilitation",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Post Op",
+      "Shoulder]"
+    ],
+    "summary": "1. Scope / procedure Post-op care following arthroscopic or open rotator cuff repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by s…",
+    "excerpt": "1. Scope / procedure Post-op care following arthroscopic or open rotator cuff repair. 2. Important surgeon- or protocol-dependent cautions Procedure-specific restrictions vary by surgeon/protocol. 3. Healing and rehab ph…",
+    "sourcePath": "Physio_Knowledge_Base/03_Post_Op/Shoulder/Rotator_Cuff_Repair_Rehabilitation.md"
+  },
+  {
+    "slug": "rotator-cuff-related-shoulder-pain",
+    "title": "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy Clinical summary Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instabil…",
+    "excerpt": "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy Clinical summary Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pai…",
+    "sourcePath": "02_conditions/shoulder/rotator_cuff_related_shoulder_pain.md"
+  },
+  {
+    "slug": "shoulder-anatomy-biomechanics",
+    "title": "Shoulder Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Shoulder Anatomy + Biomechanics Clinical summary The shoulder complex trades bony constraint for mobility. Clinical reasoning therefore has to account for both pain-generating tiss…",
+    "excerpt": "Shoulder Anatomy + Biomechanics Clinical summary The shoulder complex trades bony constraint for mobility. Clinical reasoning therefore has to account for both pain-generating tissues and the movement / load-sharing syst…",
+    "sourcePath": "01_foundations/shoulder_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "shoulder-regional-assessment",
+    "title": "Shoulder Assessment",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Assessment",
+      "Shoulder]"
+    ],
+    "summary": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irrita…",
+    "excerpt": "1. Purpose Structured regional assessment to classify presentation, identify differential pivots, and set first-line management. 2. Key questions - Primary symptom behavior, irritability, 24-hour pattern. - Mechanism/ons…",
+    "sourcePath": "Physio_Knowledge_Base/02_Assessment/Regional_Assessment/Shoulder_Regional_Assessment.md"
+  },
+  {
+    "slug": "shoulder-bankart-stabilization-post-op-notes",
+    "title": "Shoulder Bankart / Arthroscopic Stabilization Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "Shoulder",
+    "aliases": [],
+    "tags": [],
+    "summary": "Shoulder Bankart / Arthroscopic Stabilization Post-Op Notes Use this annex for - arthroscopic Bankart / stabilization rehab planning for traumatic anterior instability Non-negotiab…",
+    "excerpt": "Shoulder Bankart / Arthroscopic Stabilization Post-Op Notes Use this annex for - arthroscopic Bankart / stabilization rehab planning for traumatic anterior instability Non-negotiable note Always reconcile against: - firs…",
+    "sourcePath": "06_protocol_annexes/shoulder_bankart_stabilization_post_op_notes.md"
+  },
+  {
+    "slug": "shoulder-clinical-reasoning",
+    "title": "Shoulder Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Shoulder Clinical Reasoning Goal Separate common outpatient shoulder presentations into useful management pathways: - rotator cuff-related shoulder pain / rotator cuff tendinopathy…",
+    "excerpt": "Shoulder Clinical Reasoning Goal Separate common outpatient shoulder presentations into useful management pathways: - rotator cuff-related shoulder pain / rotator cuff tendinopathy - adhesive capsulitis / frozen shoulder…",
+    "sourcePath": "01_foundations/shoulder_clinical_reasoning.md"
+  },
+  {
+    "slug": "shoulder-cluster-evidence-update",
+    "title": "Shoulder Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Shoulder Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current shoulder cluster: - rotator cuff-related shoulder pain / RC tendinopath…",
+    "excerpt": "Shoulder Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current shoulder cluster: - rotator cuff-related shoulder pain / RC tendinopathy - adhesive capsulitis / frozen shoulde…",
+    "sourcePath": "05_evidence_updates/shoulder_cluster_evidence_update.md"
+  },
+  {
+    "slug": "shoulder-instability",
+    "title": "Shoulder Instability",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease"
+    ],
+    "tags": [
+      "[Shoulder",
+      "Instability]"
+    ],
+    "summary": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presen…",
+    "excerpt": "1. Clinical summary Starter condition page for clinic use. Prioritize symptom pattern, risk profile, and function-based progression while awaiting full evidence pass. 2. Key presentation patterns - Common pattern cluster…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Shoulder/Shoulder_Instability.md"
+  },
+  {
+    "slug": "shoulder-outcome-measures",
+    "title": "Shoulder Outcome Measures",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Shoulder Outcome Measures Goal Use a small set of repeatable measures that match the dominant presentation and are practical in outpatient practice. Core generic shoulder tools SPA…",
+    "excerpt": "Shoulder Outcome Measures Goal Use a small set of repeatable measures that match the dominant presentation and are practical in outpatient practice. Core generic shoulder tools SPADI Useful for: - rotator cuff-related sh…",
+    "sourcePath": "03_assessment_tools/shoulder_outcome_measures.md"
+  },
+  {
+    "slug": "shoulder-rehab-progression-framework",
+    "title": "Shoulder Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain"
+    ],
+    "tags": [],
+    "summary": "Shoulder Rehab Progression Framework Goal Provide a reusable progression framework for the main non-surgical shoulder cluster in this KB: - rotator cuff-related shoulder pain - adh…",
+    "excerpt": "Shoulder Rehab Progression Framework Goal Provide a reusable progression framework for the main non-surgical shoulder cluster in this KB: - rotator cuff-related shoulder pain - adhesive capsulitis / frozen shoulder - tra…",
+    "sourcePath": "04_exercise_library/shoulder_rehab_progression_framework.md"
+  },
+  {
+    "slug": "shoulder-subjective-objective-exam",
+    "title": "Shoulder Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain"
+    ],
+    "tags": [],
+    "summary": "Shoulder Subjective + Objective Exam Subjective exam priorities Triage first - fracture / unreduced dislocation suspicion - acute traumatic inability to elevate - infection / tumor…",
+    "excerpt": "Shoulder Subjective + Objective Exam Subjective exam priorities Triage first - fracture / unreduced dislocation suspicion - acute traumatic inability to elevate - infection / tumor / red flag pattern - neurovascular symp…",
+    "sourcePath": "03_assessment_tools/shoulder_subjective_objective_exam.md"
+  },
+  {
+    "slug": "spadi",
+    "title": "SPADI",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Shoulder]"
+    ],
+    "summary": "1. Purpose Shoulder pain and disability outcome measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Se…",
+    "excerpt": "1. Purpose Shoulder pain and disability outcome measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/SPADI.md"
+  },
+  {
+    "slug": "tmj-cluster-evidence-update",
+    "title": "TMJ / Orofacial Cluster Evidence Update",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "TMJ",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "TMJ / Orofacial Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current TMJ / orofacial cluster: - myogenous temporomandibular disorder…",
+    "excerpt": "TMJ / Orofacial Cluster Evidence Update Scope of this update This page tracks higher-value evidence for the current TMJ / orofacial cluster: - myogenous temporomandibular disorder - disc / mobility-dominant TMJ disorder…",
+    "sourcePath": "05_evidence_updates/tmj_cluster_evidence_update.md"
+  },
+  {
+    "slug": "tmj-rehab-progression-framework",
+    "title": "TMJ / Orofacial Rehab Progression Framework",
+    "section": "exercise-frameworks",
+    "sectionLabel": "Exercise Frameworks",
+    "region": "TMJ",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular"
+    ],
+    "tags": [],
+    "summary": "TMJ / Orofacial Rehab Progression Framework Phase 1: calm pain and reduce overload Goals - reduce constant irritation - improve comfort with basic jaw function - reduce parafunctio…",
+    "excerpt": "TMJ / Orofacial Rehab Progression Framework Phase 1: calm pain and reduce overload Goals - reduce constant irritation - improve comfort with basic jaw function - reduce parafunctional load Common strategies - education a…",
+    "sourcePath": "04_exercise_library/tmj_rehab_progression_framework.md"
+  },
+  {
+    "slug": "tmj-subjective-objective-exam",
+    "title": "TMJ / Orofacial Subjective + Objective Exam",
+    "section": "assessment-tools",
+    "sectionLabel": "Assessment Tools",
+    "region": "TMJ",
+    "aliases": [
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "TMJ / Orofacial Subjective + Objective Exam Subjective Key questions - pain location: joint-line, cheek, temple, ear, teeth, diffuse - pain vs clicking vs locking vs opening restri…",
+    "excerpt": "TMJ / Orofacial Subjective + Objective Exam Subjective Key questions - pain location: joint-line, cheek, temple, ear, teeth, diffuse - pain vs clicking vs locking vs opening restriction - chewing, yawning, talking, singi…",
+    "sourcePath": "03_assessment_tools/tmj_subjective_objective_exam.md"
+  },
+  {
+    "slug": "tmj-anatomy-biomechanics",
+    "title": "TMJ Anatomy + Biomechanics",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "TMJ",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular"
+    ],
+    "tags": [],
+    "summary": "TMJ Anatomy + Biomechanics Core anatomy - temporomandibular joint includes mandibular condyle, temporal fossa, and intra-articular disc - mandibular motion combines rotation and tr…",
+    "excerpt": "TMJ Anatomy + Biomechanics Core anatomy - temporomandibular joint includes mandibular condyle, temporal fossa, and intra-articular disc - mandibular motion combines rotation and translation - masseter, temporalis, medial…",
+    "sourcePath": "01_foundations/tmj_anatomy_biomechanics.md"
+  },
+  {
+    "slug": "tmj-clinical-reasoning",
+    "title": "TMJ Clinical Reasoning",
+    "section": "foundations",
+    "sectionLabel": "Foundations",
+    "region": "TMJ",
+    "aliases": [
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular",
+      "TMD",
+      "temporomandibular disorder"
+    ],
+    "tags": [],
+    "summary": "TMJ Clinical Reasoning Main buckets - myogenous TMD - mobility / disc-dominant disorder - trauma / acute lock / fracture concern - dental / sinus / ENT / neural mimics when indicat…",
+    "excerpt": "TMJ Clinical Reasoning Main buckets - myogenous TMD - mobility / disc-dominant disorder - trauma / acute lock / fracture concern - dental / sinus / ENT / neural mimics when indicated - cervical contribution or coexistenc…",
+    "sourcePath": "01_foundations/tmj_clinical_reasoning.md"
+  },
+  {
+    "slug": "tmj-disc-displacement-mobility-disorder",
+    "title": "TMJ Disc Displacement / Mobility-Dominant Disorder",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "TMJ",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement",
+      "TMJ",
+      "temporomandibular joint disorder",
+      "temporomandibular"
+    ],
+    "tags": [],
+    "summary": "TMJ Disc Displacement / Mobility-Dominant Disorder Clinical summary This bucket includes disc-related and mobility-dominant jaw presentations, such as clicking with reduction and p…",
+    "excerpt": "TMJ Disc Displacement / Mobility-Dominant Disorder Clinical summary This bucket includes disc-related and mobility-dominant jaw presentations, such as clicking with reduction and painful restricted opening / locking-type…",
+    "sourcePath": "02_conditions/tmj/tmj_disc_displacement_mobility_disorder.md"
+  },
+  {
+    "slug": "total-hip-arthroplasty-post-op-notes",
+    "title": "Total Hip Arthroplasty Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "Hip",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Total Hip Arthroplasty Post-Op Notes Use this annex for - elective THA rehab reference - quick outpatient framing after surgeon / hospital discharge instructions are known Non-nego…",
+    "excerpt": "Total Hip Arthroplasty Post-Op Notes Use this annex for - elective THA rehab reference - quick outpatient framing after surgeon / hospital discharge instructions are known Non-negotiable note Always check: - surgical app…",
+    "sourcePath": "06_protocol_annexes/total_hip_arthroplasty_post_op_notes.md"
+  },
+  {
+    "slug": "total-knee-arthroplasty-post-op-notes",
+    "title": "Total Knee Arthroplasty Post-Op Notes",
+    "section": "post-op-annexes",
+    "sectionLabel": "Post-op Annexes",
+    "region": "Knee",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "TKA",
+      "total knee arthroplasty",
+      "total knee replacement",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Total Knee Arthroplasty Post-Op Notes Use this annex for - quick outpatient framing after primary TKA - building practical plans when surgeon protocol is broad Non-negotiable note…",
+    "excerpt": "Total Knee Arthroplasty Post-Op Notes Use this annex for - quick outpatient framing after primary TKA - building practical plans when surgeon protocol is broad Non-negotiable note Always reconcile against: - surgeon prec…",
+    "sourcePath": "06_protocol_annexes/total_knee_arthroplasty_post_op_notes.md"
+  },
+  {
+    "slug": "traumatic-anterior-shoulder-instability",
+    "title": "Traumatic Anterior Shoulder Instability",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [],
+    "summary": "Traumatic Anterior Shoulder Instability Clinical summary Traumatic anterior shoulder instability is a spectrum that includes first-time dislocation, recurrent dislocation, and symp…",
+    "excerpt": "Traumatic Anterior Shoulder Instability Clinical summary Traumatic anterior shoulder instability is a spectrum that includes first-time dislocation, recurrent dislocation, and symptomatic subluxation / apprehension state…",
+    "sourcePath": "02_conditions/shoulder/traumatic_anterior_shoulder_instability.md"
+  },
+  {
+    "slug": "tug",
+    "title": "TUG",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [],
+    "tags": [
+      "[Outcome Measure",
+      "Mobility]"
+    ],
+    "summary": "1. Purpose Quick mobility and fall-risk screening tool. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Sel…",
+    "excerpt": "1. Purpose Quick mobility and fall-risk screening tool. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as…",
+    "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/TUG.md"
+  },
+  {
+    "slug": "vestibular-hypofunction",
+    "title": "Vestibular Hypofunction",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "[Vestibular",
+      "Dizziness",
+      "Neuro]"
+    ],
+    "summary": "1. Clinical summary Peripheral vestibular hypofunction presents with dizziness, oscillopsia, and balance deficits. Targeted vestibular rehab is first-line. 2. Key presentation patt…",
+    "excerpt": "1. Clinical summary Peripheral vestibular hypofunction presents with dizziness, oscillopsia, and balance deficits. Targeted vestibular rehab is first-line. 2. Key presentation patterns Worse with head movement, visual mo…",
+    "sourcePath": "Physio_Knowledge_Base/01_Conditions/Neuro_Vestibular/Vestibular_Hypofunction.md"
+  }
+]

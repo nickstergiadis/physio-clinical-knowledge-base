@@ -14,7 +14,7 @@ This repository now builds as a **fully static Next.js export** for deployment o
 
 Markdown files in `/knowledge_base_source` are the source of truth.
 
-In this repository, `knowledge_base_source` points to `physio_kb_clinical_handbook`.
+In this repository, `knowledge_base_source` now contains the refactored scaffold at `knowledge_base_source/Physio_Knowledge_Base` and also preserves the prior `physio_kb_clinical_handbook` content.
 You can override with:
 
 ```bash
