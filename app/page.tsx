@@ -1,63 +1,67 @@
 import Link from 'next/link';
-import { getKnowledgeBaseItems, getNavigationData } from '@/lib/kb';
+import { TOP_LEVEL_NAV } from '@/components/SiteHeader';
+
+const workflowUses = ['Assessment', 'Follow-up', 'Study / review'];
+
+const quickAccess = [
+  {
+    title: 'Common condition lookup',
+    description: 'Start with likely differential, key exam priorities, and first-line management pointers.',
+    href: '/conditions',
+  },
+  {
+    title: 'Special test selection',
+    description: 'Quickly verify purpose, interpretation, and when each test is clinically useful.',
+    href: '/special-tests',
+  },
+  {
+    title: 'Treatment planning',
+    description: 'Check practical treatment options and progression logic before or during follow-up visits.',
+    href: '/treatments',
+  },
+] as const;
 
 export default function HomePage() {
-  const nav = getNavigationData();
-  const recent = [...getKnowledgeBaseItems()].reverse().slice(0, 10);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
   return (
     <>
       <header>
-        <h1>Clinical Knowledge Base</h1>
-        <p>Static physiotherapy references from markdown source files, organized for fast point-of-care browsing.</p>
+        <h1>Clinical Physiotherapy Knowledge Base</h1>
+        <p>
+          A lean, evidence-based clinical reference built for fast point-of-care lookup.
+          Use it during consults for quick decisions, then switch to deeper review for prep and study.
+        </p>
       </header>
 
-      <section className="card" aria-labelledby="home-search-title" style={{ marginBottom: '1rem' }}>
-        <h2 id="home-search-title">Quick search</h2>
-        <form action={`${basePath}/search`} role="search">
-          <label htmlFor="q">Search title, aliases, tags, and summary</label>
-          <input id="q" name="q" type="search" placeholder="e.g. GTPS, patellofemoral pain, outcome measures" />
-        </form>
+      <section className="card" aria-labelledby="value-title" style={{ marginBottom: '1rem' }}>
+        <h2 id="value-title">Built for real clinical workflow</h2>
+        <ul>
+          <li>Fast evidence-based lookup for conditions, tests, treatments, and progressions.</li>
+          <li>Two-mode clinical pages: <strong>Quick View</strong> (one-screen summary) and <strong>Deep View</strong> (expandable detail).</li>
+          <li>Useful across {workflowUses.join(', ')}.</li>
+        </ul>
       </section>
 
-      <div className="grid two" style={{ marginBottom: '1rem' }}>
-        <section className="card" aria-labelledby="regions-title">
-          <h2 id="regions-title">Browse by body region</h2>
-          <ul>
-            {nav.regions.map((r) => (
-              <li key={r.slug}>
-                <Link href={`/search?region=${r.slug}`}>{r.name}</Link> ({r.count})
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="card" aria-labelledby="sections-title">
-          <h2 id="sections-title">Browse by section</h2>
-          <ul>
-            {nav.sections.map((s) => (
-              <li key={s.slug}>
-                <Link href={`/search?section=${s.slug}`}>{s.name}</Link> ({s.count})
-              </li>
-            ))}
-          </ul>
-        </section>
-      </div>
-
-      <section className="card" aria-labelledby="recent-title">
-        <h2 id="recent-title">Reference pages</h2>
-        <ul>
-          {recent.map((item) => (
-            <li key={item.id}>
-              <Link href={`/content/${item.slug}`}>{item.title}</Link>
-              {' · '}
-              <span>{item.region}</span>
-              {' · '}
-              <span>{item.sectionLabel}</span>
-            </li>
+      <section className="card" aria-labelledby="ia-title" style={{ marginBottom: '1rem' }}>
+        <h2 id="ia-title">Information architecture</h2>
+        <p className="muted">Minimal top-level navigation focused on clinical decisions and evidence.</p>
+        <div className="grid two">
+          {TOP_LEVEL_NAV.map((item) => (
+            <Link key={item.href} href={item.href} className="card link-card">
+              <h3>{item.label}</h3>
+              <p className="muted">Open {item.label.toLowerCase()} index</p>
+            </Link>
           ))}
-        </ul>
+        </div>
+      </section>
+
+      <section className="grid two" aria-label="Quick access modules">
+        {quickAccess.map((item) => (
+          <article key={item.title} className="card">
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <Link href={item.href}>Open {item.title.toLowerCase()} →</Link>
+          </article>
+        ))}
       </section>
     </>
   );
