@@ -10,6 +10,17 @@
   --max-width: 78rem;
 }
 
+[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #334155;
+  --accent: #7dd3fc;
+  --focus: #f59e0b;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -48,7 +59,7 @@ a:hover { text-decoration-thickness: 0.15em; }
 
 .sidebar {
   border-right: 1px solid var(--border);
-  background: #eef4f8;
+  background: color-mix(in oklab, var(--panel) 85%, var(--bg));
   padding: 1rem;
   position: sticky;
   top: 0;
@@ -83,7 +94,7 @@ input, select {
   padding: 0.6rem;
   border: 1px solid #6d8294;
   border-radius: 0.5rem;
-  background: white;
+  background: var(--panel);
   color: var(--text);
 }
 
@@ -91,8 +102,13 @@ button {
   border: 1px solid var(--border);
   border-radius: 0.5rem;
   padding: 0.6rem 0.9rem;
-  background: #fff;
+  background: var(--panel);
   cursor: pointer;
+}
+
+.theme-toggle {
+  width: 100%;
+  margin-bottom: 0.75rem;
 }
 
 .favorite-btn {
@@ -107,8 +123,8 @@ button {
 .prose pre, .prose code { white-space: pre-wrap; }
 
 .quick-facts {
-  background: #f0f7fb;
-  border: 1px solid #bdd6e4;
+  background: color-mix(in oklab, var(--panel) 90%, var(--accent));
+  border: 1px solid color-mix(in oklab, var(--border) 75%, var(--accent));
   border-radius: 0.6rem;
   padding: 0.8rem 1rem;
 }
@@ -129,7 +145,7 @@ button {
     display: none;
   }
   .sidebar.open { display: block; }
-  .mobile-nav-toggle {
+.mobile-nav-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -139,7 +155,7 @@ button {
     border: 1px solid var(--border);
     padding: 0.6rem 0.75rem;
     border-radius: 0.5rem;
-    background: white;
+    background: var(--panel);
   }
 
   .main { padding: 1rem; }
@@ -163,7 +179,7 @@ button {
 }
 
 .muted {
-  color: #475569;
+  color: var(--muted);
 }
 
 .admin-grid {
@@ -174,9 +190,9 @@ button {
 }
 
 .admin-card {
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--border);
   border-radius: 0.75rem;
-  background: #fff;
+  background: var(--panel);
   padding: 0.9rem;
 }
 

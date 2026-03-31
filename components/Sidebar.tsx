@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FavoritesPanel } from '@/components/FavoritesPanel';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 type SidebarProps = {
   regions: { slug: string; name: string; count: number }[];
@@ -30,6 +31,8 @@ export function Sidebar({ regions, sections }: SidebarProps) {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/search">Search</Link></li>
           </ul>
+
+          <ThemeToggle />
 
           <FavoritesPanel />
 
