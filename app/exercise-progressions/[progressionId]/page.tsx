@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { StageBadge } from '@/components/clinical/StageBadge';
+import { CitationList } from '@/components/evidence/CitationList';
+import { EditorialWarning } from '@/components/evidence/EditorialWarning';
+import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getExerciseProgressionsWithContext } from '@/lib/clinicalModules';
 
 export function generateStaticParams() {
@@ -12,6 +16,8 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
   const progression = getExerciseProgressionsWithContext().find((entry) => entry.id === progressionId);
   if (!progression) return notFound();
 
+  const evidenceProfile = buildEvidenceProfile(progression.referenceIds);
+
   return (
     <article className="grid">
       <header className="card">
@@ -20,6 +26,9 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
         <p className="muted">Target: {progression.targetTissuesFunctions.join(' · ')}</p>
         <StageBadge stage={progression.stage} />
       </header>
+
+      <EditorialWarning message={evidenceProfile.editorialWarning} />
+      <EvidenceSummaryCard profile={evidenceProfile} lastReviewedIso={progression.lastReviewed?.reviewedAtIso} />
 
       <section className="grid two">
         <section className="card"><h2>Target condition(s)</h2><ul>{progression.targetConditions.map((condition) => <li key={condition.id}>{condition.slug ? <Link href={`/content/${condition.slug}`}>{condition.title}</Link> : condition.title}</li>)}</ul></section>
@@ -31,7 +40,8 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
       </section>
 
       <section className="card"><h2>Return-to-function relevance</h2><p>{progression.returnToFunctionRelevance}</p></section>
-      <section className="card"><h2>Evidence summary</h2><p>{progression.evidenceNotes}</p></section>
+      <section className="card"><h2>Evidence summary narrative</h2><p>{progression.evidenceNotes}</p></section>
+      <CitationList references={evidenceProfile.references} title="References / linked evidence" />
     </article>
   );
 }

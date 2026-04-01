@@ -1,19 +1,25 @@
-import { SectionLanding } from '@/components/SectionLanding';
+import Link from 'next/link';
+import { getOutcomeMeasures } from '@/lib/outcomeMeasures';
 
 export default function OutcomeMeasuresPage() {
+  const measures = getOutcomeMeasures();
+
   return (
-    <SectionLanding
-      title="Outcome Measures"
-      quickView={[
-        'Best-fit PROMs and performance tests',
-        'When to use baseline vs follow-up timing',
-        'Rapid interpretation notes',
-      ]}
-      deepView={[
-        'Psychometric properties and thresholds',
-        'MCID/MDC context by population',
-        'Measure selection trade-offs and caveats',
-      ]}
-    />
+    <>
+      <header>
+        <h1>Outcome Measures</h1>
+        <p className="muted">Validated measures with transparent citations and review metadata.</p>
+      </header>
+
+      <section className="grid two">
+        {measures.map((measure) => (
+          <article key={measure.id} className="card">
+            <h2><Link href={`/outcome-measures/${measure.id}`}>{measure.title}</Link></h2>
+            <p className="muted">{measure.bodyRegionName}</p>
+            <p>{measure.population}</p>
+          </article>
+        ))}
+      </section>
+    </>
   );
 }

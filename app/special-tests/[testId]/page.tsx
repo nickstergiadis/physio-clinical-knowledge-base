@@ -1,5 +1,9 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { CitationList } from '@/components/evidence/CitationList';
+import { EditorialWarning } from '@/components/evidence/EditorialWarning';
+import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
 
 export function generateStaticParams() {
@@ -11,6 +15,8 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
   const test = getSpecialTestById(testId);
   if (!test) return notFound();
 
+  const evidenceProfile = buildEvidenceProfile(test.referenceIds);
+
   return (
     <article className="grid">
       <header className="card">
@@ -19,6 +25,9 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
         <p className="muted"><strong>Region:</strong> {test.bodyRegionName}</p>
         <p><strong>What question does this help answer?</strong> {test.testPurpose}</p>
       </header>
+
+      <EditorialWarning message={evidenceProfile.editorialWarning} />
+      <EvidenceSummaryCard profile={evidenceProfile} lastReviewedIso={test.lastReviewed?.reviewedAtIso} />
 
       <section className="grid two">
         <article className="card">
@@ -64,17 +73,10 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
               </li>
             ))}
           </ul>
-
-          <h3>References</h3>
-          <ul>
-            {test.references.map((reference) => (
-              <li key={reference.id}>
-                {reference.url ? <a href={reference.url}>{reference.shortLabel}</a> : reference.shortLabel} — {reference.year}
-              </li>
-            ))}
-          </ul>
         </article>
       </section>
+
+      <CitationList references={test.references} title="References / linked evidence" />
 
       {test.relatedTests.length > 0 && (
         <section className="card" aria-labelledby="comparison-title">

@@ -494,3 +494,18 @@ button {
 
 table { width: 100%; border-collapse: collapse; }
 th, td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; vertical-align: top; }
+
+.evidence-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.editorial-warning {
+  border-color: #f59e0b;
+  background: color-mix(in srgb, #f59e0b 10%, var(--surface));
+}

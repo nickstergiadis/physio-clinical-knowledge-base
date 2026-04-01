@@ -57,6 +57,12 @@ export type ExercisePrescription = {
   rationale: string;
 };
 
+export type ReviewMetadata = {
+  reviewer: string;
+  reviewedAtIso: string;
+  nextReviewDueIso: string;
+};
+
 export type ClinicalCondition = {
   id: EntityId;
   title: string;
@@ -76,11 +82,7 @@ export type ClinicalCondition = {
   evidenceSummary: string;
   referenceIds: EntityId[];
   evidenceStrengthTags: EvidenceStrength[];
-  lastReviewed: {
-    reviewer: string;
-    reviewedAtIso: string;
-    nextReviewDueIso: string;
-  };
+  lastReviewed: ReviewMetadata;
 };
 
 export type SpecialTest = {
@@ -100,6 +102,7 @@ export type SpecialTest = {
   evidenceNotes: string;
   relatedConditionIds: EntityId[];
   referenceIds: EntityId[];
+  lastReviewed?: ReviewMetadata;
 };
 
 export type Treatment = {
@@ -115,6 +118,7 @@ export type Treatment = {
   practicalNotes: string[];
   evidenceSummary: string;
   referenceIds: EntityId[];
+  lastReviewed?: ReviewMetadata;
 };
 
 export type ExerciseProgression = {
@@ -133,6 +137,7 @@ export type ExerciseProgression = {
   returnToFunctionRelevance: string;
   evidenceNotes: string;
   referenceIds: EntityId[];
+  lastReviewed?: ReviewMetadata;
 };
 
 export type OutcomeMeasure = {
@@ -147,6 +152,7 @@ export type OutcomeMeasure = {
   mcidMdc: string[];
   interpretation: string[];
   referenceIds: EntityId[];
+  lastReviewed?: ReviewMetadata;
 };
 
 export type RedFlagReferralTopic = {
@@ -160,6 +166,7 @@ export type RedFlagReferralTopic = {
   escalationPathway: string[];
   referralUrgency: ReferralUrgency;
   referenceIds: EntityId[];
+  lastReviewed?: ReviewMetadata;
 };
 
 export type ClinicalContentStore = {
