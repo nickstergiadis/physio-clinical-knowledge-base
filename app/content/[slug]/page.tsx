@@ -1,8 +1,9 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { FavoriteButton } from '@/components/FavoriteButton';
+import { ConditionPageShell } from '@/components/condition/ConditionPageShell';
+import { buildConditionPageSchema } from '@/lib/conditionPage';
 import { getItemBySlug, getItemsBySlugs, getKnowledgeBaseItems } from '@/lib/kb';
 
 export function generateStaticParams() {
@@ -19,6 +20,17 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
   const evidence = getItemsBySlugs(item.related.evidenceUpdates);
   const postop = getItemsBySlugs(item.related.postOpAnnexes);
 
+  if (item.section === 'conditions') {
+    const schema = buildConditionPageSchema(item);
+    return (
+      <ConditionPageShell
+        item={item}
+        schema={schema}
+        related={{ assessments, frameworks, evidence, postop }}
+      />
+    );
+  }
+
   return (
     <article className="card prose detail-page">
       <header className="detail-header">
@@ -30,16 +42,6 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
           <strong>Source file:</strong> <code>{item.sourcePath}</code>
         </p>
       </header>
-
-      {item.section === 'conditions' && (
-        <section aria-labelledby="related-condition-content">
-          <h2 id="related-condition-content">Related clinical content</h2>
-          {assessments.length > 0 && <RelatedList title="Assessment tools" items={assessments} />}
-          {frameworks.length > 0 && <RelatedList title="Rehab progression framework" items={frameworks} />}
-          {evidence.length > 0 && <RelatedList title="Evidence updates" items={evidence} />}
-          {postop.length > 0 && <RelatedList title="Post-op annexes" items={postop} />}
-        </section>
-      )}
 
       <Markdown remarkPlugins={[remarkGfm]}>{item.markdown}</Markdown>
 
@@ -56,20 +58,5 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
         </section>
       )}
     </article>
-  );
-}
-
-function RelatedList({ title, items }: { title: string; items: Array<{ slug: string; title: string }> }) {
-  return (
-    <section aria-label={title}>
-      <h3>{title}</h3>
-      <ul>
-        {items.map((item) => (
-          <li key={item.slug}>
-            <Link href={`/content/${item.slug}`}>{item.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </section>
   );
 }

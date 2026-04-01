@@ -356,3 +356,106 @@ button {
   max-height: 220px;
   overflow: auto;
 }
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.condition-layout {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.condition-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.evidence-badge {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.83rem;
+  border: 1px solid var(--border);
+}
+
+.strength-strong { background: color-mix(in oklab, #22c55e 20%, var(--panel)); }
+.strength-moderate { background: color-mix(in oklab, #f59e0b 20%, var(--panel)); }
+.strength-limited { background: color-mix(in oklab, #64748b 16%, var(--panel)); }
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.view-toggle button {
+  border: 0;
+  border-radius: 0;
+  min-height: auto;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+}
+
+.view-toggle button[aria-selected='true'] {
+  background: color-mix(in oklab, var(--accent) 18%, var(--panel));
+  font-weight: 650;
+}
+
+.condition-content-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: minmax(0, 230px) minmax(0, 1fr);
+}
+
+.section-nav {
+  position: sticky;
+  top: 5.4rem;
+  height: fit-content;
+}
+
+.section-nav ul { display: grid; gap: 0.3rem; margin: 0; padding: 0; }
+.section-nav a { text-decoration: none; font-size: 0.92rem; }
+
+.quick-view-grid,
+.deep-view-stack {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.timeline-stage {
+  border-left: 3px solid var(--border);
+  padding-left: 0.65rem;
+}
+
+.reference-drawer summary {
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.related-links-grid {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+@media (max-width: 900px) {
+  .condition-content-grid { grid-template-columns: 1fr; }
+  .section-nav {
+    position: static;
+    order: -1;
+  }
+}
