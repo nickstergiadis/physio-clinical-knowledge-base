@@ -1,19 +1,18 @@
-import { SectionLanding } from '@/components/SectionLanding';
+import { ExerciseProgressionsLibrary } from '@/components/clinical/ExerciseProgressionsLibrary';
+import { getConditionFilterOptions, getExerciseProgressionsWithContext, getRegionFilterOptions } from '@/lib/clinicalModules';
 
 export default function ExerciseProgressionsPage() {
+  const progressions = getExerciseProgressionsWithContext();
+  const regions = getRegionFilterOptions();
+  const conditions = getConditionFilterOptions();
+
   return (
-    <SectionLanding
-      title="Exercise Progressions"
-      quickView={[
-        'Starting level by irritability and capacity',
-        'Simple progression/regression rules',
-        'Session-to-session modification triggers',
-      ]}
-      deepView={[
-        'Phase-based rehab framework',
-        'Load progression criteria and objective markers',
-        'Return-to-function and return-to-sport milestones',
-      ]}
-    />
+    <>
+      <header>
+        <h1>Exercise Progressions Library</h1>
+        <p className="muted">Clinically reasoned progressions and regressions by condition, impairment target, and rehab stage.</p>
+      </header>
+      <ExerciseProgressionsLibrary progressions={progressions} regions={regions} conditions={conditions} />
+    </>
   );
 }

@@ -6,6 +6,8 @@ import clsx from 'clsx';
 import type { KbItem } from '@/lib/kb';
 import type { ConditionPageSchema } from '@/lib/conditionPage';
 import { FavoriteButton } from '@/components/FavoriteButton';
+import { ConditionStageCards } from '@/components/clinical/ConditionStageCards';
+import type { getStageReasoningCardsForConditionSlug } from '@/lib/clinicalModules';
 
 type RelatedItem = { slug: string; title: string };
 
@@ -13,6 +15,7 @@ export function ConditionPageShell({
   item,
   schema,
   related,
+  stageReasoning,
 }: {
   item: KbItem;
   schema: ConditionPageSchema;
@@ -22,6 +25,7 @@ export function ConditionPageShell({
     evidence: RelatedItem[];
     postop: RelatedItem[];
   };
+  stageReasoning: ReturnType<typeof getStageReasoningCardsForConditionSlug>;
 }) {
   const [mode, setMode] = useState<'quick' | 'deep'>('quick');
 
@@ -79,6 +83,13 @@ export function ConditionPageShell({
 
         <section className="condition-main">
           {mode === 'quick' ? <QuickView schema={schema} /> : <DeepView schema={schema} item={item} />}
+          {stageReasoning && (
+            <ConditionStageCards
+              conditionTitle={stageReasoning.conditionTitle}
+              treatmentCards={stageReasoning.treatmentCards}
+              progressionCards={stageReasoning.progressionCards}
+            />
+          )}
 
           <details className="card reference-drawer" open>
             <summary>References / linked evidence</summary>

@@ -112,6 +112,7 @@ export type Treatment = {
   stageRelevance: ConditionStage[];
   indications: string[];
   contraindicationsPrecautions: string[];
+  practicalNotes: string[];
   evidenceSummary: string;
   referenceIds: EntityId[];
 };
@@ -128,6 +129,7 @@ export type ExerciseProgression = {
   commonCompensations: string[];
   progressionOptions: string[];
   regressionOptions: string[];
+  criteriaToAdvance: string[];
   returnToFunctionRelevance: string;
   evidenceNotes: string;
   referenceIds: EntityId[];
