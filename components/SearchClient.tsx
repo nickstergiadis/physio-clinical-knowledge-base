@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
-import { useMemo, useState } from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
 import { FavoriteButton } from '@/components/FavoriteButton';
 
 type SearchItem = {
@@ -125,12 +125,13 @@ export function SearchClient({
   const [phase, setPhase] = useState('');
   const [population, setPopulation] = useState('');
   const [managementTrack, setManagementTrack] = useState('');
+  const deferredQuery = useDeferredValue(q);
 
-  const quickJump = useMemo(() => QUICK_JUMPS.find((rule) => rule.match.test(q)), [q]);
+  const quickJump = useMemo(() => QUICK_JUMPS.find((rule) => rule.match.test(deferredQuery)), [deferredQuery]);
 
   const groupedResults = useMemo(() => {
-    const terms = expandedTerms(q);
-    const queryActive = !!q.trim();
+    const terms = expandedTerms(deferredQuery);
+    const queryActive = !!deferredQuery.trim();
     const filtered = items
       .filter((item) => {
         const regionMatch = !region || toRegionSlug(item.region) === region;
@@ -143,9 +144,9 @@ export function SearchClient({
         if (!queryActive) return true;
 
         const haystack = [item.title, item.aliases.join(' '), item.tags.join(' '), item.summary, item.excerpt].join(' ').toLowerCase();
-        return terms.some((term) => haystack.includes(term)) || haystack.includes(q.toLowerCase());
+        return terms.some((term) => haystack.includes(term)) || haystack.includes(deferredQuery.toLowerCase());
       })
-      .map((item) => ({ item, score: scoreItem(item, q, terms, quickJump?.targetType) }))
+      .map((item) => ({ item, score: scoreItem(item, deferredQuery, terms, quickJump?.targetType) }))
       .filter((result) => (!queryActive ? true : result.score >= 20))
       .sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title));
 
@@ -157,7 +158,7 @@ export function SearchClient({
     }
 
     return grouped;
-  }, [items, q, region, section, contentType, phase, population, managementTrack, quickJump]);
+  }, [items, deferredQuery, region, section, contentType, phase, population, managementTrack, quickJump]);
 
   const total = [...groupedResults.values()].reduce((count, group) => count + group.length, 0);
   const activeFilters = [q.trim(), region, section, contentType, phase, population, managementTrack].filter(Boolean).length;
@@ -176,7 +177,7 @@ export function SearchClient({
     <>
       <h1>Search</h1>
 
-      <form className="card" style={{ marginBottom: '1rem' }} role="search" aria-label="Clinical content search" onSubmit={(e) => e.preventDefault()}>
+      <form className="card search-toolbar" role="search" aria-label="Clinical content search" onSubmit={(e) => e.preventDefault()}>
         <p className="muted" style={{ marginTop: 0 }}>
           Use 1-3 filters for high-signal results. Over-filtering can hide clinically useful alternatives.
         </p>
@@ -238,13 +239,13 @@ export function SearchClient({
             </select>
           </div>
         </div>
-        <div style={{ marginTop: '0.7rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+        <div className="search-toolbar__actions">
           <button type="button" onClick={clearFilters}>Clear all filters</button>
           <span className="muted" aria-live="polite">{activeFilters} active filter{activeFilters === 1 ? '' : 's'}</span>
         </div>
       </form>
 
-      <p aria-live="polite">{total} result{total === 1 ? '' : 's'} found.</p>
+      <p className="search-summary" aria-live="polite">{total} result{total === 1 ? '' : 's'} found.</p>
 
       {quickJump && total > 0 && (
         <section className="search-empty" aria-live="polite">
@@ -268,25 +269,26 @@ export function SearchClient({
       )}
 
       {[...groupedResults.entries()].map(([group, groupItems]) => (
-        <section key={group} style={{ marginBottom: '1rem' }}>
+        <section key={group} className="search-group">
           <h2>{CONTENT_TYPE_LABELS[group]} ({groupItems.length})</h2>
           <ul className="clean grid" aria-label={`${CONTENT_TYPE_LABELS[group]} search results`}>
             {groupItems.map(({ item }) => (
               <li key={item.slug} className="card result-card">
-                <h3 style={{ marginTop: 0, fontSize: '1.1rem' }}>
+                <h3 className="result-title">
                   <Link href={`/content/${item.slug}`}>{item.title}</Link>
                 </h3>
                 <p>{item.excerpt}</p>
-                <p>
-                  <strong>Region:</strong> {item.region} · <strong>Section:</strong> {item.sectionLabel}
-                </p>
-                <p>
-                  <strong>Clinical fit:</strong> {CONTENT_TYPE_LABELS[item.contentType]}
-                  {item.phases.length > 0 ? ` · ${item.phases.join(', ')}` : ''}
-                  {item.managementTrack !== 'mixed' ? ` · ${item.managementTrack}` : ''}
-                </p>
-                {item.tags.length > 0 && <p><strong>Tags:</strong> {item.tags.join(', ')}</p>}
-                <p className="muted"><code>{item.sourcePath}</code></p>
+                <div className="search-result-meta">
+                  <span className="meta-pill">{item.region}</span>
+                  <span className="meta-pill">{item.sectionLabel}</span>
+                  <span className="meta-pill">{CONTENT_TYPE_LABELS[item.contentType]}</span>
+                  {item.phases.map((stage) => (
+                    <span key={stage} className="meta-pill">{stage}</span>
+                  ))}
+                  {item.managementTrack !== 'mixed' && <span className="meta-pill">{item.managementTrack}</span>}
+                </div>
+                {item.tags.length > 0 && <p className="muted">Tags: {item.tags.slice(0, 5).join(' · ')}</p>}
+                <p className="muted search-result-source"><code>{item.sourcePath}</code></p>
                 <FavoriteButton slug={item.slug} title={item.title} />
               </li>
             ))}

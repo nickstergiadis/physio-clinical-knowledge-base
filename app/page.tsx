@@ -33,7 +33,7 @@ const COMMON_CONDITIONS_BY_REGION = [
 
 export default function HomePage() {
   return (
-    <>
+    <div className="section-stack">
       <section className="hero-search card" aria-labelledby="home-title">
         <h1 id="home-title">What do you need to look up?</h1>
         <p className="muted">Search is the fastest path. Use quick entry points below when you already know your clinical direction.</p>
@@ -44,7 +44,7 @@ export default function HomePage() {
         </form>
       </section>
 
-      <section aria-labelledby="entry-points-title" style={{ marginTop: '1rem' }}>
+      <section aria-labelledby="entry-points-title">
         <h2 id="entry-points-title">Common clinical entry points</h2>
         <div className="grid three">
           {CLINICAL_ENTRY_POINTS.map((item) => (
@@ -56,7 +56,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="grid two" aria-label="Homepage modules" style={{ marginTop: '1rem' }}>
+      <section className="grid two" aria-label="Homepage modules">
         <article className="card">
           <h2>Common body regions</h2>
           <ul className="clean quick-list">
@@ -83,7 +83,7 @@ export default function HomePage() {
         </article>
       </section>
 
-      <section className="grid two" aria-label="Condition and activity modules" style={{ marginTop: '1rem' }}>
+      <section className="grid two" aria-label="Condition and activity modules">
         <article className="card">
           <h2>Common conditions by region</h2>
           {COMMON_CONDITIONS_BY_REGION.map((group) => (
@@ -105,6 +105,6 @@ export default function HomePage() {
           </div>
         </article>
       </section>
-    </>
+    </div>
   );
 }
