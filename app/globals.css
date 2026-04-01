@@ -509,3 +509,38 @@ th, td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; ver
   border-color: #f59e0b;
   background: color-mix(in srgb, #f59e0b 10%, var(--surface));
 }
+
+.hub-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.mode-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.mode-toggle a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  border-right: 1px solid var(--border);
+}
+
+.mode-toggle a:last-child {
+  border-right: 0;
+}
+
+.mode-toggle a.active {
+  background: color-mix(in oklab, var(--accent) 18%, var(--panel));
+  font-weight: 650;
+}
+
+.recall-card summary {
+  cursor: pointer;
+  font-weight: 600;
+}
