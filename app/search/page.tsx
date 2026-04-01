@@ -15,6 +15,10 @@ export default function SearchPage() {
     summary: item.summary,
     excerpt: item.excerpt,
     sourcePath: item.sourcePath,
+    contentType: item.contentType,
+    phases: item.phases,
+    population: item.population,
+    managementTrack: item.managementTrack,
   }));
 
   return (

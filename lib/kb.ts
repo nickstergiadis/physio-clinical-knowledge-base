@@ -24,6 +24,10 @@ export type KbItem = {
     evidenceUpdates: string[];
     postOpAnnexes: string[];
   };
+  contentType: 'condition' | 'symptom-pattern' | 'body-region' | 'special-test' | 'treatment' | 'outcome-measure' | 'exercise-progression' | 'red-flag-topic' | 'general';
+  phases: Array<'acute' | 'subacute' | 'chronic'>;
+  population: 'sport' | 'general' | 'mixed';
+  managementTrack: 'post-op' | 'non-op' | 'mixed';
 };
 
 type Frontmatter = Record<string, string | string[] | undefined>;
@@ -137,6 +141,47 @@ function inferAliases(title: string, markdown: string, tags: string[]): string[]
   return [...aliases];
 }
 
+function inferContentType(section: KbSection, sourcePath: string, title: string, markdown: string): KbItem['contentType'] {
+  const haystack = `${sourcePath} ${title} ${markdown}`.toLowerCase();
+  if (section === 'conditions') return 'condition';
+  if (section === 'exercise-frameworks') return 'exercise-progression';
+  if (section === 'post-op-annexes') return 'treatment';
+  if (haystack.includes('red_flag') || haystack.includes('red flag')) return 'red-flag-topic';
+  if (haystack.includes('outcome measure') || sourcePath.includes('outcome_measures')) return 'outcome-measure';
+  if (haystack.includes('special test') || sourcePath.includes('special_tests')) return 'special-test';
+  if (section === 'assessment-tools') return 'symptom-pattern';
+  if (section === 'foundations') return 'body-region';
+  return 'general';
+}
+
+function inferPhases(title: string, markdown: string, tags: string[]): KbItem['phases'] {
+  const haystack = `${title} ${markdown} ${tags.join(' ')}`.toLowerCase();
+  const phases: KbItem['phases'] = [];
+  if (haystack.includes('acute')) phases.push('acute');
+  if (haystack.includes('subacute') || haystack.includes('sub-acute')) phases.push('subacute');
+  if (haystack.includes('chronic') || haystack.includes('persistent')) phases.push('chronic');
+  return phases;
+}
+
+function inferPopulation(title: string, markdown: string, tags: string[]): KbItem['population'] {
+  const haystack = `${title} ${markdown} ${tags.join(' ')}`.toLowerCase();
+  const sportHints = ['sport', 'athlete', 'return to play', 'return-to-sport'];
+  const generalHints = ['general population', 'older adult', 'primary care'];
+  const sport = sportHints.some((hint) => haystack.includes(hint));
+  const general = generalHints.some((hint) => haystack.includes(hint));
+  if (sport && general) return 'mixed';
+  if (sport) return 'sport';
+  return 'general';
+}
+
+function inferManagementTrack(section: KbSection, sourcePath: string, title: string, markdown: string): KbItem['managementTrack'] {
+  const haystack = `${sourcePath} ${title} ${markdown}`.toLowerCase();
+  const postOp = section === 'post-op-annexes' || haystack.includes('post-op') || haystack.includes('post op') || haystack.includes('reconstruction') || haystack.includes('repair');
+  const nonOp = section !== 'post-op-annexes';
+  if (postOp && nonOp) return 'mixed';
+  return postOp ? 'post-op' : 'non-op';
+}
+
 function inferCitations(markdown: string): Array<{ label: string; url?: string }> {
   const map = new Map<string, { label: string; url?: string }>();
   for (const match of markdown.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g)) {
@@ -195,6 +240,10 @@ export function getKnowledgeBaseItems(): KbItem[] {
       sourcePath: relPath,
       citations: inferCitations(body),
       related: { assessmentTools: [], exerciseFrameworks: [], evidenceUpdates: [], postOpAnnexes: [] },
+      contentType: inferContentType(section, relPath, title, body),
+      phases: inferPhases(title, body, tags),
+      population: inferPopulation(title, body, tags),
+      managementTrack: inferManagementTrack(section, relPath, title, body),
     };
 
     item.aliases = inferAliases(item.title, body, item.tags);
