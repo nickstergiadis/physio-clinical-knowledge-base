@@ -22,7 +22,7 @@ export default function SearchPage() {
   }));
 
   return (
-    <Suspense fallback={<section className="search-loading" role="status" aria-live="polite">Loading search index…</section>}>
+    <Suspense fallback={<section className="search-loading" role="status" aria-live="polite">Loading search index and preparing ranked results…</section>}>
       <SearchClient regions={nav.regions} sections={nav.sections} items={items} />
     </Suspense>
   );

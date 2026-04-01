@@ -8,7 +8,7 @@ type SectionLandingProps = {
 
 export function SectionLanding({ title, quickView, deepView }: SectionLandingProps) {
   return (
-    <>
+    <div className="section-stack">
       <header>
         <h1>{title}</h1>
         <p className="muted">
@@ -38,13 +38,13 @@ export function SectionLanding({ title, quickView, deepView }: SectionLandingPro
         </article>
       </section>
 
-      <section className="card" style={{ marginTop: '1rem' }}>
+      <section className="card">
         <h2>Clinical safety note</h2>
         <p>
           This section is an index layer. Confirm recommendations against source-linked pages and patient-specific findings before applying care plans.
           Use <Link href="/search"> Search</Link> for current source-linked content.
         </p>
       </section>
-    </>
+    </div>
   );
 }
