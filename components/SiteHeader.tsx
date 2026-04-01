@@ -17,7 +17,7 @@ export function SiteHeader() {
       <div className="site-header__inner">
         <div className="site-branding">
           <Link href="/" className="site-title">Physio Clinical KB</Link>
-          <p className="site-tagline">Fast evidence-based reference for point-of-care decisions.</p>
+          <p className="site-tagline">Clinical lookup tool for rapid point-of-care decisions.</p>
         </div>
 
         <form action="/search" role="search" className="site-search" aria-label="Search clinical content">
@@ -26,8 +26,9 @@ export function SiteHeader() {
             id="site-search-input"
             name="q"
             type="search"
-            placeholder="Search condition, test, treatment..."
+            placeholder="Search condition, body region, test, treatment…"
           />
+          <button type="submit">Search</button>
         </form>
       </div>
 

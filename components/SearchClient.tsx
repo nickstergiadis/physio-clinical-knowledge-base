@@ -106,6 +106,20 @@ export function SearchClient({
 
       <p aria-live="polite">{results.length} result{results.length === 1 ? '' : 's'} found.</p>
 
+      {!q.trim() && !region && !section && (
+        <section className="search-empty" aria-live="polite">
+          <h2>Start with a clinical keyword</h2>
+          <p className="muted">Try: lumbar radicular pain, patellofemoral pain, Lachman test, or WOMAC.</p>
+        </section>
+      )}
+
+      {results.length === 0 && (q.trim() || region || section) && (
+        <section className="search-empty" aria-live="polite">
+          <h2>No matches found</h2>
+          <p className="muted">Try a broader term, remove filters, or search by body region first.</p>
+        </section>
+      )}
+
       <ul className="clean grid" aria-label="Search results">
         {results.map((item) => (
           <li key={item.slug} className="card result-card">
