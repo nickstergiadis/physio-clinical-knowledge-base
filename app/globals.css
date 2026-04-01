@@ -296,6 +296,36 @@ button {
   gap: 0.2rem;
 }
 
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.7rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.5rem 0;
+}
+
+.stage-badge {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.82rem;
+  background: color-mix(in oklab, var(--panel) 90%, var(--accent));
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 @media (max-width: 900px) {
   .site-header,
   .main {

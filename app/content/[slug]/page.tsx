@@ -3,6 +3,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ConditionPageShell } from '@/components/condition/ConditionPageShell';
+import { getStageReasoningCardsForConditionSlug } from '@/lib/clinicalModules';
 import { buildConditionPageSchema } from '@/lib/conditionPage';
 import { getItemBySlug, getItemsBySlugs, getKnowledgeBaseItems } from '@/lib/kb';
 
@@ -22,11 +23,13 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
 
   if (item.section === 'conditions') {
     const schema = buildConditionPageSchema(item);
+    const stageReasoning = getStageReasoningCardsForConditionSlug(item.slug);
     return (
       <ConditionPageShell
         item={item}
         schema={schema}
         related={{ assessments, frameworks, evidence, postop }}
+        stageReasoning={stageReasoning}
       />
     );
   }
