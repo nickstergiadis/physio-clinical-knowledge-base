@@ -63,6 +63,13 @@ export function ConditionPageShell({
         {item.citations.length === 0 && (
           <EditorialWarning message="This condition page is not citation-complete yet. Add references before treating it as final." />
         )}
+        <EditorialWarning message="Clinical support tool only: not a standalone diagnosis or prognosis. Pair with patient-specific reassessment and local referral protocols." />
+        {schema.certaintyWarnings.length > 0 && (
+          <EditorialWarning message={schema.certaintyWarnings.join(' ')} />
+        )}
+        {(!schema.stageCompleteness.hasAcute || !schema.stageCompleteness.hasSubacute || !schema.stageCompleteness.hasLate) && (
+          <EditorialWarning message="Stage-based rehab content is incomplete for at least one phase. Use this page with caution and progress by objective response." />
+        )}
         <div className="view-toggle" role="tablist" aria-label="Condition view mode">
           <button role="tab" aria-selected={mode === 'quick'} onClick={() => setMode('quick')}>
             Quick View
@@ -83,6 +90,12 @@ export function ConditionPageShell({
               </li>
             ))}
           </ul>
+          <hr />
+          <p className="muted" style={{ marginBottom: '0.45rem' }}>Safety routes</p>
+          <ul className="clean">
+            <li><Link href="/red-flags-referral">Red flags / referral hub</Link></li>
+            <li><a href="#red-flags">This page: red flags section</a></li>
+          </ul>
         </aside>
 
         <section className="condition-main">
@@ -96,11 +109,13 @@ export function ConditionPageShell({
           )}
 
           <details className="card reference-drawer" open>
-            <summary>References / linked evidence</summary>
+            <summary>References / linked evidence ({item.citations.length})</summary>
+            <p className="muted">Prioritize primary sources and publication recency before applying recommendations.</p>
             <ul>
               {item.citations.map((citation) => (
                 <li key={`${citation.label}-${citation.url || 'none'}`}>
                   {citation.url ? <a href={citation.url}>{citation.label}</a> : citation.label}
+                  {!citation.url ? <span className="muted"> · URL not provided</span> : null}
                 </li>
               ))}
             </ul>
@@ -135,6 +150,13 @@ function QuickView({ schema }: { schema: ConditionPageSchema }) {
       </section>
       <Card id="healing-timeline" title="Healing / recovery timeline" items={q.healingTimeline} />
       <Card id="red-flags" title="Red flags / when to reconsider" items={q.redFlags} />
+      <section className="card">
+        <h2>Referral pathway reminder</h2>
+        <p>
+          If progressive neurologic deficit, systemic red flags, or disproportionate symptoms are present,
+          use the <Link href="/red-flags-referral">red flags / referral pathway</Link> immediately.
+        </p>
+      </section>
     </div>
   );
 }

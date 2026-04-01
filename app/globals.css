@@ -500,14 +500,14 @@ th, td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; ver
   align-items: center;
   border-radius: 999px;
   padding: 0.25rem 0.65rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   font-size: 0.78rem;
   font-weight: 600;
 }
 
 .editorial-warning {
   border-color: #f59e0b;
-  background: color-mix(in srgb, #f59e0b 10%, var(--surface));
+  background: color-mix(in srgb, #f59e0b 10%, var(--panel));
 }
 
 .hub-card-actions {

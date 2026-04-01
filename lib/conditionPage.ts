@@ -27,6 +27,12 @@ export type ConditionPageSchema = {
   };
   deepView: ConditionBlock[];
   evidenceStrength: EvidenceStrength;
+  stageCompleteness: {
+    hasAcute: boolean;
+    hasSubacute: boolean;
+    hasLate: boolean;
+  };
+  certaintyWarnings: string[];
   residualMarkdown: string;
 };
 
@@ -122,6 +128,15 @@ export function buildConditionPageSchema(item: KbItem): ConditionPageSchema {
   const evidenceItems = byKey.get('evidence-summary') ?? byKey.get('citations') ?? [];
 
   const stageBased = toStageBlocks(progression.length > 0 ? progression : management);
+  const stageNames = stageBased.map((stage) => stage.stage);
+  const certaintyWarnings = [
+    /\b(always|never|guaranteed|definitive|certainly)\b/i.test(item.markdown)
+      ? 'Source language includes high-certainty wording. Confirm applicability to individual patient context.'
+      : '',
+    /\b(will recover|full recovery expected in)\b/i.test(item.markdown)
+      ? 'Prognosis wording may overstate certainty. Frame timelines as ranges tied to reassessment findings.'
+      : '',
+  ].filter(Boolean);
 
   const deepView: ConditionBlock[] = [
     { id: 'definition-overview', title: 'Definition / Overview', items: byKey.get('definition-overview') ?? [item.summary] },
@@ -158,6 +173,12 @@ export function buildConditionPageSchema(item: KbItem): ConditionPageSchema {
     },
     deepView,
     evidenceStrength: inferEvidenceStrength(item, evidenceItems),
+    stageCompleteness: {
+      hasAcute: stageNames.includes('Acute'),
+      hasSubacute: stageNames.includes('Subacute'),
+      hasLate: stageNames.includes('Late / Return to Performance'),
+    },
+    certaintyWarnings,
     residualMarkdown,
   };
 }

@@ -146,6 +146,7 @@ export function SearchClient({
         return terms.some((term) => haystack.includes(term)) || haystack.includes(q.toLowerCase());
       })
       .map((item) => ({ item, score: scoreItem(item, q, terms, quickJump?.targetType) }))
+      .filter((result) => (!queryActive ? true : result.score >= 20))
       .sort((a, b) => b.score - a.score || a.item.title.localeCompare(b.item.title));
 
     const grouped = new Map<SearchItem['contentType'], Array<typeof filtered[number]>>();
@@ -159,13 +160,27 @@ export function SearchClient({
   }, [items, q, region, section, contentType, phase, population, managementTrack, quickJump]);
 
   const total = [...groupedResults.values()].reduce((count, group) => count + group.length, 0);
+  const activeFilters = [q.trim(), region, section, contentType, phase, population, managementTrack].filter(Boolean).length;
+
+  function clearFilters() {
+    setQ('');
+    setRegion('');
+    setSection('');
+    setContentType('');
+    setPhase('');
+    setPopulation('');
+    setManagementTrack('');
+  }
 
   return (
     <>
       <h1>Search</h1>
 
       <form className="card" style={{ marginBottom: '1rem' }} role="search" aria-label="Clinical content search" onSubmit={(e) => e.preventDefault()}>
-        <div className="grid three">
+        <p className="muted" style={{ marginTop: 0 }}>
+          Use 1-3 filters for high-signal results. Over-filtering can hide clinically useful alternatives.
+        </p>
+        <div className="filter-grid">
           <div>
             <label htmlFor="q">Clinical query</label>
             <input id="q" name="q" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. rotator cuff, lateral shoulder pain, Hawkins-Kennedy" />
@@ -222,6 +237,10 @@ export function SearchClient({
               <option value="non-op">Non-op</option>
             </select>
           </div>
+        </div>
+        <div style={{ marginTop: '0.7rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center' }}>
+          <button type="button" onClick={clearFilters}>Clear all filters</button>
+          <span className="muted" aria-live="polite">{activeFilters} active filter{activeFilters === 1 ? '' : 's'}</span>
         </div>
       </form>
 

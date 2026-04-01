@@ -12,7 +12,7 @@ export function SectionLanding({ title, quickView, deepView }: SectionLandingPro
       <header>
         <h1>{title}</h1>
         <p className="muted">
-          Clinical-first index page. Use Quick View during consults and Deep View for detailed prep and study.
+          Clinical-first index page. Use Quick View during consults and Deep View for detailed prep, differential review, and documentation support.
         </p>
       </header>
 
@@ -39,10 +39,10 @@ export function SectionLanding({ title, quickView, deepView }: SectionLandingPro
       </section>
 
       <section className="card" style={{ marginTop: '1rem' }}>
-        <h2>Next step</h2>
+        <h2>Clinical safety note</h2>
         <p>
-          This is a foundation placeholder. Full indexed content will be connected in a later module.
-          Use <Link href="/search">Search</Link> to access current source-linked pages.
+          This section is an index layer. Confirm recommendations against source-linked pages and patient-specific findings before applying care plans.
+          Use <Link href="/search"> Search</Link> for current source-linked content.
         </p>
       </section>
     </>

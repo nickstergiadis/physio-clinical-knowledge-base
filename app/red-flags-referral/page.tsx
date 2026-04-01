@@ -5,14 +5,14 @@ export default function RedFlagsReferralPage() {
     <SectionLanding
       title="Red Flags / Referral"
       quickView={[
-        'Immediate red flag checklist',
-        'Urgent vs routine referral indicators',
-        'Documentation essentials',
+        'Immediate triage: emergency vs same-day vs routine referral',
+        'Core red flag screens: cauda equina, fracture, infection, cancer, vascular events',
+        'Safety-net documentation language for uncertain presentations',
       ]}
       deepView={[
-        'Systems review decision pathways',
-        'Escalation rationale and communication notes',
-        'Differential overlap and safety-net planning',
+        'Region-specific referral pathways with escalation thresholds',
+        'Differential overlap and false-positive management',
+        'Communication scripts: patient education + receiving-provider handoff',
       ]}
     />
   );
