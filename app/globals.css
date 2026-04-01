@@ -459,3 +459,8 @@ button {
     order: -1;
   }
 }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid var(--border); padding: 0.5rem; text-align: left; vertical-align: top; }

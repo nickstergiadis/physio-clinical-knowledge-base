@@ -1,19 +1,24 @@
-import { SectionLanding } from '@/components/SectionLanding';
+import { SpecialTestsLibrary } from '@/components/special-tests/SpecialTestsLibrary';
+import { getBodyRegionFilterOptions, getSpecialTests, getTargetFilterOptions } from '@/lib/specialTests';
 
 export default function SpecialTestsPage() {
+  const tests = getSpecialTests();
+
   return (
-    <SectionLanding
-      title="Special Tests"
-      quickView={[
-        'How to perform each test quickly',
-        'Positive finding definitions',
-        'Best-use context in clinical flow',
-      ]}
-      deepView={[
-        'Sensitivity/specificity context and limits',
-        'Cluster testing strategy and sequencing',
-        'Interpretation pitfalls and alternatives',
-      ]}
-    />
+    <>
+      <header>
+        <h1>Special Tests Library</h1>
+        <p className="muted">
+          Practical special tests with clinical context: when to use them, what they help answer, how to perform them,
+          and how to interpret them alongside the rest of your exam.
+        </p>
+      </header>
+
+      <SpecialTestsLibrary
+        tests={tests}
+        regionOptions={getBodyRegionFilterOptions()}
+        targetOptions={getTargetFilterOptions()}
+      />
+    </>
   );
 }
