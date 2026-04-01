@@ -7,6 +7,7 @@ import type { KbItem } from '@/lib/kb';
 import type { ConditionPageSchema } from '@/lib/conditionPage';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ConditionStageCards } from '@/components/clinical/ConditionStageCards';
+import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import type { getStageReasoningCardsForConditionSlug } from '@/lib/clinicalModules';
 
 type RelatedItem = { slug: string; title: string };
@@ -59,6 +60,9 @@ export function ConditionPageShell({
             Evidence: {schema.evidenceStrength}
           </span>
         </div>
+        {item.citations.length === 0 && (
+          <EditorialWarning message="This condition page is not citation-complete yet. Add references before treating it as final." />
+        )}
         <div className="view-toggle" role="tablist" aria-label="Condition view mode">
           <button role="tab" aria-selected={mode === 'quick'} onClick={() => setMode('quick')}>
             Quick View
