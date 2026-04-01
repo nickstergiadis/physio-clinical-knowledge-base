@@ -42,8 +42,14 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
         <p>
           <strong>Section:</strong> {item.sectionLabel}<br />
           <strong>Region:</strong> {item.region}<br />
+          <strong>Evidence links:</strong> {item.citations.length}<br />
           <strong>Source file:</strong> <code>{item.sourcePath}</code>
         </p>
+        {item.citations.length === 0 ? (
+          <p className="editorial-warning card">
+            Citation gap: this page has no extracted reference links yet. Treat as draft-level guidance and verify externally.
+          </p>
+        ) : null}
       </header>
 
       <Markdown remarkPlugins={[remarkGfm]}>{item.markdown}</Markdown>
@@ -51,10 +57,12 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
       {item.citations.length > 0 && (
         <section aria-labelledby="citations-title">
           <h2 id="citations-title">Citations / Evidence</h2>
+          <p className="muted">Direct-source links are shown when available; confirm recency and applicability before applying recommendations.</p>
           <ol>
             {item.citations.map((citation) => (
               <li key={`${citation.label}-${citation.url || 'none'}`}>
                 {citation.url ? <a href={citation.url}>{citation.label}</a> : citation.label}
+                {!citation.url ? <span className="muted"> (URL unavailable)</span> : null}
               </li>
             ))}
           </ol>
