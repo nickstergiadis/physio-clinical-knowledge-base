@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 
 const CLINICAL_ENTRY_POINTS = [
   { title: 'Conditions', href: '/conditions', summary: 'Differential anchors, exam priorities, and first-line management.' },
@@ -90,7 +91,7 @@ export default function HomePage() {
             <section key={group.region} className="condition-group">
               <h3>{group.region}</h3>
               <ul>
-                {group.conditions.map((condition) => <li key={condition}>{condition}</li>)}
+                {group.conditions.map((condition) => <li key={condition}><KbEntityLink label={condition} /></li>)}
               </ul>
             </section>
           ))}

@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 const STORAGE_KEY = 'clinical-kb-favorites';
 
 type FavoritePayload = {
-  slug: string;
+  href: string;
   title: string;
 };
 
@@ -16,7 +16,17 @@ function readFavorites(): FavoritePayload[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed.filter((item) => typeof item?.slug === 'string' && typeof item?.title === 'string');
+    return parsed.flatMap((item) => {
+      if (typeof item?.href === 'string' && typeof item?.title === 'string') {
+        return [{ href: item.href, title: item.title }];
+      }
+
+      if (typeof item?.slug === 'string' && typeof item?.title === 'string') {
+        return [{ href: `/content/${item.slug}`, title: item.title }];
+      }
+
+      return [];
+    });
   } catch {
     return [];
   }
@@ -28,7 +38,7 @@ function writeFavorites(items: FavoritePayload[]) {
   window.dispatchEvent(new CustomEvent('favorites:updated'));
 }
 
-export function FavoriteButton({ slug, title }: FavoritePayload) {
+export function FavoriteButton({ href, title }: FavoritePayload) {
   const [favorites, setFavorites] = useState<FavoritePayload[]>([]);
 
   useEffect(() => {
@@ -38,12 +48,12 @@ export function FavoriteButton({ slug, title }: FavoritePayload) {
     return () => window.removeEventListener('favorites:updated', sync);
   }, []);
 
-  const isFavorite = useMemo(() => favorites.some((item) => item.slug === slug), [favorites, slug]);
+  const isFavorite = useMemo(() => favorites.some((item) => item.href === href), [favorites, href]);
 
   const toggleFavorite = () => {
     const next = isFavorite
-      ? favorites.filter((item) => item.slug !== slug)
-      : [{ slug, title }, ...favorites].slice(0, 30);
+      ? favorites.filter((item) => item.href !== href)
+      : [{ href, title }, ...favorites].slice(0, 30);
     setFavorites(next);
     writeFavorites(next);
   };

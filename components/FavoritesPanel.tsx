@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { STORAGE_KEY } from '@/components/FavoriteButton';
 
 type FavoritePayload = {
-  slug: string;
+  href: string;
   title: string;
 };
 
@@ -15,7 +15,17 @@ function readFavorites(): FavoritePayload[] {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed.filter((item) => typeof item?.slug === 'string' && typeof item?.title === 'string');
+    return parsed.flatMap((item) => {
+      if (typeof item?.href === 'string' && typeof item?.title === 'string') {
+        return [{ href: item.href, title: item.title }];
+      }
+
+      if (typeof item?.slug === 'string' && typeof item?.title === 'string') {
+        return [{ href: `/content/${item.slug}`, title: item.title }];
+      }
+
+      return [];
+    });
   } catch {
     return [];
   }
@@ -43,8 +53,8 @@ export function FavoritesPanel() {
       ) : (
         <ul className="clean" style={{ marginBottom: '1rem' }}>
           {favorites.map((item) => (
-            <li key={item.slug}>
-              <Link href={`/content/${item.slug}`}>{item.title}</Link>
+            <li key={item.href}>
+              <Link href={item.href}>{item.title}</Link>
             </li>
           ))}
         </ul>

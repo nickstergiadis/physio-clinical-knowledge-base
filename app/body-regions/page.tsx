@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { BODY_REGION_HUBS } from '@/lib/bodyRegionHubs';
 
 export default function BodyRegionsPage() {
@@ -17,7 +18,13 @@ export default function BodyRegionsPage() {
           {BODY_REGION_HUBS.map((hub) => (
             <article key={hub.slug} id={hub.slug} className="card">
               <h3>{hub.name}</h3>
-              <p className="muted">{hub.commonConditions.slice(0, 2).join(' • ')}</p>
+              <ul className="clean quick-list muted">
+                {hub.commonConditions.slice(0, 2).map((condition) => (
+                  <li key={condition}>
+                    <KbEntityLink label={condition} />
+                  </li>
+                ))}
+              </ul>
               <div className="hub-card-actions">
                 <Link href={`/body-regions/${hub.slug}`}>Open clinical hub</Link>
                 <Link href={`/body-regions/${hub.slug}?mode=study`}>Open Study Mode</Link>

@@ -159,10 +159,34 @@ export const clinicalSeed: ClinicalContentStore = {
       interpretation: 'Supports CTS pattern with night symptoms and thenar weakness/sensory changes.', limitations: ['Not definitive without broader exam context.'], diagnosticUtilityNotes: ['Pair with symptom map and functional provocation tasks.'],
       evidenceNotes: 'Moderate utility in combination with history/exam cluster.', relatedConditionIds: ['condition-carpal-tunnel-syndrome'], referenceIds: ['ref-carpal-tunnel'], lastReviewed: REVIEW_METADATA,
     },
+    {
+      id: 'test-cozen', title: 'Cozen Test', aliases: ["Cozen's test", 'Resisted wrist extension test'], assesses: 'Common extensor tendon provocation', bodyRegionId: 'region-elbow-forearm',
+      targetStructureOrDiagnosis: 'Lateral elbow tendinopathy', testPurpose: 'Symptom-provocation test used alongside history and local exam for lateral elbow tendinopathy.',
+      patientPosition: 'Seated with elbow flexed, forearm pronated, and hand in a relaxed fist.', clinicianAction: ['Stabilize the elbow as needed.', 'Ask the patient to extend and radially deviate the wrist against resistance.'],
+      positiveFinding: 'Familiar lateral elbow pain reproduced near the common extensor origin.', interpretation: 'Supports a lateral elbow tendinopathy hypothesis when the pain location and load history match.',
+      limitations: ['Not specific as a stand-alone diagnosis.', 'High irritability can make many resisted gripping tasks painful.'], diagnosticUtilityNotes: ['Pair with palpation, grip testing, and radial tunnel/cervical screening.', 'Use location and symptom behavior, not a binary positive/negative result alone.'],
+      evidenceNotes: 'Primarily a symptom-provocation test; interpret within the wider lateral elbow exam.', relatedConditionIds: ['condition-lateral-epicondylalgia'], referenceIds: [], lastReviewed: REVIEW_METADATA,
+    },
+    {
+      id: 'test-maudsley', title: 'Maudsley Test', aliases: ["Maudsley's test", 'Middle finger extension test'], assesses: 'Extensor digitorum provocation', bodyRegionId: 'region-elbow-forearm',
+      targetStructureOrDiagnosis: 'Lateral elbow tendinopathy', testPurpose: 'Adjunct provocation test that biases finger extensor loading in lateral elbow presentations.',
+      patientPosition: 'Seated with elbow extended or slightly flexed, forearm pronated, and fingers relaxed.', clinicianAction: ['Stabilize the hand.', 'Resist extension of the middle finger while monitoring lateral elbow pain.'],
+      positiveFinding: 'Familiar lateral elbow pain reproduced with resisted middle-finger extension.', interpretation: 'Adds support for a lateral elbow tendinopathy hypothesis when paired with local tenderness and load-provoked symptoms.',
+      limitations: ['Provocation can reflect radial tunnel irritation as well as tendon-related pain.', 'Not validated as a stand-alone rule-in test.'], diagnosticUtilityNotes: ['Use after symptom map and neurological screen.', 'Compare with Cozen or gripping response rather than relying on one provocative sign.'],
+      evidenceNotes: 'Useful as a focused provocation test, but diagnostic certainty still comes from the full exam cluster.', relatedConditionIds: ['condition-lateral-epicondylalgia'], referenceIds: [], lastReviewed: REVIEW_METADATA,
+    },
+    {
+      id: 'test-tinel-carpal-tunnel', title: 'Tinel Sign at Carpal Tunnel', aliases: ['Tinel at carpal tunnel', "Tinel's sign at carpal tunnel", 'Carpal tunnel Tinel sign'], assesses: 'Median nerve irritability at the carpal tunnel', bodyRegionId: 'region-hand-wrist',
+      targetStructureOrDiagnosis: 'Carpal tunnel syndrome', testPurpose: 'Adjunct symptom-provocation test used with history, sensory findings, and function in suspected carpal tunnel syndrome.',
+      patientPosition: 'Seated with forearm supinated and wrist relaxed.', clinicianAction: ['Palpate the carpal tunnel region.', 'Tap lightly over the median nerve at the volar wrist.'],
+      positiveFinding: 'Tingling or electric symptoms reproduced into the median nerve distribution.', interpretation: 'Supports CTS when the symptom distribution and clinical pattern are otherwise consistent.',
+      limitations: ['Sensitivity and specificity vary across populations.', 'A negative result does not rule out CTS.'], diagnosticUtilityNotes: ['Interpret alongside nocturnal symptoms, sensory change, thenar status, and Phalen response.', 'Do not overcall isolated local discomfort without neural symptoms.'],
+      evidenceNotes: 'Adjunctive provocative test only; best used within a broader carpal tunnel cluster.', relatedConditionIds: ['condition-carpal-tunnel-syndrome'], referenceIds: ['ref-carpal-tunnel'], lastReviewed: REVIEW_METADATA,
+    },
   ],
   treatments: [
     {
-      id: 'tx-education-load-modification', title: 'Education + Load Modification', aliases: ['Activity pacing'],
+      id: 'tx-education-load-modification', title: 'Education + Load Modification', aliases: ['Activity pacing', 'Activity modification and graded return', 'Task ergonomics and graded exposure', 'Education and reassurance', 'Graded activity and walking tolerance'],
       whatItIs: 'Patient-specific pacing, graded exposure, and recovery expectation setting.',
       whenToUse: ['Any irritable phase.', 'When fear or overprotection is limiting recovery.'],
       whenNotToOveruse: ['Avoid indefinite unloading once symptoms settle.'],
@@ -172,32 +196,32 @@ export const clinicalSeed: ClinicalContentStore = {
       evidenceSummary: 'Widely supported first-line component across outpatient MSK care.', referenceIds: ['ref-lbp-cpg-2021', 'ref-rcsp-cpg-2022'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'tx-progressive-resistance-exercise', title: 'Progressive Resistance Exercise', aliases: ['Progressive loading'],
+      id: 'tx-progressive-resistance-exercise', title: 'Progressive Resistance Exercise', aliases: ['Progressive loading', 'Tendon load progression', 'Load-managed rotator cuff strengthening', 'Quadriceps and hip strengthening', 'Progressive hip abductor and extensor loading'],
       whatItIs: 'Structured strength progression with symptom-informed dosage.', whenToUse: ['Subacute and chronic phases.', 'Deconditioning and force deficits.'],
       whenNotToOveruse: ['Avoid abrupt dose jumps after flares.'], stageRelevance: ['subacute', 'chronic', 'post-op-late', 'return-to-sport'],
       indications: ['Functional weakness.', 'Need for return-to-work/sport loading capacity.'], contraindicationsPrecautions: ['Respect post-op restrictions and severe irritability.'],
       practicalNotes: ['Progress one variable at a time: load, ROM, speed, complexity.', 'Track performance and next-day response.'], evidenceSummary: 'Strong support versus passive-only care in many MSK conditions.', referenceIds: ['ref-acsm-loading'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'tx-neuromuscular-balance-retraining', title: 'Neuromuscular + Balance Retraining', aliases: ['Sensorimotor retraining'], whatItIs: 'Control, proprioception, and dynamic stability retraining.',
+      id: 'tx-neuromuscular-balance-retraining', title: 'Neuromuscular + Balance Retraining', aliases: ['Sensorimotor retraining', 'Scapular motor control interventions', 'Neuromuscular retraining'], whatItIs: 'Control, proprioception, and dynamic stability retraining.',
       whenToUse: ['Ankle sprain rehab.', 'Knee and return-to-sport phases.'], whenNotToOveruse: ['Do not start with highly unstable tasks before base strength.'],
       stageRelevance: ['subacute', 'chronic', 'return-to-sport'], indications: ['Recurrent giving-way.', 'Poor single-leg control.'], contraindicationsPrecautions: ['Adjust for fall risk.'],
       practicalNotes: ['Progress predictable to reactive tasks.', 'Integrate with regional strength work.'], evidenceSummary: 'Supported for reducing recurrent ankle instability risk.', referenceIds: ['ref-ankle-cpg-2021'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'tx-manual-therapy-adjunct', title: 'Manual Therapy (Adjunct)', aliases: ['Joint/soft tissue manual therapy'], whatItIs: 'Short-term symptom modulation paired with active care.',
+      id: 'tx-manual-therapy-adjunct', title: 'Manual Therapy (Adjunct)', aliases: ['Joint/soft tissue manual therapy', 'Manual therapy adjuncts for pain modulation', 'Manual therapy where appropriate'], whatItIs: 'Short-term symptom modulation paired with active care.',
       whenToUse: ['Pain-limited movement preventing exercise start.', 'Cervical mobility deficits and headache presentations.'], whenNotToOveruse: ['Do not use as sole long-term intervention.'],
       stageRelevance: ['acute-irritable', 'subacute'], indications: ['ROM restriction with pain guarding.'], contraindicationsPrecautions: ['Screen vascular/neuro risk in cervical region.'],
       practicalNotes: ['Use to create a movement window, then load.', 'Reassess immediate and 24-hour response.'], evidenceSummary: 'Best effect as adjunct to exercise and education.', referenceIds: ['ref-neck-cpg-2017', 'ref-lbp-cpg-2021'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'tx-bracing-taping', title: 'Bracing/Taping Support', aliases: ['External support'], whatItIs: 'Short-term support to reduce irritability and improve confidence.',
+      id: 'tx-bracing-taping', title: 'Bracing/Taping Support', aliases: ['External support', 'Splinting / orthotic support as indicated'], whatItIs: 'Short-term support to reduce irritability and improve confidence.',
       whenToUse: ['Acute ankle sprain.', 'Early patellofemoral symptom management with load progression.'], whenNotToOveruse: ['Avoid creating long-term dependency.'],
       stageRelevance: ['acute-irritable', 'subacute'], indications: ['Pain during necessary daily loading.'], contraindicationsPrecautions: ['Skin irritation/allergy and circulation issues.'],
       practicalNotes: ['Pair with strengthening and movement retraining.', 'Set planned weaning timeline.'], evidenceSummary: 'Can provide short-term symptom and confidence benefit when combined with rehab.', referenceIds: ['ref-ankle-cpg-2021', 'ref-pfp-cpg-2019'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'tx-nerve-mobility', title: 'Neural Mobility Intervention', aliases: ['Nerve sliders/tensioners'], whatItIs: 'Graded neurodynamic movement to reduce mechanosensitivity.',
+      id: 'tx-nerve-mobility', title: 'Neural Mobility Intervention', aliases: ['Nerve sliders/tensioners', 'Nerve-gliding and interface management'], whatItIs: 'Graded neurodynamic movement to reduce mechanosensitivity.',
       whenToUse: ['Lumbar radicular pain with neural signs.', 'Cervical/upper-limb neural irritability.'], whenNotToOveruse: ['Avoid aggressive tensioning in highly irritable acute states.'],
       stageRelevance: ['acute-irritable', 'subacute', 'chronic'], indications: ['Reproducible neurodynamic symptoms.'], contraindicationsPrecautions: ['Progress slowly with symptom monitoring.'],
       practicalNotes: ['Prefer sliders first.', 'Dose low and frequent early.'], evidenceSummary: 'Moderate evidence as part of multimodal care for neural mechanosensitivity.', referenceIds: ['ref-lbp-cpg-2021', 'ref-neck-cpg-2017'], lastReviewed: REVIEW_METADATA,
@@ -259,6 +283,18 @@ export const clinicalSeed: ClinicalContentStore = {
       mcidMdc: ['Often around 8-15 points depending on population.'], interpretation: ['Interpret with job/sport task changes.'], referenceIds: ['ref-outcome-measures'], lastReviewed: REVIEW_METADATA,
     },
     {
+      id: 'om-prtee', title: 'PRTEE', aliases: ['Patient-Rated Tennis Elbow Evaluation'], bodyRegionId: 'region-elbow-forearm', population: 'Adults with lateral elbow tendinopathy / epicondylalgia.',
+      conditionRelevanceConditionIds: ['condition-lateral-epicondylalgia'], administration: ['15-item self-report questionnaire covering pain and functional difficulty.'],
+      scoring: ['0-100 total score; higher scores reflect greater pain and disability.'], mcidMdc: ['Verify threshold values against current PRTEE psychometric sources before formal reporting.'],
+      interpretation: ['Useful for tracking lateral elbow pain severity and task-related limitation over time.', 'Pair PROM change with grip and load-tolerance measures.'], referenceIds: ['ref-outcome-measures'], lastReviewed: REVIEW_METADATA,
+    },
+    {
+      id: 'om-bctq', title: 'Boston Carpal Tunnel Questionnaire', aliases: ['BCTQ', 'Boston Questionnaire', 'Levine Questionnaire'], bodyRegionId: 'region-hand-wrist', population: 'Adults with suspected or confirmed carpal tunnel syndrome.',
+      conditionRelevanceConditionIds: ['condition-carpal-tunnel-syndrome'], administration: ['Self-report symptom severity and functional status scales.'],
+      scoring: ['Symptom and function subscales are scored separately; higher scores indicate worse status.'], mcidMdc: ['Verify condition-specific thresholds during evidence review before using for formal audit reporting.'],
+      interpretation: ['Helpful for monitoring nocturnal paresthesia burden and hand-function change in CTS.', 'Use alongside sensory and motor reassessment rather than PROM change alone.'], referenceIds: ['ref-outcome-measures'], lastReviewed: REVIEW_METADATA,
+    },
+    {
       id: 'om-koos-jr', title: 'KOOS-JR', aliases: [], bodyRegionId: 'region-knee', population: 'Knee pain and OA populations.',
       conditionRelevanceConditionIds: ['condition-knee-oa', 'condition-meniscal-irritation', 'condition-acl-rehab-overview'], administration: ['7-item self-report.'], scoring: ['Normalized 0-100 score.'],
       mcidMdc: ['Use local benchmarks; variability across populations.'], interpretation: ['Track at baseline and at key rehab milestones.'], referenceIds: ['ref-outcome-measures'], lastReviewed: REVIEW_METADATA,
@@ -318,7 +354,7 @@ export const clinicalSeed: ClinicalContentStore = {
   ],
   conditions: [
     {
-      id: 'condition-rcrsp', title: 'Rotator Cuff-Related Shoulder Pain', aliases: ['RCRSP', 'Subacromial shoulder pain'], bodyRegionId: 'region-shoulder',
+      id: 'condition-rcrsp', title: 'Rotator Cuff-Related Shoulder Pain', aliases: ['RCRSP', 'Subacromial shoulder pain', 'Subacromial pain syndrome'], bodyRegionId: 'region-shoulder',
       clinicalSnapshot: 'Load-sensitive shoulder pain with overhead intolerance and painful arc features.',
       typicalPattern: ['Pain with overhead/reaching tasks.', 'Night pain when lying on involved side is common.'],
       commonSubjectiveClues: ['Recent workload spike.', 'Pain eases with relative rest but recurs on reload.'],
@@ -347,7 +383,7 @@ export const clinicalSeed: ClinicalContentStore = {
       commonMistakesPitfalls: ['Aggressive stretching in highly irritable phase.', 'Setting rigid prognosis timelines.'], evidenceSummary: 'Staged management is recommended; evidence quality for specific protocols remains mixed.', referenceIds: ['ref-rcsp-cpg-2022'], evidenceStrengthTags: ['moderate'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'condition-shoulder-instability', title: 'Shoulder Instability (Traumatic/Recurrent)', aliases: ['Anterior instability'], bodyRegionId: 'region-shoulder',
+      id: 'condition-shoulder-instability', title: 'Shoulder Instability (Traumatic/Recurrent)', aliases: ['Anterior instability', 'Shoulder instability'], bodyRegionId: 'region-shoulder',
       clinicalSnapshot: 'Apprehension and giving-way episodes in vulnerable positions, often after trauma.', typicalPattern: ['Symptoms in abduction-external rotation.', 'Recurrent episodes in younger active populations are common.'],
       commonSubjectiveClues: ['Sensation shoulder may slip out.', 'History of dislocation/subluxation event.'], objectiveExamPriorities: ['Apprehension/relocation response.', 'Strength and dynamic control deficits.', 'Neurovascular screen after traumatic event.'],
       keyDifferentialConditionIds: ['condition-rcrsp'], specialTestIds: ['test-apprehension-relocation'],
@@ -387,7 +423,7 @@ export const clinicalSeed: ClinicalContentStore = {
       referenceIds: ['ref-pfp-cpg-2019'], evidenceStrengthTags: ['high'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'condition-meniscal-irritation', title: 'Meniscal Irritation / Meniscal Injury Overview', aliases: ['Meniscal pathology overview'], bodyRegionId: 'region-knee',
+      id: 'condition-meniscal-irritation', title: 'Meniscal Irritation / Meniscal Injury Overview', aliases: ['Meniscal pathology overview', 'Meniscal pathology'], bodyRegionId: 'region-knee',
       clinicalSnapshot: 'Joint-line dominant knee pain with possible catching/locking symptoms after twist or compression load.', typicalPattern: ['Mechanical symptoms can occur but are variably present.', 'Degenerative patterns may present without clear trauma.'],
       commonSubjectiveClues: ['Twisting mechanism or gradual degenerative onset.', 'Pain with deep flexion and pivoting.'], objectiveExamPriorities: ['Effusion and range assessment.', 'Mechanical symptom profile and load tolerance.', 'Meniscal cluster tests as tolerated.'],
       keyDifferentialConditionIds: ['condition-patellofemoral-pain', 'condition-knee-oa', 'condition-acl-rehab-overview'], specialTestIds: ['test-thessaly'],
@@ -427,7 +463,7 @@ export const clinicalSeed: ClinicalContentStore = {
       commonMistakesPitfalls: ['Rest-only approach during flare.', 'Under-dosing strength and aerobic activity over time.'], evidenceSummary: 'Strong evidence for exercise, education, and long-term self-management.', referenceIds: ['ref-knee-oa-cpg-2021'], evidenceStrengthTags: ['high'], lastReviewed: REVIEW_METADATA,
     },
     {
-      id: 'condition-acl-rehab-overview', title: 'ACL Rehab Overview', aliases: ['ACL injury rehab'], bodyRegionId: 'region-knee',
+      id: 'condition-acl-rehab-overview', title: 'ACL Rehab Overview', aliases: ['ACL injury rehab', 'ACL injury / post-operative rehab', 'ACL injury / post-op'], bodyRegionId: 'region-knee',
       clinicalSnapshot: 'ACL injury pathway requiring staged progression from early impairment management to performance readiness.', typicalPattern: ['Early effusion and strength loss followed by prolonged performance rebuild.', 'Progression should be criteria-based, not calendar-only.'],
       commonSubjectiveClues: ['Instability history during pivot tasks.', 'Confidence gap despite pain improvement.'], objectiveExamPriorities: ['Effusion status and ROM.', 'Strength asymmetry and landing mechanics.', 'Readiness metrics for return-to-sport phases.'],
       keyDifferentialConditionIds: ['condition-meniscal-irritation', 'condition-mcl-sprain'], specialTestIds: ['test-lachman'],
@@ -534,7 +570,7 @@ export const clinicalSeed: ClinicalContentStore = {
       id: 'condition-lateral-epicondylalgia', title: 'Lateral Epicondylalgia', aliases: ['Lateral elbow tendinopathy'], bodyRegionId: 'region-elbow-forearm',
       clinicalSnapshot: 'Lateral elbow pain aggravated by gripping, wrist extension, and forearm loading.', typicalPattern: ['Load-related pain over common extensor origin.', 'Symptoms can become persistent with repetitive load exposure.'],
       commonSubjectiveClues: ['Pain with gripping/lifting cup/pan.', 'Work or sport overuse history.'], objectiveExamPriorities: ['Resisted wrist/finger extension pain response.', 'Grip strength asymmetry.', 'Screen cervical/radial tunnel contributions.'],
-      keyDifferentialConditionIds: ['condition-carpal-tunnel-syndrome'], specialTestIds: [],
+      keyDifferentialConditionIds: ['condition-carpal-tunnel-syndrome'], specialTestIds: ['test-cozen', 'test-maudsley'],
       stageBasedManagement: [
         { stage: 'acute-irritable', goals: ['Reduce tendon irritability and preserve use.'], treatmentIds: ['tx-education-load-modification', 'tx-bracing-taping'], progressionFocus: ['Isometric and load modification entry'], reassessmentPriorities: ['Grip tolerance trend'] },
         { stage: 'subacute', goals: ['Rebuild extensor tendon load capacity.'], treatmentIds: ['tx-progressive-resistance-exercise'], progressionFocus: ['Wrist extensor progressive loading'], reassessmentPriorities: ['QuickDASH/PSFS', 'task tolerance'] },
@@ -560,7 +596,7 @@ export const clinicalSeed: ClinicalContentStore = {
       id: 'condition-carpal-tunnel-syndrome', title: 'Carpal Tunnel Syndrome', aliases: ['CTS'], bodyRegionId: 'region-hand-wrist',
       clinicalSnapshot: 'Median nerve compression pattern with nocturnal paresthesia and hand functional symptoms.', typicalPattern: ['Numbness/tingling in thumb-index-middle fingers.', 'Night symptoms and repetitive hand-use aggravation common.'],
       commonSubjectiveClues: ['Shaking hand for relief at night.', 'Grip fatigue or fine motor difficulty.'], objectiveExamPriorities: ['Sensory map and thenar function screen.', 'Phalen/Tinel as adjuncts.', 'Cervical/proximal neural differential as needed.'],
-      keyDifferentialConditionIds: ['condition-neck-mobility-deficits', 'condition-lateral-epicondylalgia'], specialTestIds: ['test-phalen', 'test-upper-limb-tension-1'],
+      keyDifferentialConditionIds: ['condition-neck-mobility-deficits', 'condition-lateral-epicondylalgia'], specialTestIds: ['test-phalen', 'test-tinel-carpal-tunnel', 'test-upper-limb-tension-1'],
       stageBasedManagement: [
         { stage: 'acute-irritable', goals: ['Reduce nocturnal and repetitive-use symptom burden.'], treatmentIds: ['tx-education-load-modification', 'tx-bracing-taping'], progressionFocus: ['Night splinting and ergonomic load changes'], reassessmentPriorities: ['Night symptom frequency', 'hand numbness severity'] },
         { stage: 'subacute', goals: ['Improve nerve and hand function tolerance.'], treatmentIds: ['tx-nerve-mobility', 'tx-progressive-resistance-exercise'], progressionFocus: ['Nerve slider progression and hand/forearm conditioning'], reassessmentPriorities: ['QuickDASH/PSFS', 'work-task tolerance'] },

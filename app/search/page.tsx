@@ -1,29 +1,13 @@
 import { Suspense } from 'react';
 import { SearchClient } from '@/components/SearchClient';
-import { getKnowledgeBaseItems, getNavigationData } from '@/lib/kb';
+import { getSearchCatalog } from '@/lib/search';
 
 export default function SearchPage() {
-  const nav = getNavigationData();
-  const items = getKnowledgeBaseItems().map((item) => ({
-    slug: item.slug,
-    title: item.title,
-    section: item.section,
-    sectionLabel: item.sectionLabel,
-    region: item.region,
-    aliases: item.aliases,
-    tags: item.tags,
-    summary: item.summary,
-    excerpt: item.excerpt,
-    sourcePath: item.sourcePath,
-    contentType: item.contentType,
-    phases: item.phases,
-    population: item.population,
-    managementTrack: item.managementTrack,
-  }));
+  const { items, regions, sections } = getSearchCatalog();
 
   return (
     <Suspense fallback={<section className="search-loading" role="status" aria-live="polite">Loading search index and preparing ranked results…</section>}>
-      <SearchClient regions={nav.regions} sections={nav.sections} items={items} />
+      <SearchClient regions={regions} sections={sections} items={items} />
     </Suspense>
   );
 }

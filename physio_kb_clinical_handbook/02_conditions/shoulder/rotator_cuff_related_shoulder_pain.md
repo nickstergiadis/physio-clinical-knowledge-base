@@ -1,6 +1,9 @@
 ---
 title: "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy"
 slug: "rotator_cuff_related_shoulder_pain"
+aliases:
+  - "Rotator cuff related shoulder pain"
+  - "Subacromial pain syndrome"
 section: "conditions"
 region: "Shoulder"
 tags:

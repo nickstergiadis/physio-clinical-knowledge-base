@@ -4,23 +4,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useDeferredValue, useMemo, useState } from 'react';
 import { FavoriteButton } from '@/components/FavoriteButton';
-
-type SearchItem = {
-  slug: string;
-  title: string;
-  section: string;
-  sectionLabel: string;
-  region: string;
-  aliases: string[];
-  tags: string[];
-  summary: string;
-  excerpt: string;
-  sourcePath: string;
-  contentType: 'condition' | 'symptom-pattern' | 'body-region' | 'special-test' | 'treatment' | 'outcome-measure' | 'exercise-progression' | 'red-flag-topic' | 'general';
-  phases: Array<'acute' | 'subacute' | 'chronic'>;
-  population: 'sport' | 'general' | 'mixed';
-  managementTrack: 'post-op' | 'non-op' | 'mixed';
-};
+import type { SearchItem } from '@/lib/search';
 
 const ALIAS_EXPANSIONS: Record<string, string[]> = {
   gtps: ['greater trochanteric pain syndrome'],
@@ -273,9 +257,9 @@ export function SearchClient({
           <h2>{CONTENT_TYPE_LABELS[group]} ({groupItems.length})</h2>
           <ul className="clean grid" aria-label={`${CONTENT_TYPE_LABELS[group]} search results`}>
             {groupItems.map(({ item }) => (
-              <li key={item.slug} className="card result-card">
+              <li key={item.key} className="card result-card">
                 <h3 className="result-title">
-                  <Link href={`/content/${item.slug}`}>{item.title}</Link>
+                  <Link href={item.href}>{item.title}</Link>
                 </h3>
                 <p>{item.excerpt}</p>
                 <div className="search-result-meta">
@@ -289,7 +273,7 @@ export function SearchClient({
                 </div>
                 {item.tags.length > 0 && <p className="muted">Tags: {item.tags.slice(0, 5).join(' · ')}</p>}
                 <p className="muted search-result-source"><code>{item.sourcePath}</code></p>
-                <FavoriteButton slug={item.slug} title={item.title} />
+                <FavoriteButton href={item.href} title={item.title} />
               </li>
             ))}
           </ul>

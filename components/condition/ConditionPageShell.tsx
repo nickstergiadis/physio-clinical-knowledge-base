@@ -8,6 +8,7 @@ import type { ConditionPageSchema } from '@/lib/conditionPage';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ConditionStageCards } from '@/components/clinical/ConditionStageCards';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import type { getStageReasoningCardsForConditionSlug } from '@/lib/clinicalModules';
 
 type RelatedItem = { slug: string; title: string };
@@ -55,7 +56,7 @@ export function ConditionPageShell({
         <h1>{item.title}</h1>
         <p className="muted">{item.summary}</p>
         <div className="condition-header__meta">
-          <FavoriteButton slug={item.slug} title={item.title} />
+          <FavoriteButton href={`/content/${item.slug}`} title={item.title} />
           <span className={clsx('evidence-badge', `strength-${schema.evidenceStrength.toLowerCase()}`)}>
             Evidence: {schema.evidenceStrength}
           </span>
@@ -184,7 +185,7 @@ function Card({ id, title, items }: { id: string; title: string; items: string[]
       <h2>{title}</h2>
       <ul>
         {items.map((entry) => (
-          <li key={entry}>{entry}</li>
+          <li key={entry}><KbEntityLink label={entry} /></li>
         ))}
       </ul>
     </section>

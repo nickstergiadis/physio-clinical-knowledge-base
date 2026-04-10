@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import type { BodyRegionHub } from '@/lib/bodyRegionHubs';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 
 const SECTION_DEFINITIONS = [
   { key: 'commonConditions', label: 'Common conditions' },
@@ -52,6 +53,15 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
               <details key={card.prompt} className="card recall-card">
                 <summary>{card.prompt}</summary>
                 <p>{card.answer}</p>
+                {card.relatedEntities?.length ? (
+                  <ul className="clean quick-list">
+                    {card.relatedEntities.map((entity) => (
+                      <li key={entity}>
+                        <KbEntityLink label={entity} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </details>
             ))}
           </section>
@@ -64,7 +74,7 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
             <h2>{section.label}</h2>
             <ul>
               {hub[section.key].map((entry) => (
-                <li key={entry}>{entry}</li>
+                <li key={entry}><KbEntityLink label={entry} /></li>
               ))}
             </ul>
           </section>

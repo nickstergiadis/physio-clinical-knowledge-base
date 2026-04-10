@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { CitationList } from '@/components/evidence/CitationList';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
 
@@ -69,7 +70,7 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
           <ul>
             {test.relatedConditions.map((condition) => (
               <li key={condition.id}>
-                <Link href={`/search?q=${encodeURIComponent(condition.title)}`}>{condition.title}</Link>
+                <KbEntityLink label={condition.title} />
               </li>
             ))}
           </ul>

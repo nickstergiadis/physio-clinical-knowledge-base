@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { CitationList } from '@/components/evidence/CitationList';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getOutcomeMeasureById, getOutcomeMeasures } from '@/lib/outcomeMeasures';
 
@@ -39,7 +40,9 @@ export default async function OutcomeMeasureDetailPage({ params }: { params: Pro
         <h2>Condition relevance</h2>
         <ul>
           {measure.relatedConditions.map((condition) => (
-            <li key={condition.id}>{condition.title}</li>
+            <li key={condition.id}>
+              <KbEntityLink label={condition.title} />
+            </li>
           ))}
         </ul>
       </section>
