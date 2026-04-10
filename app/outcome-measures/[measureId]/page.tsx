@@ -6,6 +6,7 @@ import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getOutcomeMeasureById, getOutcomeMeasures } from '@/lib/outcomeMeasures';
+import { getEntityHref } from '@/lib/entityRoutes';
 
 export function generateStaticParams() {
   return getOutcomeMeasures().map((measure) => ({ measureId: measure.id }));

@@ -6,6 +6,7 @@ import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
+import { getEntityHref } from '@/lib/entityRoutes';
 
 export function generateStaticParams() {
   return getSpecialTests().map((test) => ({ testId: test.id }));
