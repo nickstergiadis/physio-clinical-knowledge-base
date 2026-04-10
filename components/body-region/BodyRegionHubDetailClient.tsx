@@ -53,6 +53,15 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
               <details key={card.prompt} className="card recall-card">
                 <summary>{card.prompt}</summary>
                 <p>{card.answer}</p>
+                {card.relatedEntities?.length ? (
+                  <ul className="clean quick-list">
+                    {card.relatedEntities.map((entity) => (
+                      <li key={entity}>
+                        <KbEntityLink label={entity} />
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </details>
             ))}
           </section>

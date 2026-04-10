@@ -1,6 +1,9 @@
 ---
 title: "Lateral Elbow Tendinopathy"
 slug: "lateral_elbow_tendinopathy"
+aliases:
+  - "Lateral epicondylalgia"
+  - "Tennis elbow"
 section: "conditions"
 region: "Elbow & Forearm"
 tags:

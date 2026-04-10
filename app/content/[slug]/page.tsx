@@ -38,7 +38,7 @@ export default async function ContentDetailPage({ params }: { params: Promise<{ 
     <article className="card prose detail-page">
       <header className="detail-header">
         <h1>{item.title}</h1>
-        <FavoriteButton slug={item.slug} title={item.title} />
+        <FavoriteButton href={`/content/${item.slug}`} title={item.title} />
         <p>
           <strong>Section:</strong> {item.sectionLabel}<br />
           <strong>Region:</strong> {item.region}<br />

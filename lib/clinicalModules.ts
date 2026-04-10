@@ -29,22 +29,39 @@ function normalize(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
-function findConditionSlug(title: string) {
-  const conditions = getKnowledgeBaseItems().filter((item) => item.section === 'conditions');
-  const exact = conditions.find((item) => normalize(item.title) === normalize(title));
-  if (exact) return exact.slug;
-  return conditions.find((item) => normalize(item.title).includes(normalize(title)) || normalize(title).includes(normalize(item.title)))?.slug;
+function findConditionSlug(labels: string[]) {
+  const candidates = getKnowledgeBaseItems();
+  const normalizedLabels = labels.map((label) => normalize(label)).filter(Boolean);
+
+  for (const label of normalizedLabels) {
+    const exact = candidates.find((item) =>
+      normalize(item.title) === label || item.aliases.some((alias) => normalize(alias) === label),
+    );
+    if (exact) return exact.slug;
+  }
+
+  for (const label of normalizedLabels) {
+    const fuzzy = candidates.find((item) =>
+      normalize(item.title).includes(label)
+      || label.includes(normalize(item.title))
+      || item.aliases.some((alias) => normalize(alias).includes(label) || label.includes(normalize(alias))),
+    );
+    if (fuzzy) return fuzzy.slug;
+  }
+
+  return undefined;
 }
 
 function withConditionContext(conditionId: string): LinkedCondition | null {
   const condition = clinicalSeed.conditions.find((entry) => entry.id === conditionId);
   if (!condition) return null;
   const region = clinicalSeed.bodyRegions.find((entry) => entry.id === condition.bodyRegionId);
+  const slug = findConditionSlug([condition.title, ...condition.aliases]);
 
   return {
     id: condition.id,
     title: condition.title,
-    slug: findConditionSlug(condition.title),
+    slug,
     bodyRegionId: condition.bodyRegionId,
     bodyRegionName: region?.name || 'General',
   };
@@ -101,7 +118,7 @@ export function getRegionFilterOptions() {
 }
 
 export function getStageReasoningCardsForConditionSlug(slug: string) {
-  const condition = clinicalSeed.conditions.find((entry) => findConditionSlug(entry.title) === slug);
+  const condition = clinicalSeed.conditions.find((entry) => findConditionSlug([entry.title, ...entry.aliases]) === slug);
   if (!condition) return null;
 
   const treatmentCards = getTreatmentsWithContext().filter((entry) =>

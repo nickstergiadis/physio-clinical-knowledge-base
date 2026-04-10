@@ -6,20 +6,35 @@ function normalizeEntityLabel(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
-function findKbSlugForLabel(label: string) {
-  const normalizedLabel = normalizeEntityLabel(label);
+function findKbSlugForLabels(labels: string[]) {
+  const normalizedLabels = labels.map((label) => normalizeEntityLabel(label)).filter(Boolean);
   const candidates = getKnowledgeBaseItems();
 
-  const exact = candidates.find((item) => normalizeEntityLabel(item.title) === normalizedLabel);
-  if (exact) return exact.slug;
+  for (const normalizedLabel of normalizedLabels) {
+    const exact = candidates.find((item) =>
+      normalizeEntityLabel(item.title) === normalizedLabel
+      || item.aliases.some((alias) => normalizeEntityLabel(alias) === normalizedLabel),
+    );
+    if (exact) return exact.slug;
+  }
 
-  const aliasMatch = candidates.find((item) => item.aliases.some((alias) => normalizeEntityLabel(alias) === normalizedLabel));
-  if (aliasMatch) return aliasMatch.slug;
+  for (const normalizedLabel of normalizedLabels) {
+    const fuzzy = candidates.find((item) => {
+      const normalizedTitle = normalizeEntityLabel(item.title);
+      return (
+        normalizedTitle.includes(normalizedLabel)
+        || normalizedLabel.includes(normalizedTitle)
+        || item.aliases.some((alias) => {
+          const normalizedAlias = normalizeEntityLabel(alias);
+          return normalizedAlias.includes(normalizedLabel) || normalizedLabel.includes(normalizedAlias);
+        })
+      );
+    });
 
-  return candidates.find((item) => {
-    const normalizedTitle = normalizeEntityLabel(item.title);
-    return normalizedTitle.includes(normalizedLabel) || normalizedLabel.includes(normalizedTitle);
-  })?.slug;
+    if (fuzzy) return fuzzy.slug;
+  }
+
+  return undefined;
 }
 
 function buildEntityRouteMap() {
@@ -38,7 +53,7 @@ function buildEntityRouteMap() {
   }
 
   for (const condition of clinicalSeed.conditions) {
-    const slug = findKbSlugForLabel(condition.title);
+    const slug = findKbSlugForLabels([condition.title, ...condition.aliases]);
     if (!slug) continue;
     const href = `/content/${slug}`;
     register(condition.title, href);

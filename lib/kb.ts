@@ -224,6 +224,7 @@ export function getKnowledgeBaseItems(): KbItem[] {
     const title = (typeof frontmatter.title === 'string' && frontmatter.title.trim()) || body.match(/^#\s+(.+)$/m)?.[1] || titleFromFilename(path.basename(filePath));
     const section = SECTION_MAP[relPath.split(path.sep)[0] || ''] || 'index';
     const tags = [...new Set(toArray(frontmatter.tags).map((tag) => normalizeLabel(tag)))];
+    const declaredAliases = toArray(frontmatter.aliases).map((alias) => normalizeLabel(alias));
 
     const item: KbItem = {
       id: slugify(relPath),
@@ -246,7 +247,7 @@ export function getKnowledgeBaseItems(): KbItem[] {
       managementTrack: inferManagementTrack(section, relPath, title, body),
     };
 
-    item.aliases = inferAliases(item.title, body, item.tags);
+    item.aliases = [...new Set([...declaredAliases, ...inferAliases(item.title, body, item.tags)])];
     return item;
   });
 

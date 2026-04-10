@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { StageBadge } from '@/components/clinical/StageBadge';
 import { CitationList } from '@/components/evidence/CitationList';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getExerciseProgressionsWithContext } from '@/lib/clinicalModules';
 
@@ -31,7 +31,7 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
       <EvidenceSummaryCard profile={evidenceProfile} lastReviewedIso={progression.lastReviewed?.reviewedAtIso} />
 
       <section className="grid two">
-        <section className="card"><h2>Target condition(s)</h2><ul>{progression.targetConditions.map((condition) => <li key={condition.id}>{condition.slug ? <Link href={`/content/${condition.slug}`}>{condition.title}</Link> : condition.title}</li>)}</ul></section>
+        <section className="card"><h2>Target condition(s)</h2><ul>{progression.targetConditions.map((condition) => <li key={condition.id}><KbEntityLink label={condition.title} /></li>)}</ul></section>
         <section className="card"><h2>Example dosage</h2><ul>{progression.dosageSuggestions.map((entry) => <li key={entry}>{entry}</li>)}</ul></section>
         <section className="card"><h2>Progression options</h2><ul>{progression.progressionOptions.map((entry) => <li key={entry}>{entry}</li>)}</ul></section>
         <section className="card"><h2>Regression options</h2><ul>{progression.regressionOptions.map((entry) => <li key={entry}>{entry}</li>)}</ul></section>

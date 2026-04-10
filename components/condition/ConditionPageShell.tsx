@@ -56,7 +56,7 @@ export function ConditionPageShell({
         <h1>{item.title}</h1>
         <p className="muted">{item.summary}</p>
         <div className="condition-header__meta">
-          <FavoriteButton slug={item.slug} title={item.title} />
+          <FavoriteButton href={`/content/${item.slug}`} title={item.title} />
           <span className={clsx('evidence-badge', `strength-${schema.evidenceStrength.toLowerCase()}`)}>
             Evidence: {schema.evidenceStrength}
           </span>

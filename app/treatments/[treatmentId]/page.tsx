@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { StageBadge } from '@/components/clinical/StageBadge';
 import { CitationList } from '@/components/evidence/CitationList';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceStrengthTags } from '@/components/evidence/EvidenceStrengthTags';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getTreatmentsWithContext } from '@/lib/clinicalModules';
 
@@ -42,7 +42,9 @@ export default async function TreatmentDetailPage({ params }: { params: Promise<
         <h2>Related conditions</h2>
         <ul>
           {treatment.relatedConditions.map((condition) => (
-            <li key={condition.id}>{condition.slug ? <Link href={`/content/${condition.slug}`}>{condition.title}</Link> : condition.title}</li>
+            <li key={condition.id}>
+              <KbEntityLink label={condition.title} />
+            </li>
           ))}
         </ul>
       </section>

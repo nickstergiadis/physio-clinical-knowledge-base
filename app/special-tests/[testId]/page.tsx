@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { CitationList } from '@/components/evidence/CitationList';
 import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
 import { getEntityHref } from '@/lib/entityRoutes';
@@ -68,14 +69,11 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
         <article className="card">
           <h2>Related conditions</h2>
           <ul>
-            {test.relatedConditions.map((condition) => {
-              const href = getEntityHref(condition.title);
-              return (
-                <li key={condition.id}>
-                  {href ? <Link href={href}>{condition.title}</Link> : condition.title}
-                </li>
-              );
-            })}
+            {test.relatedConditions.map((condition) => (
+              <li key={condition.id}>
+                <KbEntityLink label={condition.title} />
+              </li>
+            ))}
           </ul>
         </article>
       </section>

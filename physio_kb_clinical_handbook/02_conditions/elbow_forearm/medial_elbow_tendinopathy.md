@@ -1,6 +1,9 @@
 ---
 title: "Medial Elbow Tendinopathy"
 slug: "medial_elbow_tendinopathy"
+aliases:
+  - "Medial epicondylalgia"
+  - "Golfer's elbow"
 section: "conditions"
 region: "Elbow & Forearm"
 tags:

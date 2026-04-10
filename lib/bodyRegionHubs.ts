@@ -9,7 +9,7 @@ export type BodyRegionHub = {
   keyRedFlags: string[];
   relevantOutcomeMeasures: string[];
   highYieldSummary: string[];
-  recallCards: { prompt: string; answer: string }[];
+  recallCards: { prompt: string; answer: string; relatedEntities?: string[] }[];
 };
 
 export const BODY_REGION_HUBS: BodyRegionHub[] = [
@@ -25,7 +25,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
     relevantOutcomeMeasures: ['SPADI', 'QuickDASH', 'Numeric Pain Rating Scale'],
     highYieldSummary: ['Prioritize active range, irritability, and traumatic vs non-traumatic onset.', 'Use a cluster of history + exam findings rather than single-test diagnosis.'],
     recallCards: [
-      { prompt: 'Most useful first-line shoulder outcomes?', answer: 'SPADI and QuickDASH plus pain scale baseline.' },
+      { prompt: 'Most useful first-line shoulder outcomes?', answer: 'Use a region PROM plus a pain scale baseline.', relatedEntities: ['SPADI', 'QuickDASH'] },
       { prompt: 'Common initial loading strategy for irritable cuff pain?', answer: 'Begin with isometrics and low-range isotonic work, then progress load and range.' },
     ],
   },
@@ -41,7 +41,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
     relevantOutcomeMeasures: ['PRTEE', 'QuickDASH', 'Boston Carpal Tunnel Questionnaire'],
     highYieldSummary: ['Differentiate tendon overload from nerve entrapment early.', 'Grip tolerance and work demands should guide progression speed.'],
     recallCards: [
-      { prompt: 'Two high-yield tests for lateral elbow tendinopathy?', answer: 'Cozen and Maudsley tests.' },
+      { prompt: 'Two high-yield tests for lateral elbow tendinopathy?', answer: 'Use these provocation tests as adjuncts within the broader exam cluster.', relatedEntities: ['Cozen Test', 'Maudsley Test'] },
       { prompt: 'When to prioritize urgent referral in hand complaints?', answer: 'Rapid neurological loss, major trauma deformity, or suspected infection.' },
     ],
   },
@@ -57,7 +57,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
     relevantOutcomeMeasures: ['Neck Disability Index', 'Patient-Specific Functional Scale', 'Numeric Pain Rating Scale'],
     highYieldSummary: ['Screen myelopathy and vascular risk before mechanical loading.', 'Cluster radiculopathy findings to improve diagnostic confidence.'],
     recallCards: [
-      { prompt: 'Core disability measure for neck pain?', answer: 'Neck Disability Index (NDI).' },
+      { prompt: 'Core disability measure for neck pain?', answer: 'Use the core disability measure alongside symptom and ROM tracking.', relatedEntities: ['Neck Disability Index'] },
       { prompt: 'Critical early rule-out in cervical exam?', answer: 'Myelopathy and vascular red flags.' },
     ],
   },
@@ -90,7 +90,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
     highYieldSummary: ['Most low back pain responds to active management and progressive loading.', 'Use neuro screen repeatedly when radicular symptoms are present.'],
     recallCards: [
       { prompt: 'Urgent lumbar referral concern?', answer: 'Cauda equina signs (e.g., saddle anesthesia, bladder/bowel changes).' },
-      { prompt: 'Core lumbar disability outcome?', answer: 'Oswestry Disability Index.' },
+      { prompt: 'Core lumbar disability outcome?', answer: 'Use the core lumbar disability outcome alongside function tracking.', relatedEntities: ['Oswestry Disability Index'] },
     ],
   },
   {
@@ -121,7 +121,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
     relevantOutcomeMeasures: ['KOOS / KOOS Jr', 'IKDC', 'Lower Extremity Functional Scale'],
     highYieldSummary: ['Match rehab phase to irritability and tissue healing stage.', 'Use objective strength/function criteria for return-to-sport decisions.'],
     recallCards: [
-      { prompt: 'Primary ligament integrity test after acute ACL injury?', answer: 'Lachman test.' },
+      { prompt: 'Primary ligament integrity test after acute ACL injury?', answer: 'Start with the primary ACL integrity test, then interpret it with mechanism and effusion timing.', relatedEntities: ['Lachman Test'] },
       { prompt: 'Common knee function outcome tools?', answer: 'KOOS/KOOS Jr and IKDC.' },
     ],
   },

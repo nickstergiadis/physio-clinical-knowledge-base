@@ -1,6 +1,9 @@
 ---
 title: "Post-op ACL Reconstruction + Meniscal Repair"
 slug: "post_op_acl_reconstruction_meniscal_repair"
+aliases:
+  - "ACL injury / post-operative rehab"
+  - "ACL injury / post-op"
 section: "conditions"
 region: "Knee"
 tags:
