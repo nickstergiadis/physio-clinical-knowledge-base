@@ -5,6 +5,7 @@ import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
+import { getEntityHref } from '@/lib/entityRoutes';
 
 export function generateStaticParams() {
   return getSpecialTests().map((test) => ({ testId: test.id }));
@@ -67,11 +68,14 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
         <article className="card">
           <h2>Related conditions</h2>
           <ul>
-            {test.relatedConditions.map((condition) => (
-              <li key={condition.id}>
-                <Link href={`/search?q=${encodeURIComponent(condition.title)}`}>{condition.title}</Link>
-              </li>
-            ))}
+            {test.relatedConditions.map((condition) => {
+              const href = getEntityHref(condition.title);
+              return (
+                <li key={condition.id}>
+                  {href ? <Link href={href}>{condition.title}</Link> : condition.title}
+                </li>
+              );
+            })}
           </ul>
         </article>
       </section>

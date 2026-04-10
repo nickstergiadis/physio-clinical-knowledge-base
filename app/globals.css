@@ -48,6 +48,22 @@ body {
 a { color: var(--accent); text-decoration-thickness: 0.08em; }
 a:hover { text-decoration-thickness: 0.15em; }
 
+
+.kb-entity-link,
+.kb-entity-text {
+  color: inherit;
+}
+
+.kb-entity-link {
+  text-decoration-color: color-mix(in oklab, var(--muted) 55%, transparent);
+  text-underline-offset: 0.12em;
+}
+
+.kb-entity-link:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 2px;

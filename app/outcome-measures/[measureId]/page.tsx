@@ -5,6 +5,7 @@ import { EditorialWarning } from '@/components/evidence/EditorialWarning';
 import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getOutcomeMeasureById, getOutcomeMeasures } from '@/lib/outcomeMeasures';
+import { getEntityHref } from '@/lib/entityRoutes';
 
 export function generateStaticParams() {
   return getOutcomeMeasures().map((measure) => ({ measureId: measure.id }));
@@ -38,9 +39,10 @@ export default async function OutcomeMeasureDetailPage({ params }: { params: Pro
       <section className="card">
         <h2>Condition relevance</h2>
         <ul>
-          {measure.relatedConditions.map((condition) => (
-            <li key={condition.id}>{condition.title}</li>
-          ))}
+          {measure.relatedConditions.map((condition) => {
+            const href = getEntityHref(condition.title);
+            return <li key={condition.id}>{href ? <Link href={href}>{condition.title}</Link> : condition.title}</li>;
+          })}
         </ul>
       </section>
 

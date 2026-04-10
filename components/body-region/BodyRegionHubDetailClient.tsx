@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import type { BodyRegionHub } from '@/lib/bodyRegionHubs';
+import { KbEntityLink } from '@/components/kb/KbEntityLink';
 
 const SECTION_DEFINITIONS = [
   { key: 'commonConditions', label: 'Common conditions' },
@@ -64,7 +65,7 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
             <h2>{section.label}</h2>
             <ul>
               {hub[section.key].map((entry) => (
-                <li key={entry}>{entry}</li>
+                <li key={entry}><KbEntityLink label={entry} /></li>
               ))}
             </ul>
           </section>
