@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SearchForm } from '@/components/SearchForm';
 
 const TOP_LEVEL_NAV = [
   { href: '/conditions', label: 'Conditions' },
@@ -20,16 +21,13 @@ export function SiteHeader() {
           <p className="site-tagline">Clinical lookup tool for rapid point-of-care decisions.</p>
         </div>
 
-        <form action="/search" role="search" className="site-search" aria-label="Search clinical content">
-          <label htmlFor="site-search-input" className="sr-only">Search conditions, tests, treatments, and outcomes</label>
-          <input
-            id="site-search-input"
-            name="q"
-            type="search"
-            placeholder="Search condition, body region, test, treatment…"
-          />
-          <button type="submit">Search</button>
-        </form>
+        <SearchForm
+          className="site-search"
+          ariaLabel="Search clinical content"
+          inputId="site-search-input"
+          label="Search conditions, tests, treatments, and outcomes"
+          placeholder="Search condition, body region, test, treatment…"
+        />
       </div>
 
       <nav aria-label="Primary" className="top-nav">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SearchForm } from '@/components/SearchForm';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 
 const CLINICAL_ENTRY_POINTS = [
@@ -38,11 +39,13 @@ export default function HomePage() {
       <section className="hero-search card" aria-labelledby="home-title">
         <h1 id="home-title">What do you need to look up?</h1>
         <p className="muted">Search is the fastest path. Use quick entry points below when you already know your clinical direction.</p>
-        <form action="/search" role="search" className="home-search" aria-label="Homepage clinical search">
-          <label htmlFor="home-search-input" className="sr-only">Search clinical knowledge base</label>
-          <input id="home-search-input" name="q" type="search" placeholder="Search condition, test, region, treatment, outcome measure…" />
-          <button type="submit">Search</button>
-        </form>
+        <SearchForm
+          className="home-search"
+          ariaLabel="Homepage clinical search"
+          inputId="home-search-input"
+          label="Search clinical knowledge base"
+          placeholder="Search condition, test, region, treatment, outcome measure…"
+        />
       </section>
 
       <section aria-labelledby="entry-points-title">
