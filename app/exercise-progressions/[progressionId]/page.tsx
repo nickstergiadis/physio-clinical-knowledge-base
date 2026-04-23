@@ -6,6 +6,7 @@ import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getExerciseProgressionsWithContext } from '@/lib/clinicalModules';
+import { getEvidenceSummariesForConditionLabels } from '@/lib/evidenceSummaries';
 
 export function generateStaticParams() {
   return getExerciseProgressionsWithContext().map((progression) => ({ progressionId: progression.id }));
@@ -17,6 +18,7 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
   if (!progression) return notFound();
 
   const evidenceProfile = buildEvidenceProfile(progression.referenceIds);
+  const relatedEvidenceSummaries = getEvidenceSummariesForConditionLabels(progression.targetConditions.map((condition) => condition.title));
 
   return (
     <article className="grid">
@@ -41,6 +43,19 @@ export default async function ExerciseProgressionDetailPage({ params }: { params
 
       <section className="card"><h2>Return-to-function relevance</h2><p>{progression.returnToFunctionRelevance}</p></section>
       <section className="card"><h2>Evidence summary narrative</h2><p>{progression.evidenceNotes}</p></section>
+
+      {relatedEvidenceSummaries.length > 0 && (
+        <section className="card">
+          <h2>Related evidence summaries</h2>
+          <ul>
+            {relatedEvidenceSummaries.map((summary) => (
+              <li key={summary.slug}>
+                <KbEntityLink label={summary.title} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <CitationList references={evidenceProfile.references} title="References / linked evidence" />
     </article>
   );

@@ -6,7 +6,7 @@ import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getSpecialTestById, getSpecialTests } from '@/lib/specialTests';
-import { getEntityHref } from '@/lib/entityRoutes';
+import { getEvidenceSummariesForConditionLabels } from '@/lib/evidenceSummaries';
 
 export function generateStaticParams() {
   return getSpecialTests().map((test) => ({ testId: test.id }));
@@ -18,6 +18,7 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
   if (!test) return notFound();
 
   const evidenceProfile = buildEvidenceProfile(test.referenceIds);
+  const relatedEvidenceSummaries = getEvidenceSummariesForConditionLabels(test.relatedConditions.map((condition) => condition.title));
 
   return (
     <article className="grid">
@@ -79,6 +80,20 @@ export default async function SpecialTestDetailPage({ params }: { params: Promis
       </section>
 
       <CitationList references={test.references} title="References / linked evidence" />
+
+      {relatedEvidenceSummaries.length > 0 && (
+        <section className="card">
+          <h2>Related evidence summaries</h2>
+          <ul>
+            {relatedEvidenceSummaries.map((summary) => (
+              <li key={summary.slug}>
+                <KbEntityLink label={summary.title} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
 
       {test.relatedTests.length > 0 && (
         <section className="card" aria-labelledby="comparison-title">
