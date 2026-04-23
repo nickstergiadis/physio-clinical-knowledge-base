@@ -1,5 +1,6 @@
 'use client';
 
+import { withBasePath } from '@/lib/basePath';
 import { useRouter } from 'next/navigation';
 import type { FormEvent } from 'react';
 
@@ -13,19 +14,7 @@ type SearchFormProps = {
 
 export function SearchForm({ className, ariaLabel, inputId, label, placeholder }: SearchFormProps) {
   const router = useRouter();
-
-  const configuredBasePath = (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/$/, '');
-
-  function detectRuntimeBasePath() {
-    if (typeof window === 'undefined') return '';
-    if (!window.location.hostname.endsWith('github.io')) return '';
-
-    const firstSegment = window.location.pathname.split('/').filter(Boolean)[0];
-    return firstSegment ? `/${firstSegment}` : '';
-  }
-
-  const basePath = configuredBasePath || detectRuntimeBasePath();
-  const searchAction = `${basePath}/search/`;
+  const searchAction = withBasePath('/search/');
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
