@@ -31,9 +31,12 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
         <p className="muted">
           Default view stays point-of-care focused. Study Mode is intentionally lightweight for quick structured review.
         </p>
-        <div className="mode-toggle" role="navigation" aria-label="View mode">
-          <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}`}>Clinical View</Link>
-          <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study`}>Study Mode</Link>
+        <div className="hub-card-actions">
+          <div className="mode-toggle" role="navigation" aria-label="View mode">
+            <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}`}>Clinical View</Link>
+            <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study`}>Study Mode</Link>
+          </div>
+          {hub.referralPageHref ? <Link href={hub.referralPageHref}>Red flags / referral pathway</Link> : null}
         </div>
       </header>
 
