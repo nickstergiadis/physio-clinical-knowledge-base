@@ -27,6 +27,7 @@ This is the cleaned and consolidated handbook build of the physiotherapy knowled
 - Use the **exercise framework** for stage-based progression logic.
 - Use **protocol annexes** only after checking the operative note and surgeon-specific restrictions.
 - Review the **evidence update** page when management assumptions may have shifted.
+- Build new condition pages with the [Condition Page Template (Quick View + Deep View)](./condition_page_template.md).
 
 ## Hip / Lateral Hip
 ### Foundations

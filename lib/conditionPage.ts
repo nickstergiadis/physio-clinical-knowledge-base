@@ -37,16 +37,21 @@ export type ConditionPageSchema = {
 };
 
 const HEADING_MAP: Array<{ key: string; match: RegExp[] }> = [
-  { key: 'definition-overview', match: [/clinical summary/i, /overview/i, /definition/i] },
-  { key: 'clinical-presentation', match: [/typical presentation/i, /presentation/i] },
+  { key: 'definition-overview', match: [/clinical summary/i, /overview/i, /definition/i, /clinical framing/i] },
+  { key: 'clinical-presentation', match: [/typical presentation/i, /common presentation/i, /presentation/i] },
   { key: 'subjective-clues', match: [/subjective/i, /history/i] },
-  { key: 'objective-exam', match: [/objective/i, /exam/i] },
+  { key: 'objective-exam', match: [/objective/i, /exam/i, /exam priorities/i] },
   { key: 'differential-diagnosis', match: [/differential/i] },
+  { key: 'differential-reasoning', match: [/differential reasoning/i] },
   { key: 'special-tests', match: [/special test/i] },
-  { key: 'management', match: [/management/i, /treatment/i, /conservative/i] },
-  { key: 'exercise-progression', match: [/progression/i, /rehab/i, /loading/i] },
+  { key: 'tests-interpretation', match: [/high[- ]yield tests/i, /test interpretation/i] },
+  { key: 'subgrouping-modifiers', match: [/subgroup/i, /modifier/i] },
+  { key: 'management', match: [/management/i, /treatment option/i, /treatment/i, /conservative/i, /first-line/i] },
+  { key: 'exercise-progression', match: [/exercise progression/i, /progression strategy/i, /rehab/i, /loading/i] },
+  { key: 'follow-up-markers', match: [/follow-up/i, /reassessment/i, /monitor/i] },
   { key: 'prognosis-healing', match: [/prognosis/i, /timeline/i, /healing/i] },
   { key: 'referral-imaging', match: [/refer/i, /imaging/i] },
+  { key: 'related-pages', match: [/linked related pages/i, /related pages/i, /linked pages/i] },
   { key: 'evidence-summary', match: [/evidence/i] },
   { key: 'citations', match: [/citation/i, /source link/i] },
   { key: 'red-flags', match: [/red flag/i, /when to refer/i, /when to reconsider/i] },
@@ -95,7 +100,7 @@ function toStageBlocks(items: string[]): StageBlock[] {
 
   for (const item of items) {
     const lower = item.toLowerCase();
-    if (/(acute|irritable|high pain|high irritability)/.test(lower)) stages[0].focus.push(item);
+    if (/(acute|irritable|high pain|high irritability|calm phase)/.test(lower)) stages[0].focus.push(item);
     else if (/(subacute|rebuild|progress)/.test(lower)) stages[1].focus.push(item);
     else if (/(late|return|heavy|power|performance|sport)/.test(lower)) stages[2].focus.push(item);
     else stages[1].focus.push(item);
@@ -139,17 +144,19 @@ export function buildConditionPageSchema(item: KbItem): ConditionPageSchema {
   ].filter(Boolean);
 
   const deepView: ConditionBlock[] = [
-    { id: 'definition-overview', title: 'Definition / Overview', items: byKey.get('definition-overview') ?? [item.summary] },
-    { id: 'clinical-presentation', title: 'Clinical Presentation', items: byKey.get('clinical-presentation') ?? [] },
-    { id: 'subjective-clues', title: 'Subjective Clues', items: byKey.get('subjective-clues') ?? [] },
-    { id: 'objective-exam', title: 'Objective Exam', items: byKey.get('objective-exam') ?? [] },
-    { id: 'differential-diagnosis', title: 'Differential Diagnosis', items: byKey.get('differential-diagnosis') ?? [] },
-    { id: 'special-tests', title: 'Special Tests', items: byKey.get('special-tests') ?? [] },
-    { id: 'management', title: 'Management', items: management },
-    { id: 'exercise-progression', title: 'Exercise Progression by Stage', items: progression },
-    { id: 'prognosis-healing', title: 'Prognosis / Healing Timeline', items: byKey.get('prognosis-healing') ?? [] },
-    { id: 'referral-imaging', title: 'Referral / Imaging Considerations', items: byKey.get('referral-imaging') ?? byKey.get('red-flags') ?? [] },
+    { id: 'definition-overview', title: 'Definition / Clinical Framing', items: byKey.get('definition-overview') ?? [item.summary] },
+    { id: 'clinical-presentation', title: 'Common Presentation Pattern', items: byKey.get('clinical-presentation') ?? [] },
+    { id: 'differential-reasoning', title: 'Differential Reasoning', items: byKey.get('differential-reasoning') ?? byKey.get('differential-diagnosis') ?? [] },
+    { id: 'objective-exam', title: 'Exam Priorities', items: byKey.get('objective-exam') ?? [] },
+    { id: 'special-tests', title: 'High-yield Tests and Interpretation', items: byKey.get('tests-interpretation') ?? byKey.get('special-tests') ?? [] },
+    { id: 'subgrouping-modifiers', title: 'Subgrouping / Modifiers', items: byKey.get('subgrouping-modifiers') ?? [] },
+    { id: 'management', title: 'Treatment Options', items: management },
+    { id: 'exercise-progression', title: 'Exercise / Progression Strategy', items: progression },
+    { id: 'follow-up-markers', title: 'Follow-up Markers / Reassessment', items: byKey.get('follow-up-markers') ?? [] },
+    { id: 'prognosis-healing', title: 'Prognosis / Timeline Snapshot', items: byKey.get('prognosis-healing') ?? [] },
+    { id: 'referral-imaging', title: 'Red-flag Screen / Referral Considerations', items: byKey.get('red-flags') ?? byKey.get('referral-imaging') ?? [] },
     { id: 'evidence-summary', title: 'Evidence Summary', items: evidenceItems },
+    { id: 'related-pages', title: 'Linked Related Pages', items: byKey.get('related-pages') ?? [] },
     { id: 'citations', title: 'Citations', items: item.citations.map((c) => c.label) },
   ];
 
@@ -163,9 +170,9 @@ export function buildConditionPageSchema(item: KbItem): ConditionPageSchema {
     quickView: {
       clinicalSnapshot: byKey.get('definition-overview') ?? [item.summary],
       typicalPattern: byKey.get('clinical-presentation') ?? [],
-      keyDifferentials: byKey.get('differential-diagnosis') ?? [],
+      keyDifferentials: byKey.get('differential-diagnosis') ?? byKey.get('differential-reasoning') ?? [],
       examPriorities: byKey.get('objective-exam') ?? [],
-      specialTests: byKey.get('special-tests') ?? [],
+      specialTests: byKey.get('tests-interpretation') ?? byKey.get('special-tests') ?? [],
       firstLineTreatment: management,
       stageBasedRehab: stageBased,
       healingTimeline: byKey.get('prognosis-healing') ?? [],
