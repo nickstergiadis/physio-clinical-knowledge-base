@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
-import { useDeferredValue, useMemo, useState } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { FormEvent, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import type { SearchItem } from '@/lib/search';
 
@@ -92,6 +92,20 @@ function scoreItem(item: SearchItem, q: string, terms: string[], quickJumpType?:
   return score;
 }
 
+function previewSnippet(item: SearchItem, query: string) {
+  const text = item.excerpt || item.summary;
+  const normalized = query.trim().toLowerCase();
+  if (!normalized) return text;
+  const index = text.toLowerCase().indexOf(normalized);
+  if (index === -1) return text;
+
+  const start = Math.max(0, index - 55);
+  const end = Math.min(text.length, index + normalized.length + 80);
+  const leading = start > 0 ? '…' : '';
+  const trailing = end < text.length ? '…' : '';
+  return `${leading}${text.slice(start, end).trim()}${trailing}`;
+}
+
 export function SearchClient({
   regions,
   sections,
@@ -101,6 +115,8 @@ export function SearchClient({
   sections: { slug: string; name: string }[];
   items: SearchItem[];
 }) {
+  const router = useRouter();
+  const pathname = usePathname();
   const params = useSearchParams();
   const [q, setQ] = useState(params.get('q') || '');
   const [region, setRegion] = useState(params.get('region') || '');
@@ -110,6 +126,12 @@ export function SearchClient({
   const [population, setPopulation] = useState('');
   const [managementTrack, setManagementTrack] = useState('');
   const deferredQuery = useDeferredValue(q);
+
+  useEffect(() => {
+    setQ(params.get('q') || '');
+    setRegion(params.get('region') || '');
+    setSection(params.get('section') || '');
+  }, [params]);
 
   const quickJump = useMemo(() => QUICK_JUMPS.find((rule) => rule.match.test(deferredQuery)), [deferredQuery]);
 
@@ -157,11 +179,21 @@ export function SearchClient({
     setManagementTrack('');
   }
 
+  function onSearchSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const next = new URLSearchParams();
+    if (q.trim()) next.set('q', q.trim());
+    if (region) next.set('region', region);
+    if (section) next.set('section', section);
+    const queryString = next.toString();
+    router.push(queryString ? `${pathname}?${queryString}` : pathname);
+  }
+
   return (
     <>
       <h1>Search</h1>
 
-      <form className="card search-toolbar" role="search" aria-label="Clinical content search" onSubmit={(e) => e.preventDefault()}>
+      <form className="card search-toolbar" role="search" aria-label="Clinical content search" onSubmit={onSearchSubmit}>
         <p className="muted" style={{ marginTop: 0 }}>
           Use 1-3 filters for high-signal results. Over-filtering can hide clinically useful alternatives.
         </p>
@@ -224,6 +256,7 @@ export function SearchClient({
           </div>
         </div>
         <div className="search-toolbar__actions">
+          <button type="submit">Search</button>
           <button type="button" onClick={clearFilters}>Clear all filters</button>
           <span className="muted" aria-live="polite">{activeFilters} active filter{activeFilters === 1 ? '' : 's'}</span>
         </div>
@@ -261,7 +294,7 @@ export function SearchClient({
                 <h3 className="result-title">
                   <Link href={item.href}>{item.title}</Link>
                 </h3>
-                <p>{item.excerpt}</p>
+                <p>{previewSnippet(item, deferredQuery)}</p>
                 <div className="search-result-meta">
                   <span className="meta-pill">{item.region}</span>
                   <span className="meta-pill">{item.sectionLabel}</span>
