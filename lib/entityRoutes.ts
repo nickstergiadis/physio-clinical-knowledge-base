@@ -96,7 +96,34 @@ function buildEntityRouteMap() {
 }
 
 const ENTITY_ROUTE_MAP = buildEntityRouteMap();
+const ENTITY_ROUTE_ENTRIES = Array.from(ENTITY_ROUTE_MAP.entries());
+
+function buildLabelVariants(label: string) {
+  const variants = new Set<string>([label]);
+  const noParen = label.replace(/\s*\([^)]*\)/g, '').trim();
+  if (noParen) variants.add(noParen);
+
+  for (const candidate of Array.from(variants)) {
+    const slashParts = candidate.split(/\s*\/\s*/).map((part) => part.trim()).filter(Boolean);
+    if (slashParts.length > 1) {
+      for (const part of slashParts) variants.add(part);
+    }
+  }
+
+  return Array.from(variants).map((value) => normalizeEntityLabel(value)).filter(Boolean);
+}
 
 export function getEntityHref(label: string) {
-  return ENTITY_ROUTE_MAP.get(normalizeEntityLabel(label));
+  for (const normalizedLabel of buildLabelVariants(label)) {
+    const direct = ENTITY_ROUTE_MAP.get(normalizedLabel);
+    if (direct) return direct;
+
+    const fuzzy = ENTITY_ROUTE_ENTRIES
+      .filter(([key]) => key.includes(normalizedLabel) || normalizedLabel.includes(key))
+      .sort((a, b) => Math.abs(a[0].length - normalizedLabel.length) - Math.abs(b[0].length - normalizedLabel.length))[0];
+
+    if (fuzzy) return fuzzy[1];
+  }
+
+  return undefined;
 }

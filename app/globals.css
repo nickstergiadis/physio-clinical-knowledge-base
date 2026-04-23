@@ -64,6 +64,20 @@ a:hover { text-decoration-thickness: 0.15em; }
   text-decoration-color: currentColor;
 }
 
+
+.kb-entity-unavailable {
+  color: var(--muted);
+}
+
+.kb-entity-unavailable__tag {
+  margin-left: 0.45rem;
+  font-size: 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.05rem 0.4rem;
+  vertical-align: middle;
+}
+
 :focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 2px;
