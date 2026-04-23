@@ -77,7 +77,7 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
             <h2>{section.label}</h2>
             <ul>
               {hub[section.key].map((entry) => (
-                <li key={entry}><KbEntityLink label={entry} unresolvedBehavior="unavailable" /></li>
+                <li key={entry}><KbEntityLink label={entry} /></li>
               ))}
             </ul>
           </section>
