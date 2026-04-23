@@ -3,6 +3,13 @@
 import { FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
 
+const configuredBasePath = process.env.NEXT_PUBLIC_BASE_PATH?.replace(/\/$/, '') || '';
+
+function withBasePath(pathname: string) {
+  const normalizedPath = pathname.startsWith('/') ? pathname : `/${pathname}`;
+  return `${configuredBasePath}${normalizedPath}`;
+}
+
 type SearchFormProps = {
   className: string;
   ariaLabel: string;
@@ -20,8 +27,9 @@ export function SearchForm({ className, ariaLabel, inputId, label, placeholder }
     const formData = new FormData(event.currentTarget);
     const queryValue = formData.get('q');
     const query = typeof queryValue === 'string' ? queryValue.trim() : '';
+    const baseSearchPath = withBasePath('/search');
 
-    router.push(query ? `/search?q=${encodeURIComponent(query)}` : '/search');
+    router.push(query ? `${baseSearchPath}?q=${encodeURIComponent(query)}` : baseSearchPath);
   };
 
   return (
