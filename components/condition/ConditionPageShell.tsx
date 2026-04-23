@@ -35,14 +35,14 @@ export function ConditionPageShell({
     () =>
       mode === 'quick'
         ? [
-            ['clinical-snapshot', 'Clinical snapshot'],
-            ['typical-pattern', 'Typical pattern'],
+            ['clinical-snapshot', 'Definition / clinical framing'],
+            ['typical-pattern', 'Common presentation'],
             ['key-differentials', 'Key differentials'],
-            ['exam-priorities', 'Top exam priorities'],
-            ['special-tests', 'Most useful special tests'],
-            ['first-line-treatment', 'First-line treatment'],
+            ['exam-priorities', 'Exam priorities'],
+            ['special-tests', 'High-yield tests / interpretation'],
+            ['first-line-treatment', 'First-line management'],
             ['stage-based-rehab', 'Stage-based rehab'],
-            ['healing-timeline', 'Healing / recovery timeline'],
+            ['healing-timeline', 'Prognosis / timeline snapshot'],
             ['red-flags', 'Red flags / reconsider'],
           ]
         : schema.deepView.map((block) => [block.id, block.title]),
@@ -132,12 +132,12 @@ function QuickView({ schema }: { schema: ConditionPageSchema }) {
   const q = schema.quickView;
   return (
     <div className="quick-view-grid">
-      <Card id="clinical-snapshot" title="Clinical snapshot" items={q.clinicalSnapshot} />
-      <Card id="typical-pattern" title="Typical pattern" items={q.typicalPattern} />
+      <Card id="clinical-snapshot" title="Definition / clinical framing" items={q.clinicalSnapshot} />
+      <Card id="typical-pattern" title="Common presentation" items={q.typicalPattern} />
       <Card id="key-differentials" title="Key differentials" items={q.keyDifferentials} />
-      <Card id="exam-priorities" title="Top exam priorities" items={q.examPriorities} />
-      <Card id="special-tests" title="Most useful special tests" items={q.specialTests} />
-      <Card id="first-line-treatment" title="First-line treatment approach" items={q.firstLineTreatment} />
+      <Card id="exam-priorities" title="Exam priorities" items={q.examPriorities} />
+      <Card id="special-tests" title="High-yield tests and interpretation" items={q.specialTests} />
+      <Card id="first-line-treatment" title="First-line management" items={q.firstLineTreatment} />
       <section className="card" id="stage-based-rehab">
         <h2>Stage-based rehab summary</h2>
         <div className="timeline">
@@ -149,7 +149,7 @@ function QuickView({ schema }: { schema: ConditionPageSchema }) {
           ))}
         </div>
       </section>
-      <Card id="healing-timeline" title="Healing / recovery timeline" items={q.healingTimeline} />
+      <Card id="healing-timeline" title="Prognosis / timeline snapshot" items={q.healingTimeline} />
       <Card id="red-flags" title="Red flags / when to reconsider" items={q.redFlags} />
       <section className="card">
         <h2>Referral pathway reminder</h2>

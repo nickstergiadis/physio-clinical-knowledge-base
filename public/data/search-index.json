@@ -5,7 +5,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Activities Specific Balance Confidence]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Balance Confidence]"
@@ -21,6 +23,7 @@
     "sectionLabel": "Index",
     "region": "Ankle",
     "aliases": [
+      "[Achilles Repair Rehab]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -40,6 +43,7 @@
     "sectionLabel": "Index",
     "region": "Ankle",
     "aliases": [
+      "[Midportion Achilles Tendinopathy]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -75,6 +79,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Anterior Cruciate Ligament Injury]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -94,6 +99,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Acl Reconstruction Rehab]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -115,6 +121,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Meniscal Tear]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -134,6 +141,7 @@
     "sectionLabel": "Index",
     "region": "Shoulder",
     "aliases": [
+      "[Frozen Shoulder]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -282,7 +290,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Assessment Template]"
+    ],
     "tags": [
       "[Template",
       "Assessment]"
@@ -297,7 +307,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Bbs]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Balance]"
@@ -313,6 +325,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Implementation Roadmap]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -332,6 +345,7 @@
     "sectionLabel": "Index",
     "region": "Elbow & Forearm",
     "aliases": [
+      "[Cts]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -443,6 +457,7 @@
     "sectionLabel": "Index",
     "region": "Lumbar Spine",
     "aliases": [
+      "[Cervical Radiculopathy]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -462,6 +477,7 @@
     "sectionLabel": "Index",
     "region": "Cervical",
     "aliases": [
+      "[Neck Assessment]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -549,17 +565,40 @@
   },
   {
     "slug": "condition-page-template",
-    "title": "Condition Page Template",
+    "title": "Condition Page Template (Quick View + Deep View)",
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [],
+    "tags": [],
+    "summary": "Condition Page Template (Quick View + Deep View) Reusable clinician-facing structure for all condition pages. Quick View - Definition / clinical framing - Common presentation - Key…",
+    "excerpt": "Condition Page Template (Quick View + Deep View) Reusable clinician-facing structure for all condition pages. Quick View - Definition / clinical framing - Common presentation - Key differentials - Exam priorities - Red-f…",
+    "sourcePath": "00_index/condition_page_template.md"
+  },
+  {
+    "slug": "condition-page-template",
+    "title": "Condition Page Template (Quick View + Deep View)",
+    "section": "index",
+    "sectionLabel": "Index",
+    "region": "General",
+    "aliases": [
+      "[Condition Template",
+      "Clinician Condition Page Template]",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
     "tags": [
       "[Template",
-      "Condition]"
+      "Condition",
+      "Quick View",
+      "Deep View]"
     ],
-    "summary": "1. Clinical summary 2. Key presentation patterns 3. Differential diagnosis 4. Red flags / referral triggers 5. Subjective exam priorities 6. Objective exam priorities 7. Useful spe…",
-    "excerpt": "1. Clinical summary 2. Key presentation patterns 3. Differential diagnosis 4. Red flags / referral triggers 5. Subjective exam priorities 6. Objective exam priorities 7. Useful special tests and their limits 8. Common im…",
+    "summary": "Condition Page Template (Clinician-Facing) Use this structure for point-of-care condition pages. Keep language clinical, concise, and action-oriented. Do not write as patient educa…",
+    "excerpt": "Condition Page Template (Clinician-Facing) Use this structure for point-of-care condition pages. Keep language clinical, concise, and action-oriented. Do not write as patient education. Quick View Definition / Clinical F…",
     "sourcePath": "Physio_Knowledge_Base/00_Index/Templates/Condition_Page_Template.md"
   },
   {
@@ -568,7 +607,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[KB Standards]"
+    ],
     "tags": [
       "[Standards",
       "Governance",
@@ -644,7 +685,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Dizziness Handicap Inventory]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Vestibular]"
@@ -660,6 +703,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Vestibular Screen]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -781,6 +825,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Evidence Backlog]",
       "ACLR",
       "anterior cruciate ligament reconstruction"
     ],
@@ -798,7 +843,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Foot And Ankle Ability Measure]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Foot Ankle]"
@@ -838,7 +885,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[5xsts]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Function]"
@@ -854,6 +903,7 @@
     "sectionLabel": "Index",
     "region": "Ankle",
     "aliases": [
+      "[Foot Ankle Exam]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -895,6 +945,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Lower Quarter Neuro]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -917,6 +968,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Upper Quarter Neuro]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -955,6 +1007,7 @@
     "sectionLabel": "Index",
     "region": "Hip",
     "aliases": [
+      "[Lateral Hip Pain]",
       "GTPS",
       "greater trochanteric pain syndrome",
       "OA",
@@ -1148,6 +1201,7 @@
     "sectionLabel": "Index",
     "region": "Hip",
     "aliases": [
+      "[Fai Labral Repair Rehab]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1167,6 +1221,7 @@
     "sectionLabel": "Index",
     "region": "Hip",
     "aliases": [
+      "[Hip Exam]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -1234,6 +1289,7 @@
     "sectionLabel": "Index",
     "region": "Hip",
     "aliases": [
+      "[Hip Oa]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1328,6 +1384,8 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Hoos Jr",
+      "Hoos]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1347,6 +1405,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Master Index]",
       "GTPS",
       "greater trochanteric pain syndrome",
       "OA",
@@ -1391,6 +1450,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Knee Exam]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -1470,6 +1530,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Knee Oa]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -1546,6 +1607,8 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Koos Jr",
+      "Koos]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1587,6 +1650,8 @@
     "sectionLabel": "Index",
     "region": "Ankle",
     "aliases": [
+      "[Las",
+      "Ankle Sprain]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1607,6 +1672,8 @@
     "sectionLabel": "Conditions",
     "region": "Elbow & Forearm",
     "aliases": [
+      "Lateral Epicondylalgia",
+      "Tennis Elbow",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1626,6 +1693,7 @@
     "sectionLabel": "Index",
     "region": "Elbow & Forearm",
     "aliases": [
+      "[Tennis Elbow]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1644,7 +1712,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Lower Extremity Functional Scale]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Lower Extremity]"
@@ -1744,6 +1814,7 @@
     "sectionLabel": "Index",
     "region": "Lumbar Spine",
     "aliases": [
+      "[Lumbar Radicular Pain]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1859,6 +1930,7 @@
     "sectionLabel": "Index",
     "region": "Lumbar Spine",
     "aliases": [
+      "[Low Back Assessment]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -1938,6 +2010,8 @@
     "sectionLabel": "Conditions",
     "region": "Elbow & Forearm",
     "aliases": [
+      "Medial Epicondylalgia",
+      "Golfer'S Elbow",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1957,6 +2031,7 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Meniscal Repair Rehab]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -1998,6 +2073,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Red Flags]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -2043,7 +2119,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Neck Disability Index]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Cervical]"
@@ -2059,6 +2137,7 @@
     "sectionLabel": "Index",
     "region": "Lumbar Spine",
     "aliases": [
+      "[Mechanical Neck Pain]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2099,7 +2178,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Numeric Pain Rating Scale]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Pain]"
@@ -2114,7 +2195,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Oswestry Disability Index]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Lumbar]"
@@ -2129,7 +2212,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Measure Template]"
+    ],
     "tags": [
       "[Template",
       "Outcome Measure]"
@@ -2167,6 +2252,8 @@
     "sectionLabel": "Index",
     "region": "Knee",
     "aliases": [
+      "[Pfp",
+      "Anterior Knee Pain]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2287,6 +2374,7 @@
     "sectionLabel": "Index",
     "region": "Ankle",
     "aliases": [
+      "[Plantar Fasciopathy]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2306,6 +2394,8 @@
     "sectionLabel": "Conditions",
     "region": "Knee",
     "aliases": [
+      "ACL Injury / Post Operative Rehab",
+      "ACL Injury / Post Op",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2341,6 +2431,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Post Op Template]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2360,6 +2451,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Patient Specific Functional Scale]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2378,7 +2470,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Disabilities Of Arm Shoulder Hand]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Upper Extremity]"
@@ -2416,6 +2510,7 @@
     "sectionLabel": "Index",
     "region": "Shoulder",
     "aliases": [
+      "[Rcrsp]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -2453,6 +2548,7 @@
     "sectionLabel": "Index",
     "region": "Shoulder",
     "aliases": [
+      "[Rcr Rehab]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2472,6 +2568,8 @@
     "sectionLabel": "Conditions",
     "region": "Shoulder",
     "aliases": [
+      "Rotator Cuff Related Shoulder Pain",
+      "Subacromial Pain Syndrome",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -2485,8 +2583,8 @@
       "Shoulder",
       "Condition"
     ],
-    "summary": "Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pain where symptoms are linked to rotator cuff / subacromial loading but cannot be ",
-    "excerpt": "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy Clinical summary Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pai…",
+    "summary": "Rotator cuff-related shoulder pain (RCRSP) is a clinical shoulder pain label for load-sensitive non-fracture, non-instability, non-stiffness-dominant presentations where management is primarily education + progressive loading.",
+    "excerpt": "Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy Definition / Clinical Framing - RCRSP is a pragmatic clinical diagnosis for load-sensitive shoulder pain where rotator cuff/subacromial loading reproduces sy…",
     "sourcePath": "02_conditions/shoulder/rotator_cuff_related_shoulder_pain.md"
   },
   {
@@ -2515,6 +2613,7 @@
     "sectionLabel": "Index",
     "region": "Shoulder",
     "aliases": [
+      "[Shoulder Exam]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease",
@@ -2591,6 +2690,7 @@
     "sectionLabel": "Index",
     "region": "Shoulder",
     "aliases": [
+      "[Glenohumeral Instability]",
       "OA",
       "osteoarthritis",
       "degenerative joint disease"
@@ -2664,7 +2764,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Shoulder Pain Disability Index]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Shoulder]"
@@ -2672,6 +2774,33 @@
     "summary": "1. Purpose Shoulder pain and disability outcome measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Se…",
     "excerpt": "1. Purpose Shoulder pain and disability outcome measure. 2. Population / when to use Use in the relevant regional condition set and track over episode of care. 3. Administration Self-report or timed/performance format as…",
     "sourcePath": "Physio_Knowledge_Base/04_Outcome_Measures/SPADI.md"
+  },
+  {
+    "slug": "thumb-cmc-osteoarthritis",
+    "title": "Thumb CMC Osteoarthritis",
+    "section": "conditions",
+    "sectionLabel": "Conditions",
+    "region": "Hand & Wrist",
+    "aliases": [
+      "Thumb Carpometacarpal Osteoarthritis",
+      "Thumb CMC OA",
+      "Basal Thumb Osteoarthritis",
+      "First Carpometacarpal Osteoarthritis",
+      "1st CMC OA",
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "Hand Wrist",
+      "Condition"
+    ],
+    "summary": "Thumb-base osteoarthritis causing load-related pain, stiffness, and pinch weakness, usually managed first with education, splinting support, and progressive hand loading.",
+    "excerpt": "Thumb CMC Osteoarthritis Clinical summary Thumb CMC osteoarthritis is a common cause of thumb-base pain, pinch weakness, and hand function loss. Diagnosis is usually clinical when the symptom pattern is typical, and firs…",
+    "sourcePath": "02_conditions/hand_wrist/thumb_cmc_osteoarthritis.md"
   },
   {
     "slug": "tmj-cluster-evidence-update",
@@ -2873,7 +3002,9 @@
     "section": "index",
     "sectionLabel": "Index",
     "region": "General",
-    "aliases": [],
+    "aliases": [
+      "[Timed Up And Go]"
+    ],
     "tags": [
       "[Outcome Measure",
       "Mobility]"
@@ -2889,6 +3020,7 @@
     "sectionLabel": "Index",
     "region": "General",
     "aliases": [
+      "[Unilateral Vestibular Hypofunction]",
       "THA",
       "total hip arthroplasty",
       "total hip replacement"

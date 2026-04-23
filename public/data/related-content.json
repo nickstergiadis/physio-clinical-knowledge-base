@@ -318,6 +318,15 @@
     }
   },
   {
+    "slug": "condition-page-template",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
+    }
+  },
+  {
     "slug": "content-standards",
     "related": {
       "assessmentTools": [],
@@ -1611,6 +1620,29 @@
       "exerciseFrameworks": [],
       "evidenceUpdates": [],
       "postOpAnnexes": []
+    }
+  },
+  {
+    "slug": "thumb-cmc-osteoarthritis",
+    "related": {
+      "assessmentTools": [
+        "hand-wrist-outcome-measures",
+        "hand-wrist-subjective-objective-exam"
+      ],
+      "exerciseFrameworks": [
+        "hand-wrist-rehab-progression-framework"
+      ],
+      "evidenceUpdates": [
+        "hand-wrist-cluster-evidence-update"
+      ],
+      "postOpAnnexes": [
+        "achilles-tendon-repair-post-op-notes",
+        "gastrocnemius-recession-post-op-notes",
+        "gluteus-medius-minimus-repair-post-op-notes",
+        "hip-arthroscopy-fai-labral-repair-post-op-notes",
+        "rotator-cuff-repair-post-op-notes",
+        "total-hip-arthroplasty-post-op-notes"
+      ]
     }
   },
   {

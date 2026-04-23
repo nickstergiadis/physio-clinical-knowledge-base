@@ -9,7 +9,7 @@ region: "Shoulder"
 tags:
   - "shoulder"
   - "condition"
-summary: "Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pain where symptoms are linked to rotator cuff / subacromial loading but cannot be "
+summary: "Rotator cuff-related shoulder pain (RCRSP) is a clinical shoulder pain label for load-sensitive non-fracture, non-instability, non-stiffness-dominant presentations where management is primarily education + progressive loading."
 evidence_update_needed: false
 psychometric_values_to_verify: false
 procedure_restrictions_vary_by_surgeon_protocol: false
@@ -17,93 +17,99 @@ procedure_restrictions_vary_by_surgeon_protocol: false
 
 # Rotator Cuff-Related Shoulder Pain / Rotator Cuff Tendinopathy
 
-## Clinical summary
-Rotator cuff-related shoulder pain (RCRSP) is a useful clinical label for non-fracture, non-instability, non-stiffness-dominant shoulder pain where symptoms are linked to rotator cuff / subacromial loading but cannot be pinned confidently on one single structure. Current guidance supports conservative-first management with education and exercise at the center.
+## Definition / Clinical Framing
+- RCRSP is a pragmatic clinical diagnosis for load-sensitive shoulder pain where rotator cuff/subacromial loading reproduces symptoms but a single-tissue diagnosis is usually low confidence.
+- Use this label when presentation is mechanical and shoulder-driven, while excluding fracture, dominant instability, and stiffness-dominant adhesive capsulitis patterns.
 
-## Typical presentation
-- lateral shoulder / deltoid-region pain is common
-- pain with reaching, lifting, pressing, overhead work, throwing, or lying on the shoulder
-- painful arc may be present
-- resisted cuff loading may reproduce symptoms
-- passive ROM may be near full or mildly pain-limited
-- major global passive stiffness is not typical
+## Common Presentation
+- Lateral deltoid-region pain with overhead reach, pressing, lifting, and side-lying on the involved shoulder.
+- Painful arc and post-load irritability can be present, with near-full or mildly pain-limited passive ROM.
+- Resisted cuff loading (especially external rotation/abduction) commonly reproduces familiar pain.
 
-## Subjective findings to prioritize
-- irritability with overhead / away-from-body loading
-- night pain / sleep disruption
-- work and gym demands
-- duration and previous episodes
-- trauma vs gradual onset
-- beliefs around “impingement,” “tear,” or need for surgery
-- sport demands and return goals
+## Key Differentials
+- Adhesive Capsulitis / Frozen Shoulder
+- Shoulder Instability (Traumatic/Recurrent)
+- Acromioclavicular (AC) Joint Sprain
+- Cervical radicular referral
 
-## Objective findings
-- active elevation tolerance
-- pain pattern in flexion / abduction / scaption
-- resisted external rotation / abduction tolerance
-- scapular and thoracic contribution during tasks
-- passive ROM pattern to exclude dominant stiffness disorder
-- cervical contribution screen where indicated
-- confirm absence of clear instability pattern
+## Exam Priorities
+- Establish irritability profile: baseline pain, night pain, and 24-hour post-load response.
+- Compare active elevation tolerance vs passive ROM to detect stiffness-dominant patterns.
+- Test resisted external rotation and abduction tolerance plus scapulohumeral control.
+- Screen cervical contribution and neuro status when pain distribution or neurological symptoms suggest referral.
 
-## First-line conservative management
-- education and reassurance
-- progressive exercise therapy
-- load modification rather than complete rest
-- shoulder-specific loading plus broader kinetic-chain support as needed
-- manual therapy only as an adjunct to support participation, not a stand-alone treatment
-- review expectations around timescale and fluctuating irritability
+## Red-Flag Screen
+- Acute traumatic onset with marked weakness, pseudoparalysis, deformity, or suspected fracture/dislocation.
+- Progressive neurological deficit, constitutional symptoms, or non-mechanical pain behavior.
+- Pain severity and disability out of proportion to mechanical loading profile.
+- Use Red flags / referral for immediate escalation pathways.
 
-## Exercise priorities
-### Calm-irritable phase
-- reduce provocative volume temporarily
-- maintain tolerable movement
-- isometric or low-irritability cuff / scapular loading
-- supported elevation in symptom-tolerant range
-- thoracic / mobility work where useful
+## First-Line Management
+- Education and load modification (relative deload, not prolonged complete rest).
+- Progressive Resistance Exercise anchored to tolerance and 24-hour symptom response.
+- Rotator Cuff Loading Progression with staged exposure to elevation and overhead demands.
+- Manual therapy adjuncts can support short-term participation but should not replace active loading.
 
-### Rebuild phase
-- progressive cuff loading
-- scapular upward-rotation / posterior-tilt contributors where indicated
-- row / press / carry / elevation progressions
-- functional reaching and occupational exposure rebuilding
+## Prognosis / Timeline Snapshot
+- Typical improvement begins over 6-12 weeks with consistent load progression; return to higher-demand overhead tasks often requires longer.
+- Prognosis is better when irritability decreases over successive reassessments and load tolerance objectively improves.
+- Reassess diagnosis or escalation pathway when progress plateaus despite an adequate rehabilitation dose.
 
-### Return-to-performance phase
-- heavier and faster loading
-- overhead endurance
-- plyometric / throwing / contact preparation if relevant
-- self-management plan for volume spikes
+## Differential Reasoning
+- RCRSP fit rises when mechanical shoulder loading reproduces familiar pain without global passive capsular restriction.
+- Adhesive capsulitis fit rises when passive ROM loss (especially ER) is substantial and drives function limits.
+- Instability fit rises with apprehension/instability narrative, traumatic mechanism, and relocation response.
+- AC-joint dominant pain is more likely with local superior shoulder tenderness and cross-body compression provocation.
 
-## What not to center the plan on
-- routine imaging for uncomplicated presentation
-- single special tests as definitive proof of one tissue source
-- passive treatment alone
-- early surgery for typical nontraumatic RCRSP
-- blanket advice to avoid all painful movement indefinitely
+## High-Yield Tests and Interpretation
+- Hawkins-Kennedy Test: useful as part of a cluster, not a stand-alone diagnosis.
+- Painful arc + resisted cuff tests + symptom behavior over 24 hours are more informative than any single special test.
+- Apprehension/Relocation Test helps redirect differential toward instability when history supports it.
+- Interpret positives in context of irritability, mechanism, and competing diagnoses.
 
-## When to refer / reconsider
-Reassess if:
-- there is major traumatic weakness or suspected acute full-thickness tear
-- stiffness pattern dominates and adhesive capsulitis fits better
-- instability symptoms dominate
-- symptoms remain highly irritable or non-mechanical
-- a good rehab trial has failed and medical / imaging decisions would change management
+## Subgrouping / Modifiers
+- High-irritability subgroup: prioritize symptom settling, sleep, and short-lever loading entry.
+- Deconditioned/persistent subgroup: emphasize graded capacity rebuild and fear/avoidance-informed pacing.
+- Overhead athlete or high-demand worker subgroup: progress earlier into endurance, velocity, and exposure-specific loading.
+- Metabolic comorbidity/age-related cuff changes: expect slower progression and adjust dosage/recovery windows.
 
-## Patient education points
-- Most shoulder pain in this group is managed without surgery.
-- Exercise is first-line care.
-- Pain with loading does not automatically mean damage is worsening.
-- Imaging often shows age-related findings that may not explain symptoms.
+## Treatment Options
+- First-line: education + load management + progressive exercise.
+- Adjunct options: manual therapy, short-term analgesic support discussions, and coordinated medical management when pain blocks progression.
+- Escalation options: imaging or specialist review when traumatic tear suspicion is high, diagnosis is unclear, or robust rehab trial fails.
+- Avoid over-centering care on routine early imaging or passive-only treatment pathways.
 
-## Evidence and source links
-- Rotator cuff tendinopathy CPG (2025): https://pubmed.ncbi.nlm.nih.gov/40165544/
-- FITT exercise meta-analysis (2024): https://pubmed.ncbi.nlm.nih.gov/38848304/
-- RCRSP terminology editorial (2025): https://pubmed.ncbi.nlm.nih.gov/40536259/
-- Shoulder CPG systematic review (2024): https://pubmed.ncbi.nlm.nih.gov/37832814/
+## Exercise / Progression Strategy
+- Acute-irritable: isometric cuff loading, supported elevation, and symptom-calming volume control.
+- Subacute: progress isotonic cuff/scapular loading, row/press/carry patterns, and functional reach exposure.
+- Late/return-to-performance: heavy-slow plus faster/overhead endurance and sport/work-specific exposure.
+- Progress only when flare response settles within acceptable 24-hour limits and functional markers trend positively.
 
-## Notes for this KB
-Use this page with:
-- `../../01_foundations/shoulder_anatomy_biomechanics.md`
-- `../../01_foundations/shoulder_clinical_reasoning.md`
-- `../../03_assessment_tools/shoulder_subjective_objective_exam.md`
-- `../../04_exercise_library/shoulder_rehab_progression_framework.md`
+## Follow-Up Markers / Reassessment
+- SPADI trend and PSFS task-specific function over 2-4 week intervals.
+- NPRS irritability trend at rest/night and after key shoulder loads.
+- Objective markers: active elevation tolerance, resisted ER/abduction tolerance, and overhead task capacity.
+- Trigger reassessment of diagnosis when function and irritability fail to improve despite adherence and sufficient dose.
+
+## Evidence Summary
+- Current shoulder guidance supports conservative-first care, with progressive exercise as the core intervention for most non-traumatic RCRSP presentations.
+- Diagnostic confidence is stronger from history + exam clusters than isolated special tests.
+- Evidence supports reserving imaging/escalation for atypical, traumatic, or non-responding presentations where management decisions change.
+
+## Linked Related Pages
+- Hawkins-Kennedy Test
+- Apprehension/Relocation Test
+- Progressive Resistance Exercise
+- Rotator Cuff Loading Progression
+- SPADI
+- QuickDASH
+- NPRS
+- Shoulder Cluster Evidence Update
+- Shoulder Subjective + Objective Exam
+
+## Evidence and Source Links
+- [Rotator cuff tendinopathy CPG (2025)](https://pubmed.ncbi.nlm.nih.gov/40165544/)
+- [Exercise dose/frequency meta-analysis for rotator cuff tendinopathy (2024)](https://pubmed.ncbi.nlm.nih.gov/38848304/)
+- [RCRSP terminology and clinical reasoning editorial (2025)](https://pubmed.ncbi.nlm.nih.gov/40536259/)
+- [Systematic review of shoulder CPG recommendations (2024)](https://pubmed.ncbi.nlm.nih.gov/37832814/)
+- PLACEHOLDER CITATION - verify shoulder-specific prognostic cohort source before final publication.
