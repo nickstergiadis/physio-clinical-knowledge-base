@@ -97,6 +97,7 @@ procedure_restrictions_vary_by_surgeon_protocol: false
 - Evidence supports reserving imaging/escalation for atypical, traumatic, or non-responding presentations where management decisions change.
 
 ## Linked Related Pages
+- [Rotator Cuff-Related Shoulder Pain Management — Evidence Summary](/evidence-library/rotator-cuff-related-shoulder-pain-management-evidence-summary)
 - Hawkins-Kennedy Test
 - Apprehension/Relocation Test
 - Progressive Resistance Exercise

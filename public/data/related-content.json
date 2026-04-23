@@ -82,6 +82,7 @@
         "shoulder-rehab-progression-framework"
       ],
       "evidenceUpdates": [
+        "rotator-cuff-related-shoulder-pain-management-evidence-summary",
         "shoulder-cluster-evidence-update"
       ],
       "postOpAnnexes": [
@@ -1520,6 +1521,7 @@
         "shoulder-rehab-progression-framework"
       ],
       "evidenceUpdates": [
+        "rotator-cuff-related-shoulder-pain-management-evidence-summary",
         "shoulder-cluster-evidence-update"
       ],
       "postOpAnnexes": [
@@ -1530,6 +1532,15 @@
         "rotator-cuff-repair-post-op-notes",
         "shoulder-bankart-stabilization-post-op-notes"
       ]
+    }
+  },
+  {
+    "slug": "rotator-cuff-related-shoulder-pain-management-evidence-summary",
+    "related": {
+      "assessmentTools": [],
+      "exerciseFrameworks": [],
+      "evidenceUpdates": [],
+      "postOpAnnexes": []
     }
   },
   {
@@ -1741,6 +1752,7 @@
         "shoulder-rehab-progression-framework"
       ],
       "evidenceUpdates": [
+        "rotator-cuff-related-shoulder-pain-management-evidence-summary",
         "shoulder-cluster-evidence-update"
       ],
       "postOpAnnexes": [

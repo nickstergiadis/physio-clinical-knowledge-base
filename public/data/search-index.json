@@ -2588,6 +2588,30 @@
     "sourcePath": "02_conditions/shoulder/rotator_cuff_related_shoulder_pain.md"
   },
   {
+    "slug": "rotator-cuff-related-shoulder-pain-management-evidence-summary",
+    "title": "Rotator Cuff-Related Shoulder Pain Management — Evidence Summary",
+    "section": "evidence-updates",
+    "sectionLabel": "Evidence Updates",
+    "region": "Shoulder",
+    "aliases": [
+      "OA",
+      "osteoarthritis",
+      "degenerative joint disease",
+      "RCRSP",
+      "rotator cuff related shoulder pain",
+      "THA",
+      "total hip arthroplasty",
+      "total hip replacement"
+    ],
+    "tags": [
+      "Shoulder",
+      "Evidence Summary"
+    ],
+    "summary": "Synthesis-focused summary for non-operative rotator cuff-related shoulder pain management, including quality signal, bottom line, caveats, and direct references.",
+    "excerpt": "Rotator Cuff-Related Shoulder Pain Management — Evidence Summary Clinical question In adults with non-traumatic rotator cuff-related shoulder pain (RCRSP), what management strategy produces the best short- to medium-term…",
+    "sourcePath": "05_evidence_updates/rotator_cuff_related_shoulder_pain_management_evidence_summary.md"
+  },
+  {
     "slug": "shoulder-anatomy-biomechanics",
     "title": "Shoulder Anatomy + Biomechanics",
     "section": "foundations",

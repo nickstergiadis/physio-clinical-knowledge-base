@@ -104,6 +104,9 @@ Document confidence / fear response, not only pain.
 - recurrent episodes / high-risk sport
 - age and activity profile raise recurrence concern
 
+## Related evidence summary
+- [Rotator Cuff-Related Shoulder Pain Management — Evidence Summary](/evidence-library/rotator-cuff-related-shoulder-pain-management-evidence-summary)
+
 ## Optional outcome-linked baselines
 - pain with a meaningful aggravating task
 - active flexion / abduction

@@ -101,6 +101,9 @@ Examples:
 - include confidence / apprehension exposure and criteria-based RTS decisions
 - recurrence risk and structural context may alter how conservative care is framed
 
+## Related evidence summary
+- [Rotator Cuff-Related Shoulder Pain Management — Evidence Summary](/evidence-library/rotator-cuff-related-shoulder-pain-management-evidence-summary)
+
 ## Source links
 - Rotator cuff tendinopathy CPG (2025): https://pubmed.ncbi.nlm.nih.gov/40165544/
 - RCRSP FITT meta-analysis (2024): https://pubmed.ncbi.nlm.nih.gov/38848304/

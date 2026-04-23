@@ -7,6 +7,7 @@ import { EvidenceSummaryCard } from '@/components/evidence/EvidenceSummaryCard';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
 import { buildEvidenceProfile } from '@/lib/clinicalEvidence';
 import { getTreatmentsWithContext } from '@/lib/clinicalModules';
+import { getEvidenceSummariesForConditionLabels } from '@/lib/evidenceSummaries';
 
 export function generateStaticParams() {
   return getTreatmentsWithContext().map((treatment) => ({ treatmentId: treatment.id }));
@@ -18,6 +19,7 @@ export default async function TreatmentDetailPage({ params }: { params: Promise<
   if (!treatment) return notFound();
 
   const evidenceProfile = buildEvidenceProfile(treatment.referenceIds);
+  const relatedEvidenceSummaries = getEvidenceSummariesForConditionLabels(treatment.relatedConditions.map((condition) => condition.title));
 
   return (
     <article className="grid">
@@ -38,6 +40,19 @@ export default async function TreatmentDetailPage({ params }: { params: Promise<
       </section>
       <section className="card"><h2>Evidence summary narrative</h2><p>{treatment.evidenceSummary}</p></section>
       <CitationList references={evidenceProfile.references} title="References / linked evidence" />
+
+      {relatedEvidenceSummaries.length > 0 && (
+        <section className="card">
+          <h2>Related evidence summaries</h2>
+          <ul>
+            {relatedEvidenceSummaries.map((summary) => (
+              <li key={summary.slug}>
+                <KbEntityLink label={summary.title} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <section className="card">
         <h2>Related conditions</h2>
         <ul>
