@@ -90,6 +90,8 @@ function buildEntityRouteMap() {
 
   register('Red flags / referral', '/red-flags-referral');
   register('Red flags referral', '/red-flags-referral');
+  register('Lumbar spine red flags / referral', '/red-flags-referral/lumbar-spine');
+  register('Lumbar red flags', '/red-flags-referral/lumbar-spine');
   register('Evidence library', '/evidence-library');
 
   return routeMap;

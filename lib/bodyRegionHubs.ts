@@ -10,6 +10,7 @@ export type BodyRegionHub = {
   relevantOutcomeMeasures: string[];
   highYieldSummary: string[];
   recallCards: { prompt: string; answer: string; relatedEntities?: string[] }[];
+  referralPageHref?: string;
 };
 
 export const BODY_REGION_HUBS: BodyRegionHub[] = [
@@ -92,6 +93,7 @@ export const BODY_REGION_HUBS: BodyRegionHub[] = [
       { prompt: 'Urgent lumbar referral concern?', answer: 'Cauda equina signs (e.g., saddle anesthesia, bladder/bowel changes).' },
       { prompt: 'Core lumbar disability outcome?', answer: 'Use the core lumbar disability outcome alongside function tracking.', relatedEntities: ['Oswestry Disability Index'] },
     ],
+    referralPageHref: '/red-flags-referral/lumbar-spine',
   },
   {
     slug: 'hip',
