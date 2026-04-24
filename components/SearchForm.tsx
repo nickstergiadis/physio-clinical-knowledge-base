@@ -1,7 +1,9 @@
 'use client';
 
 import { withBasePath } from '@/lib/basePath';
+import { buildSearchRoute } from '@/lib/searchRouting';
 import { useRouter } from 'next/navigation';
+import type { Route } from 'next';
 import type { FormEvent } from 'react';
 
 type SearchFormProps = {
@@ -21,12 +23,9 @@ export function SearchForm({ className, ariaLabel, inputId, label, placeholder }
 
     const formData = new FormData(event.currentTarget);
     const queryValue = formData.get('q');
-    const query = typeof queryValue === 'string' ? queryValue.trim() : '';
-    const searchParams = new URLSearchParams();
-    if (query) searchParams.set('q', query);
-    const suffix = searchParams.toString();
+    const query = typeof queryValue === 'string' ? queryValue : '';
 
-    router.push(suffix ? `${searchAction}?${suffix}` : searchAction);
+    router.push(withBasePath(buildSearchRoute({ q: query })) as Route);
   };
 
   return (

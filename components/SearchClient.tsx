@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import type { Route } from 'next';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { FormEvent, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { FavoriteButton } from '@/components/FavoriteButton';
+import { withBasePath } from '@/lib/basePath';
+import { buildSearchRoute } from '@/lib/searchRouting';
 import type { SearchItem } from '@/lib/search';
 
 const ALIAS_EXPANSIONS: Record<string, string[]> = {
@@ -116,7 +119,6 @@ export function SearchClient({
   items: SearchItem[];
 }) {
   const router = useRouter();
-  const pathname = usePathname();
   const params = useSearchParams();
   const [q, setQ] = useState(params.get('q') || '');
   const [region, setRegion] = useState(params.get('region') || '');
@@ -181,12 +183,7 @@ export function SearchClient({
 
   function onSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const next = new URLSearchParams();
-    if (q.trim()) next.set('q', q.trim());
-    if (region) next.set('region', region);
-    if (section) next.set('section', section);
-    const queryString = next.toString();
-    router.push(queryString ? `${pathname}?${queryString}` : pathname);
+    router.push(withBasePath(buildSearchRoute({ q, region, section })) as Route);
   }
 
   return (
