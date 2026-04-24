@@ -19,7 +19,7 @@ export function KbEntityLink({ label, unresolvedBehavior = 'search' }: KbEntityL
   }
 
   return (
-    <Link className="kb-entity-link" href={href ?? `/search?q=${encodeURIComponent(label)}`}>
+    <Link className="kb-entity-link" href={href ?? { pathname: '/search', query: { q: label } }}>
       {label}
     </Link>
   );

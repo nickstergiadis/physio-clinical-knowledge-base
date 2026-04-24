@@ -25,7 +25,7 @@ export function SearchForm({ className, ariaLabel, inputId, label, placeholder }
     const queryValue = formData.get('q');
     const query = typeof queryValue === 'string' ? queryValue : '';
 
-    router.push(withBasePath(buildSearchRoute({ q: query })) as Route);
+    router.push(buildSearchRoute({ q: query }) as Route);
   };
 
   return (

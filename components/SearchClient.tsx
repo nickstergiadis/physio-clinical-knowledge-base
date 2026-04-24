@@ -5,7 +5,6 @@ import type { Route } from 'next';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { FormEvent, useDeferredValue, useEffect, useMemo, useState } from 'react';
 import { FavoriteButton } from '@/components/FavoriteButton';
-import { withBasePath } from '@/lib/basePath';
 import { buildSearchRoute } from '@/lib/searchRouting';
 import type { SearchItem } from '@/lib/search';
 
@@ -183,7 +182,7 @@ export function SearchClient({
 
   function onSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    router.push(withBasePath(buildSearchRoute({ q, region, section })) as Route);
+    router.push(buildSearchRoute({ q, region, section }) as Route);
   }
 
   return (
