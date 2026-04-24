@@ -17,5 +17,5 @@ export function buildSearchRoute(params: SearchRouteParams): string {
   if (params.section) search.set('section', params.section);
 
   const serialized = search.toString();
-  return serialized ? `/search?${serialized}` : '/search';
+  return serialized ? `/search/?${serialized}` : '/search/';
 }
