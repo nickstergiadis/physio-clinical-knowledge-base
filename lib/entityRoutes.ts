@@ -1,5 +1,7 @@
 import { BODY_REGION_HUBS } from '@/lib/bodyRegionHubs';
 import { clinicalSeed } from '@/lib/clinicalSeed';
+import { getKnowledgeBaseItems } from '@/lib/kb';
+import { isEvidenceSummaryItem as itemIsEvidenceSummary } from '@/lib/evidenceSummaries';
 
 function normalizeEntityLabel(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
@@ -13,6 +15,19 @@ function buildEntityRouteMap() {
     if (!normalized || routeMap.has(normalized)) return;
     routeMap.set(normalized, href);
   };
+
+  for (const condition of getKnowledgeBaseItems().filter((item) => item.section === 'conditions')) {
+
+    const href = `/content/${condition.slug}`;
+    register(condition.title, href);
+    for (const alias of condition.aliases) register(alias, href);
+  }
+
+  for (const summary of getKnowledgeBaseItems().filter((item) => item.section === 'evidence-updates')) {
+    const href = itemIsEvidenceSummary(summary) ? `/evidence-library/${summary.slug}` : `/content/${summary.slug}`;
+    register(summary.title, href);
+    for (const alias of summary.aliases) register(alias, href);
+  }
 
   for (const condition of clinicalSeed.conditions) {
     const href = `/search/?q=${encodeURIComponent(condition.title)}`;
