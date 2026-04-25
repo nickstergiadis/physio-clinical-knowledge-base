@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import type { Route } from 'next';
 import { useSearchParams } from 'next/navigation';
 import type { BodyRegionHub } from '@/lib/bodyRegionHubs';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
@@ -33,10 +34,10 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
         </p>
         <div className="hub-card-actions">
           <div className="mode-toggle" role="navigation" aria-label="View mode">
-            <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}`}>Clinical View</Link>
-            <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study`}>Study Mode</Link>
+            <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}` as Route}>Clinical View</Link>
+            <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study` as Route}>Study Mode</Link>
           </div>
-          {hub.referralPageHref ? <Link href={hub.referralPageHref}>Red flags / referral pathway</Link> : null}
+          {hub.referralPageHref ? <Link href={hub.referralPageHref as Route}>Red flags / referral pathway</Link> : null}
         </div>
       </header>
 

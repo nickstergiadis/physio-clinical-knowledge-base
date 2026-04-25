@@ -288,7 +288,7 @@ export function SearchClient({
             {groupItems.map(({ item }) => (
               <li key={item.key} className="card result-card">
                 <h3 className="result-title">
-                  <Link href={item.href}>{item.title}</Link>
+                  <Link href={item.href as Route}>{item.title}</Link>
                 </h3>
                 <p>{previewSnippet(item, deferredQuery)}</p>
                 <div className="search-result-meta">

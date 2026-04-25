@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import type { Route } from 'next';
 import { getEntityHref } from '@/lib/entityRoutes';
+import { buildSearchRoute } from '@/lib/searchRouting';
 
 type KbEntityLinkProps = {
   label: string;
@@ -8,6 +10,7 @@ type KbEntityLinkProps = {
 
 export function KbEntityLink({ label, unresolvedBehavior = 'search' }: KbEntityLinkProps) {
   const href = getEntityHref(label);
+  const fallbackHref = buildSearchRoute({ q: label });
 
   if (!href && unresolvedBehavior === 'unavailable') {
     return (
@@ -19,7 +22,7 @@ export function KbEntityLink({ label, unresolvedBehavior = 'search' }: KbEntityL
   }
 
   return (
-    <Link className="kb-entity-link" href={href ?? { pathname: '/search', query: { q: label } }}>
+    <Link className="kb-entity-link" href={(href ?? fallbackHref) as Route}>
       {label}
     </Link>
   );
