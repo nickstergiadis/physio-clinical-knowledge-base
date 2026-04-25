@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="empty-state" role="status" aria-live="polite">
             <p>No saved items yet.</p>
             <p className="muted">Pin frequently used pages from search results to keep high-value references one tap away.</p>
-            <Link href="/search">Go to search</Link>
+            <Link href={{ pathname: '/search' }}>Go to search</Link>
           </div>
         </article>
       </section>

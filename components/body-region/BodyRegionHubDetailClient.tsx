@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import type { Route } from 'next';
 import { useSearchParams } from 'next/navigation';
 import type { BodyRegionHub } from '@/lib/bodyRegionHubs';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
@@ -31,9 +32,12 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
         <p className="muted">
           Default view stays point-of-care focused. Study Mode is intentionally lightweight for quick structured review.
         </p>
-        <div className="mode-toggle" role="navigation" aria-label="View mode">
-          <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}`}>Clinical View</Link>
-          <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study`}>Study Mode</Link>
+        <div className="hub-card-actions">
+          <div className="mode-toggle" role="navigation" aria-label="View mode">
+            <Link className={!isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}` as Route}>Clinical View</Link>
+            <Link className={isStudyMode ? 'active' : ''} href={`/body-regions/${hub.slug}?mode=study` as Route}>Study Mode</Link>
+          </div>
+          {hub.referralPageHref ? <Link href={hub.referralPageHref as Route}>Red flags / referral pathway</Link> : null}
         </div>
       </header>
 
@@ -74,7 +78,7 @@ export function BodyRegionHubDetailClient({ hub }: BodyRegionHubDetailClientProp
             <h2>{section.label}</h2>
             <ul>
               {hub[section.key].map((entry) => (
-                <li key={entry}><KbEntityLink label={entry} unresolvedBehavior="unavailable" /></li>
+                <li key={entry}><KbEntityLink label={entry} /></li>
               ))}
             </ul>
           </section>

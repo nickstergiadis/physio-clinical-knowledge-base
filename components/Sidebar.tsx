@@ -29,7 +29,7 @@ export function Sidebar({ regions, sections }: SidebarProps) {
           <h2 style={{ marginTop: 0, fontSize: '1.1rem' }}>Clinical KB</h2>
           <ul className="clean" style={{ marginBottom: '1rem' }}>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/search">Search</Link></li>
+            <li><Link href={{ pathname: '/search' }}>Search</Link></li>
           </ul>
 
           <ThemeToggle />
@@ -40,7 +40,7 @@ export function Sidebar({ regions, sections }: SidebarProps) {
           <ul className="clean" style={{ marginBottom: '1rem' }}>
             {regions.map((r) => (
               <li key={r.slug}>
-                <Link href={`/search?region=${encodeURIComponent(r.slug)}`}>{r.name} ({r.count})</Link>
+                <Link href={{ pathname: '/search', query: { region: r.slug } }}>{r.name} ({r.count})</Link>
               </li>
             ))}
           </ul>
@@ -49,7 +49,7 @@ export function Sidebar({ regions, sections }: SidebarProps) {
           <ul className="clean">
             {sections.map((section) => (
               <li key={section.slug}>
-                <Link href={`/search?section=${encodeURIComponent(section.slug)}`}>{section.name} ({section.count})</Link>
+                <Link href={{ pathname: '/search', query: { section: section.slug } }}>{section.name} ({section.count})</Link>
               </li>
             ))}
           </ul>

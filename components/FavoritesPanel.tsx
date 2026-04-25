@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import type { Route } from 'next';
 import { useEffect, useState } from 'react';
 import { STORAGE_KEY } from '@/components/FavoriteButton';
 
@@ -54,7 +55,7 @@ export function FavoritesPanel() {
         <ul className="clean" style={{ marginBottom: '1rem' }}>
           {favorites.map((item) => (
             <li key={item.href}>
-              <Link href={item.href}>{item.title}</Link>
+              <Link href={item.href as Route}>{item.title}</Link>
             </li>
           ))}
         </ul>

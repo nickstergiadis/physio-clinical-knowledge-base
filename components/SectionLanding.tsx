@@ -42,7 +42,7 @@ export function SectionLanding({ title, quickView, deepView }: SectionLandingPro
         <h2>Clinical safety note</h2>
         <p>
           This section is an index layer. Confirm recommendations against source-linked pages and patient-specific findings before applying care plans.
-          Use <Link href="/search"> Search</Link> for current source-linked content.
+          Use <Link href={{ pathname: '/search' }}> Search</Link> for current source-linked content.
         </p>
       </section>
     </div>
