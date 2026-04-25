@@ -1,41 +1,8 @@
 import { BODY_REGION_HUBS } from '@/lib/bodyRegionHubs';
 import { clinicalSeed } from '@/lib/clinicalSeed';
-import { getKnowledgeBaseItems } from '@/lib/kb';
-import { isEvidenceSummaryItem as itemIsEvidenceSummary } from '@/lib/evidenceSummaries';
 
 function normalizeEntityLabel(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-}
-
-function findKbSlugForLabels(labels: string[]) {
-  const normalizedLabels = labels.map((label) => normalizeEntityLabel(label)).filter(Boolean);
-  const candidates = getKnowledgeBaseItems();
-
-  for (const normalizedLabel of normalizedLabels) {
-    const exact = candidates.find((item) =>
-      normalizeEntityLabel(item.title) === normalizedLabel
-      || item.aliases.some((alias) => normalizeEntityLabel(alias) === normalizedLabel),
-    );
-    if (exact) return exact.slug;
-  }
-
-  for (const normalizedLabel of normalizedLabels) {
-    const fuzzy = candidates.find((item) => {
-      const normalizedTitle = normalizeEntityLabel(item.title);
-      return (
-        normalizedTitle.includes(normalizedLabel)
-        || normalizedLabel.includes(normalizedTitle)
-        || item.aliases.some((alias) => {
-          const normalizedAlias = normalizeEntityLabel(alias);
-          return normalizedAlias.includes(normalizedLabel) || normalizedLabel.includes(normalizedAlias);
-        })
-      );
-    });
-
-    if (fuzzy) return fuzzy.slug;
-  }
-
-  return undefined;
 }
 
 function buildEntityRouteMap() {
@@ -47,23 +14,8 @@ function buildEntityRouteMap() {
     routeMap.set(normalized, href);
   };
 
-  for (const condition of getKnowledgeBaseItems().filter((item) => item.section === 'conditions')) {
-
-    const href = `/content/${condition.slug}`;
-    register(condition.title, href);
-    for (const alias of condition.aliases) register(alias, href);
-  }
-
-  for (const summary of getKnowledgeBaseItems().filter((item) => item.section === 'evidence-updates')) {
-    const href = itemIsEvidenceSummary(summary) ? `/evidence-library/${summary.slug}` : `/content/${summary.slug}`;
-    register(summary.title, href);
-    for (const alias of summary.aliases) register(alias, href);
-  }
-
   for (const condition of clinicalSeed.conditions) {
-    const slug = findKbSlugForLabels([condition.title, ...condition.aliases]);
-    if (!slug) continue;
-    const href = `/content/${slug}`;
+    const href = `/search/?q=${encodeURIComponent(condition.title)}`;
     register(condition.title, href);
     for (const alias of condition.aliases) register(alias, href);
   }
