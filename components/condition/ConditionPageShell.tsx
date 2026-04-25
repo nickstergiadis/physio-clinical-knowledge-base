@@ -3,7 +3,6 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
-import type { KbItem } from '@/lib/kb';
 import type { ConditionPageSchema } from '@/lib/conditionPage';
 import { FavoriteButton } from '@/components/FavoriteButton';
 import { ConditionStageCards } from '@/components/clinical/ConditionStageCards';
@@ -13,13 +12,22 @@ import type { getStageReasoningCardsForConditionSlug } from '@/lib/clinicalModul
 
 type RelatedItem = { slug: string; title: string };
 
+type ConditionShellItem = {
+  slug: string;
+  title: string;
+  region: string;
+  summary: string;
+  sourcePath: string;
+  citations: Array<{ label: string; url?: string }>;
+};
+
 export function ConditionPageShell({
   item,
   schema,
   related,
   stageReasoning,
 }: {
-  item: KbItem;
+  item: ConditionShellItem;
   schema: ConditionPageSchema;
   related: {
     assessments: RelatedItem[];
@@ -162,7 +170,7 @@ function QuickView({ schema }: { schema: ConditionPageSchema }) {
   );
 }
 
-function DeepView({ schema, item }: { schema: ConditionPageSchema; item: KbItem }) {
+function DeepView({ schema, item }: { schema: ConditionPageSchema; item: ConditionShellItem }) {
   return (
     <div className="deep-view-stack">
       {schema.deepView.map((block) => (
