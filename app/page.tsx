@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { SearchForm } from '@/components/SearchForm';
 import { KbEntityLink } from '@/components/kb/KbEntityLink';
+import { FavoritesPanel } from '@/components/FavoritesPanel';
 
 const CLINICAL_ENTRY_POINTS = [
   { title: 'Conditions', href: '/conditions', summary: 'Differential anchors, exam priorities, and first-line management.' },
@@ -102,11 +103,9 @@ export default function HomePage() {
 
         <article className="card">
           <h2>Recently viewed / pinned</h2>
-          <div className="empty-state" role="status" aria-live="polite">
-            <p>No saved items yet.</p>
-            <p className="muted">Pin frequently used pages from search results to keep high-value references one tap away.</p>
-            <Link href={{ pathname: '/search' }}>Go to search</Link>
-          </div>
+          <FavoritesPanel />
+          <p className="muted">Pin frequently used pages from search results to keep high-value references one tap away.</p>
+          <Link href={{ pathname: '/search' }}>Go to search</Link>
         </article>
       </section>
     </div>

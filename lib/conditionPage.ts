@@ -160,10 +160,10 @@ export function buildConditionPageSchema(item: KbItem): ConditionPageSchema {
     { id: 'citations', title: 'Citations', items: item.citations.map((c) => c.label) },
   ];
 
-  const residualMarkdown = item.markdown
-    .split('\n')
-    .filter((line) => !line.startsWith('## '))
-    .join('\n')
+  const residualMarkdown = sections
+    .filter((s) => sectionKey(s.heading) === 'notes')
+    .map((s) => `## ${s.heading}\n\n${s.content}`)
+    .join('\n\n')
     .trim();
 
   return {

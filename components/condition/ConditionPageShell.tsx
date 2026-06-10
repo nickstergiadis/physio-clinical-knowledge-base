@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import Markdown from 'react-markdown';
 import clsx from 'clsx';
 import type { ConditionPageSchema } from '@/lib/conditionPage';
 import { FavoriteButton } from '@/components/FavoriteButton';
@@ -179,7 +180,7 @@ function DeepView({ schema, item }: { schema: ConditionPageSchema; item: Conditi
       {schema.residualMarkdown && (
         <section className="card" id="additional-notes">
           <h2>Additional notes</h2>
-          <p className="muted">Source: <code>{item.sourcePath}</code></p>
+          <Markdown>{schema.residualMarkdown}</Markdown>
         </section>
       )}
     </div>
